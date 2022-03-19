@@ -26,40 +26,40 @@
                         <input type="text" id="bio" value="{{old('bio', $data->bio)}}" name="bio" class="form-control" placeholder="Bio">
                     </div>
                     <div class="row col-12 m-0 px-0">
-                        <div class="form-group col-11 px-0">
+                        <div class="form-group col-10 col-sm-10 col-md-11 col-lg-11 px-0">
                             <label for="address" class="form-label">Address</label>
                             <input type="text" id="address" value="{{old('address', $data->address)}}" name="address" class="form-control" placeholder="Address">
                         </div>
                         
-                        <div class="custom-control custom-switch col-1 d-flex d-flex align-items-center pb-3 pl-5 float-right">
+                        <div class="custom-control custom-switch col-2 col-sm-2 col-md-1 col-lg-1 d-flex align-items-center justify-content-end pb-3 px-0">
                             <input type="checkbox" class="custom-control-input" name="is_address_displayed" id="is_address_displayed" style="transform: scale(2);" {{$data->is_address_displayed ? 'checked' : ''}}>
                             <label class="custom-control-label" for="is_address_displayed"></label>
                         </div>
                     </div>
                     <div class="row col-12 m-0 px-0">
-                        <div class="form-group col-11 px-0">
+                        <div class="form-group col-10 col-sm-10 col-md-11 col-lg-11 px-0">
                             <label for="username" class="form-label">Username</label>
                             <input type="text" id="username" value="{{old('username', $data->username)}}" name="username" class="form-control" placeholder="Username">
                         </div>
                         
-                        <div class="custom-control custom-switch col-1 d-flex d-flex align-items-center pb-3 pl-5 float-right">
+                        <div class="custom-control custom-switch col-2 col-sm-2 col-md-1 col-lg-1 d-flex align-items-center justify-content-end pb-3 px-0">
                             <input type="checkbox" class="custom-control-input" name="is_username_displayed" id="is_username_displayed" style="transform: scale(2);" {{$data->is_username_displayed ? 'checked' : ''}}>
                             <label class="custom-control-label" for="is_username_displayed"></label>
                         </div>
                     </div>
 
                     <div class="row col-12 mb-2" >
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <p class="mb-0">Frame Color</p>
                             <a href="#" onclick="myFunction(1)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
                             <input type="color" style="visibility:hidden" name="frame_color" value="{{old('frame_color', $data->frame_color ?? '#ffffff')}}" id="fontColorButton1" title="Change Font Color" colorpick-eyedropper-active="true" />
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <p class="mb-0">Background Color</p>
                             <a href="#" onclick="myFunction(2)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
                             <input type="color" style="visibility:hidden" name="background_color" value="{{old('background_color', $data->background_color ?? '#ffffff')}}" id="fontColorButton2" title="Change Font Color" colorpick-eyedropper-active="true" />
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                             <p class="mb-0">Button Save Color</p>
                             <a href="#" onclick="myFunction(3)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
                             <input type="color" style="visibility:hidden" name="save_color" id="fontColorButton3" title="Change Font Color" colorpick-eyedropper-active="true" />

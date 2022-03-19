@@ -1,7 +1,7 @@
 @extends("user.user_home_template")
 
 @section("content")
-    <div class="row mt-4 col-12 px-5">
+    <div class="row mt-4 col-12 px-3">
 
         <div class="p-1 mb-5 col-lg-6 col-md-12 col-sm-12 col-12">
             <button class="btn btn-dark col-12" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -22,10 +22,10 @@
                                 <!-- LINK -->
                                 <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}"  class="border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
-                                        <div class="col-1 pr-1 d-flex align-items-center">
+                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
                                             <i class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-11 px-0">
+                                        <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
                                             <div class="row col-12 mx-0 px-0 mb-2">
                                                 <select onchange="linkTypeChange({{$content->id}})" id="item-link_type-{{$content->id}}" name="link_types[]" class="custom-select col-6">
                                                     @foreach($list_link_types as $link_type)
@@ -47,20 +47,20 @@
                                             </div>
                                             
                                             <div class="row col-12 mt-2 m-0 px-0">
-                                                <div class="form-group col-11 px-0 row">
-                                                    <div class="col-3">
+                                                <div class="form-group col-12 col-sm-12 col-lg-11 px-0 row">
+                                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                                                         <p class="mb-0">Text Color</p>
                                                         <button onClick="changeButtonTextColor({{$content->id}}, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
                                                         <button onClick="changeButtonTextColor({{$content->id}}, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
                                                     </div>
-                                                    <div>
+                                                    <div class="col-6 col-sm-6 col-md-9 col-lg-9">
                                                         <p class="mb-0">Button Color</p>
                                                         <a href="#" onclick="openColorPicker({{$content->id}})"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
                                                         <input type="color" onChange="changeButtonColor({{$content->id}})" name="button_colors[]" value="{{$content->button_color}}" style="visibility:hidden"  id="item-button-color-{{$content->id}}" title="Change Font Color" colorpick-eyedropper-active="true" />
                                                     </div>
                                                 </div>
                                                 
-                                                <div class="custom-control custom-switch col-1 d-flex d-flex align-items-center pb-3 pl-5">
+                                                <div class="custom-control custom-switch ml-auto col-12 col-sm-12 col-lg-1 d-flex d-flex align-items-center pb-3 px-0 d-flex justify-content-end">
                                                     <p style="margin-right:5px">Icon</p>
                                                     <input type="checkbox" onChange="onIconChange({{$content->id}})" id="item-checkbox-icon-{{$content->id}}" {{$content->is_icon_displayed ? 'checked' : ''}} class="custom-control-input" style="transform: scale(2);">
                                                     <label class="custom-control-label" for="item-checkbox-icon-{{$content->id}}"></label>
@@ -70,13 +70,13 @@
                                             <hr class="mt-0">
 
                                             <div class="row col-12 mt-2 m-0 px-0">
-                                                <div class="form-group col-9 px-0 row">
+                                                <div class="form-group col-6 col-sm-7 col-md-8 col-lg-8 px-0 row">
                                                     <div class="col-12">
                                                         <i onclick="deleteItem({{$content->id}})" class="fa-solid fa-trash"></i>
                                                         <button  onClick="setDefaultLink({{$content->id}})" class="btn btn-sm btn-dark">Default</button>
                                                     </div>
                                                 </div>
-                                                <div class="row ml-auto mr-0">
+                                                <div class="row px-0 ml-auto mr-0 col-6 col-sm-5 col-md-4 col-lg-4 d-flex justify-content-end">
                                                     <span>{{$content->total_clicked}} Klik <i class="fa-solid fa-chart-line"></i></span> 
                                                     <div style="height:30px; width:1px; background-color:#DFDFDF; margin-left:10px; margin-right:5px"></div>
                                                     <div class="custom-control custom-switch" style="margin-right:-5px">
@@ -107,22 +107,22 @@
                                 <!-- TEXT -->
                                 <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
-                                        <div class="col-1 pr-1 d-flex align-items-center">
+                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
                                             <i class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-11 px-0">
+                                        <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
                                             <div class="col-12 px-0">
                                                 <input onchange="onChangeInputText({{$content->id}})" value="{{$content->text}}" id="item-input-text-{{$content->id}}" name="text[]" type="text" class="form-control" style="width:100%" placeholder="Text">
                                             </div>
                                             
                                             <div class="row col-12 mt-2 m-0 px-0">
-                                                <div class="form-group col-11 px-0 row">
-                                                    <div class="col-3">
+                                                <div class="form-group col-12 px-0 row">
+                                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
                                                         <p class="mb-0">Text Color</p>
                                                         <button onclick="changeTextColor({{$content->id}}, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
                                                         <button onclick="changeTextColor({{$content->id}}, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
                                                     </div>
-                                                    <div>
+                                                    <div class="col-12 col-sm-6 col-md-9 col-lg-9">
                                                         <p class="mb-0">Align Text</p>
                                                         <i onclick="changeTextAlign({{$content->id}}, 'left')" class="fa-solid fa-align-left"></i>
                                                         <i onclick="changeTextAlign({{$content->id}}, 'center')" class="fa-solid fa-align-center"></i>
@@ -294,10 +294,10 @@
                 let index = ++current_item_length;
             let link = `<li id="list-item-`+index+`" class="border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
-                                        <div class="col-1 pr-1 d-flex align-items-center">
+                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
                                             <i class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-11 px-0">
+                                        <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
                                             <div class="row col-12 mx-0 px-0 mb-2">
                                                 <select onchange="linkTypeChange(`+index+`)" id="item-link_type-`+index+`" name="link_types[]" class="custom-select col-6">
                                                     @foreach($list_link_types as $link_type)
@@ -319,20 +319,20 @@
                                             </div>
                                             
                                             <div class="row col-12 mt-2 m-0 px-0">
-                                                <div class="form-group col-11 px-0 row">
-                                                    <div class="col-3">
+                                                <div class="form-group col-12 col-sm-12 col-lg-11 px-0 row">
+                                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                                                         <p class="mb-0">Text Color</p>
                                                         <button onClick="changeButtonTextColor(`+index+`, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
                                                         <button onClick="changeButtonTextColor(`+index+`, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
                                                     </div>
-                                                    <div>
+                                                    <div class="col-6 col-sm-6 col-md-9 col-lg-9">
                                                         <p class="mb-0">Button Color</p>
                                                         <a href="#" onclick="openColorPicker(`+index+`)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
                                                         <input id="item-button-color-`+index+`" onChange="changeButtonColor(`+index+`)" type="color" name="button_colors[]" style="visibility:hidden" title="Change Font Color" colorpick-eyedropper-active="true" />
                                                     </div>
                                                 </div>
                                                 
-                                                <div class="custom-control custom-switch col-1 d-flex d-flex align-items-center pb-3 pl-5">
+                                                <div class="custom-control custom-switch ml-auto col-12 col-sm-12 col-lg-1 d-flex d-flex align-items-center pb-3 px-0 d-flex justify-content-end">
                                                     <p style="margin-right:5px">Icon</p>
                                                     <input checked onChange="onIconChange(`+index+`)" id="item-checkbox-icon-`+index+`" type="checkbox" class="custom-control-input" style="transform: scale(2);">
                                                     <label class="custom-control-label" for="item-checkbox-icon-`+index+`"></label>
@@ -342,13 +342,13 @@
                                             <hr class="mt-0">
 
                                             <div class="row col-12 mt-2 m-0 px-0">
-                                                <div class="form-group col-9 px-0 row">
+                                                <div class="form-group col-6 col-sm-7 col-md-8 col-lg-8 px-0 row">
                                                     <div class="col-12">
                                                         <i onclick="deleteItem(`+index+`)" class="fa-solid fa-trash"></i>
                                                         <button onClick="setDefaultLink(`+index+`)" class="btn btn-sm btn-dark">Default</button>
                                                     </div>
                                                 </div>
-                                                <div class="row ml-auto mr-0">
+                                                <div class="row px-0 ml-auto mr-0 col-6 col-sm-5 col-md-4 col-lg-4 d-flex justify-content-end">
                                                     <span>0 Klik <i class="fa-solid fa-chart-line"></i></span> 
                                                     <div style="height:30px; width:1px; background-color:#DFDFDF; margin-left:10px; margin-right:5px"></div>
                                                     <div class="custom-control custom-switch" style="margin-right:-5px">
@@ -403,22 +403,22 @@
                 let index = ++current_item_length;
                 let text = `<li id="list-item-`+index+`" class="border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
-                                        <div class="col-1 pr-1 d-flex align-items-center">
+                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
                                             <i class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-11 px-0">
+                                        <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
                                             <div class="col-12 px-0">
                                                 <input onchange="onChangeInputText(`+index+`)" id="item-input-text-`+index+`" name="text[]" type="text" class="form-control" style="width:100%" placeholder="Text">
                                             </div>
                                             
                                             <div class="row col-12 mt-2 m-0 px-0">
-                                                <div class="form-group col-11 px-0 row">
-                                                    <div class="col-3">
+                                                <div class="form-group col-12 px-0 row">
+                                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
                                                         <p class="mb-0">Text Color</p>
                                                         <button onclick="changeTextColor(`+index+`, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
                                                         <button onclick="changeTextColor(`+index+`, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
                                                     </div>
-                                                    <div>
+                                                    <div class="col-12 col-sm-6 col-md-9 col-lg-9">
                                                         <p class="mb-0">Align Text</p>
                                                         <i onclick="changeTextAlign(`+index+`, 'left')" class="fa-solid fa-align-left"></i>
                                                         <i onclick="changeTextAlign(`+index+`, 'center')" class="fa-solid fa-align-center"></i>

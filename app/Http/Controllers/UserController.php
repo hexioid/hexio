@@ -230,7 +230,6 @@ class UserController extends Controller
             "order_number"      => $order_number,
             "content_type_id"   => 1,
             "link_type_id"      => $linkType->id,
-            "text"              => $linkType->type,
             "is_icon_displayed" => 1,
             "created_at"        => Carbon::now()
         ]);
