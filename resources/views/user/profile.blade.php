@@ -107,7 +107,7 @@
                             <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
                             <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
                             <p id="preview-bio">{{$data->bio}}</p>
-                            <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address">{{$data->address}}</span></p>
+                            <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address" class="pl-1">{{$data->address}}</span></p>
                            
                             <div id="container-list-preview">
                                 @foreach($list_contents as $content)

@@ -183,7 +183,7 @@
                             <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
                             <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
                             <p id="preview-bio">{{$data->bio}}</p>
-                            <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address">{{$data->address}}</span></p>
+                            <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address" class="pl-1">{{$data->address}}</span></p>
                             
                             <div id="container-list-preview">
                                 @foreach($list_contents as $content)
@@ -305,7 +305,7 @@
                                                     @endforeach
                                                 </select>
                                                 <div class="col-6 pr-0 pl-1">
-                                                    <input type="text" onchange="onChangeButtonName(`+index+`)" id="item-button-name-`+index+`" name="button_texts[]" class="form-control" style="width:100%" placeholder="Button Name" value="Instagram">
+                                                    <input type="text" onchange="onChangeButtonName(`+index+`)" id="item-button-name-`+index+`" name="button_texts[]" class="form-control" style="width:100%" placeholder="Button Name">
                                                 </div>
                                             </div>
                                             <div class="col-12 px-0">
@@ -363,7 +363,7 @@
                                 </li>`;
             
                 $("#container-list").append(link);
-                let preview_button = `<div id="div-preview-item-`+index+`"><a href="https://instagram.com" target="_blank" id="preview-item-button-name-`+index+`"  class="btn btn-dark col-12 mb-3"><i id="preview-icon-`+index+`" class="fa-brands fa-instagram" ></i> <span id="preview-text-button-name-`+index+`">Instagram</span> </a></div>`;
+                let preview_button = `<div id="div-preview-item-`+index+`"><a href="https://instagram.com" target="_blank" id="preview-item-button-name-`+index+`"  class="btn btn-dark col-12 mb-3"><i id="preview-icon-`+index+`" class="fa-brands fa-instagram" ></i> <span id="preview-text-button-name-`+index+`"></span> </a></div>`;
                 $("#container-list-preview").append(preview_button);
 
                 $.get("add_link", function(data, status){
@@ -568,10 +568,6 @@
             $("#item-link-"+id).attr("placeholder", placeholder);
             $("#preview-item-button-name-"+id).attr("href", prefix+value);
 
-            if($("#item-button-name-"+id).val() == ""){
-                $("#item-button-name-"+id).val(text)
-                onChangeButtonName(id);
-            }
             update_link(id);
         }
 

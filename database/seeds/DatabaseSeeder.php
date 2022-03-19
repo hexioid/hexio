@@ -59,7 +59,7 @@ class DatabaseSeeder extends Seeder
                 "prefix"    => "https://wa.me/",
                 "type"  => "Whatsapp",
                 "icon"    => "fa-brands fa-whatsapp",
-                "placeholder"    => "0821xxxxxxxx",
+                "placeholder"    => "62821xxxxxxxx",
                 "created_at"    => $current_time
             ],
             [
@@ -72,35 +72,35 @@ class DatabaseSeeder extends Seeder
             [
                 "prefix"    => null,
                 "type"  => "Website",
-                "icon"    => null,
+                "icon"    => "fa-solid fa-globe",
                 "placeholder"    => "https://",
                 "created_at"    => $current_time
             ],
             [
                 "prefix"    => null,
                 "type"  => "Online Store",
-                "icon"    => null,
+                "icon"    => "fa-solid fa-store",
                 "placeholder"    => "https://",
                 "created_at"    => $current_time
             ],
             [
                 "prefix"    => null,
                 "type"  => "Line",
-                "icon"    => null,
+                "icon"    => "fa-brands fa-line",
                 "placeholder"    => "https://",
                 "created_at"    => $current_time
             ],
             [
                 "prefix"    => "tel:",
                 "type"  => "Nomor Handphone",
-                "icon"    => null,
-                "placeholder"    => "0821xxxxxxxx",
+                "icon"    => "fa-solid fa-phone",
+                "placeholder"    => "62821xxxxxxxx",
                 "created_at"    => $current_time
             ],
             [
                 "prefix"    => null,
                 "type"  => "Lainnya",
-                "icon"    => null,
+                "icon"    => "fa-solid fa-hashtag",
                 "placeholder"    => "https://",
                 "created_at"    => $current_time
             ],

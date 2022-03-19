@@ -32,8 +32,10 @@ class AuthController extends Controller
             $user->phone = $request->get("telephone");
     
             $user->save();
-    
-            return redirect("login")->with(['success' => 'Success create user']);
+
+            if (Auth::attempt(["email"  => $request->get("email"), "password" => $request->get("password")], true)){
+                return redirect("link");
+            }
         } catch (\Exception $e) {
             return redirect()->back()->with(['error' => $e->getMessage()]);
         }

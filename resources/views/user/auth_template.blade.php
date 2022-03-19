@@ -13,8 +13,8 @@
                 <img src="{{asset('images/logo.png')}}" style=" width:160px" alt="">
             </div>
             <div class="row mt-4">
-                <div class="col-lg-3 col-md-3 col-sm-0"></div>
-                <div class="shadow p-3 mb-5 bg-white rounded col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-3 col-md-0 col-sm-0"></div>
+                <div class="shadow p-3 mb-5 bg-white rounded col-lg-6 col-md-12 col-sm-12">
                     @if ($errors->any())
                         <div class="alert alert-danger">
                             <ul>
@@ -42,7 +42,7 @@
 				        @yield('content')
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-0"></div>
+                <div class="col-lg-3 col-md-0 col-sm-0"></div>
             </div>
         </div>
 
