@@ -66,7 +66,7 @@ class DatabaseSeeder extends Seeder
                 "prefix"    => "https://youtube.com/",
                 "type"  => "Youtube",
                 "icon"    => "fa-brands fa-youtube",
-                "placeholder"    => "channel/xxxxxx",
+                "placeholder"    => "channel",
                 "created_at"    => $current_time
             ],
             [
@@ -93,6 +93,13 @@ class DatabaseSeeder extends Seeder
             [
                 "prefix"    => "tel:",
                 "type"  => "Nomor Handphone",
+                "icon"    => "fa-solid fa-mobile-screen-button",
+                "placeholder"    => "62821xxxxxxxx",
+                "created_at"    => $current_time
+            ],
+            [
+                "prefix"    => "tel:",
+                "type"  => "Nomor Telepon",
                 "icon"    => "fa-solid fa-phone",
                 "placeholder"    => "62821xxxxxxxx",
                 "created_at"    => $current_time

@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     </head>
     <body >
-        <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-md-center justify-content-start">
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-md-center justify-content-start px-5">
             <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -16,7 +16,7 @@
             <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                 <ul class="navbar-nav mx-auto text-md-center text-left">
                     <li class="nav-item mx-4">
-                        <a class="nav-link" href="{{url('/vcard')}}">
+                        <a class="nav-link" href="{{url('page/vcard')}}">
                             <div class=" row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
                                     <i class="fa-solid fa-address-book fa-2xl"></i>
@@ -28,7 +28,7 @@
                         </a> 
                     </li>
                     <li class="nav-item mx-4">
-                        <a class="nav-link" href="{{url('link')}}">
+                        <a class="nav-link" href="{{url('page/link')}}">
                             <div class=" row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
                                     <i class="fa-solid fa-link fa-2xl"></i>
@@ -40,7 +40,7 @@
                         </a> 
                     </li>
                     <li class="nav-item mx-4">
-                        <a class="nav-link" href="{{url('/profile')}}">
+                        <a class="nav-link" href="{{url('page/profile')}}">
                             <div class=" row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
                                     <i class="fa-regular fa-user fa-2xl"></i>
@@ -52,7 +52,7 @@
                         </a> 
                     </li>
                     <li class="nav-item mx-4">
-                        <a class="nav-link" href="{{url('/qrcode')}}">
+                        <a class="nav-link" href="{{url('page/qrcode')}}">
                             <div class=" row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
                                     <i class="fa-solid fa-qrcode fa-2xl"></i>
@@ -71,8 +71,8 @@
                                 <i class="fa-solid fa-gear"></i>
                             </span>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="{{url('setting')}}">Setting</a>
-                                <a class="dropdown-item" href="{{url('logout')}}">Logout</a>
+                                <a class="dropdown-item" href="{{url('page/setting')}}">Setting</a>
+                                <a class="dropdown-item" href="{{url('page/logout')}}">Logout</a>
                             </div>
                         </div>
                     </li>

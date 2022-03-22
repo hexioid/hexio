@@ -15,11 +15,11 @@
                 </div>
                 <hr>
                 <div class="col-12">
-                    <i class="fa-solid fa-lock"></i> <a href="{{url('change-password')}}" style="color: black">Change Password</a>
+                    <i class="fa-solid fa-lock"></i> <a href="{{url('page/change-password')}}" style="color: black">Change Password</a>
                 </div>
                 <hr>
                 <div class="col-12">
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i><a href="{{url('logout')}}"  style="color: black"> Logout</a>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i><a href="{{url('page/logout')}}"  style="color: black"> Logout</a>
                 </div>
             </div>
         </div>

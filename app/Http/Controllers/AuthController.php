@@ -34,7 +34,7 @@ class AuthController extends Controller
             $user->save();
 
             if (Auth::attempt(["email"  => $request->get("email"), "password" => $request->get("password")], true)){
-                return redirect("link");
+                return redirect("page/link");
             }
         } catch (\Exception $e) {
             return redirect()->back()->with(['error' => $e->getMessage()]);
@@ -51,7 +51,7 @@ class AuthController extends Controller
             'password' => 'required|string',
         ]);
         if (Auth::attempt(["email"  => $request->get("email"), "password" => $request->get("password")], $request->has("remember") ? true : false)){
-            return redirect("vcard");
+            return redirect("page/vcard");
         }
         
         return redirect()->back()->with(['error' => "Invalid email/password"]);
@@ -64,7 +64,7 @@ class AuthController extends Controller
 
     public function logout(){
         Auth::logout();
-        return redirect("login");
+        return redirect("page/login");
     }
 
     public function change_password(Request $request){
@@ -85,7 +85,7 @@ class AuthController extends Controller
             if(Hash::check($request->get("current_password"), $user->password)){
                 $user->password = Hash::make($request->get("new_password"));
                 $user->save();
-                return redirect("profile")->with(['success' => "Success change password"]);
+                return redirect("page/profile")->with(['success' => "Success change password"]);
             }
             return redirect()->back()->with(['error' => "Wrong password"]);
         } catch (\Exception $e) {

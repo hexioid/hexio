@@ -5,7 +5,7 @@
         <div class="col-lg-3 col-md-2 col-sm-1 col-0"></div>
         <div class="shadow p-3 mb-5 bg-white rounded col-lg-6 col-md-8 col-sm-10 col-12">
             <div class="card-body">
-                <form action="{{url('change-password')}}" method="POST">
+                <form action="{{url('page/change-password')}}" method="POST">
                     @csrf
                     <div class="text-left">
                         <h4>Change Password</h4>

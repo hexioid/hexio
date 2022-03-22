@@ -3,7 +3,7 @@
     {!! ReCaptcha::htmlScriptTagJsApi() !!}
 @endsection
 @section("content")
-    <form action="{{'register'}}" method="POST">
+    <form action="{{'page/register'}}" method="POST">
         @csrf
         <div class="text-center">
             <h2>SIGN UP</h2>

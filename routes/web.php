@@ -14,23 +14,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get("/register", "AuthController@create");
-Route::post("/register", "AuthController@store");
-Route::get("/login", "AuthController@login")->name("login");
-Route::post("/login", "AuthController@login_post");
-Route::get("/forget-password", function(){
-    return view("user.forget_password");
+    return redirect("page/login");
 });
 
+Route::get("/{username}", "UserController@profile_user");
 
-Route::get("/u/{username}", "UserController@profile_user");
-Route::get("open_link/{id}", "UserController@openLink");
+Route::group([
+    "prefix"    => "page"
+], function(){
+    Route::get("/register", "AuthController@create");
+    Route::post("/register", "AuthController@store");
+    Route::get("/login", "AuthController@login")->name("login");
+    Route::post("/login", "AuthController@login_post");
+    Route::get("open_link/{id}", "UserController@openLink");
+    Route::get("/forget-password", function(){
+        return view("user.forget_password");
+    });
+});
+
 
 
 Route::group([
-    "middleware"    => "auth"
+    "middleware"    => "auth",
+    "prefix"        => "page"
 ], function(){
     Route::get("/logout", "AuthController@logout");
     Route::post("/change-password", "AuthController@change_password");

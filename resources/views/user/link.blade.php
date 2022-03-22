@@ -1,7 +1,7 @@
 @extends("user.user_home_template")
 
 @section("content")
-    <div class="row mt-4 col-12 px-3">
+    <div class="row mt-4 col-12 px-5 mx-0">
 
         <div class="p-1 mb-5 col-lg-6 col-md-12 col-sm-12 col-12">
             <button class="btn btn-dark col-12" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -23,7 +23,7 @@
                                 <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}"  class="border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
-                                            <i class="fa-solid fa-grip-vertical"></i>
+                                            <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
                                             <div class="row col-12 mx-0 px-0 mb-2">
@@ -63,7 +63,7 @@
                                                 <div class="custom-control custom-switch ml-auto col-12 col-sm-12 col-lg-1 d-flex d-flex align-items-center pb-3 px-0 d-flex justify-content-end">
                                                     <p style="margin-right:5px">Icon</p>
                                                     <input type="checkbox" onChange="onIconChange({{$content->id}})" id="item-checkbox-icon-{{$content->id}}" {{$content->is_icon_displayed ? 'checked' : ''}} class="custom-control-input" style="transform: scale(2);">
-                                                    <label class="custom-control-label" for="item-checkbox-icon-{{$content->id}}"></label>
+                                                    <label style="cursor: pointer;" class="custom-control-label" for="item-checkbox-icon-{{$content->id}}"></label>
                                                 </div>
                                             </div>
 
@@ -72,7 +72,7 @@
                                             <div class="row col-12 mt-2 m-0 px-0">
                                                 <div class="form-group col-6 col-sm-7 col-md-8 col-lg-8 px-0 row">
                                                     <div class="col-12">
-                                                        <i onclick="deleteItem({{$content->id}})" class="fa-solid fa-trash"></i>
+                                                        <i style="cursor: pointer;" onclick="deleteItem({{$content->id}})" class="fa-solid fa-trash mr-2"></i>
                                                         <button  onClick="setDefaultLink({{$content->id}})" class="btn btn-sm btn-dark">Default</button>
                                                     </div>
                                                 </div>
@@ -81,7 +81,7 @@
                                                     <div style="height:30px; width:1px; background-color:#DFDFDF; margin-left:10px; margin-right:5px"></div>
                                                     <div class="custom-control custom-switch" style="margin-right:-5px">
                                                         <input onChange="onDisplayChange({{$content->id}})" id="item-checkbox-display-{{$content->id}}" {{$content->is_content_displayed ? 'checked' : ''}} type="checkbox" class="custom-control-input">
-                                                        <label class="custom-control-label" for="item-checkbox-display-{{$content->id}}"></label>
+                                                        <label style="cursor: pointer;" class="custom-control-label" for="item-checkbox-display-{{$content->id}}"></label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -94,11 +94,11 @@
                                 <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
                                         <div class="col-1 pr-1 d-flex align-items-center">
-                                            <i class="fa-solid fa-grip-vertical"></i>
+                                            <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-11 px-0">
                                             <div class="col-12">
-                                                <i onclick="deleteItem({{$content->id}})" class="fa-solid fa-trash"></i>
+                                                <i style="cursor: pointer;" onclick="deleteItem({{$content->id}})" class="fa-solid fa-trash"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -108,7 +108,7 @@
                                 <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
-                                            <i class="fa-solid fa-grip-vertical"></i>
+                                            <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
                                             <div class="col-12 px-0">
@@ -123,11 +123,11 @@
                                                         <button onclick="changeTextColor({{$content->id}}, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
                                                     </div>
                                                     <div class="col-12 col-sm-6 col-md-9 col-lg-9">
-                                                        <p class="mb-0">Align Text</p>
-                                                        <i onclick="changeTextAlign({{$content->id}}, 'left')" class="fa-solid fa-align-left"></i>
-                                                        <i onclick="changeTextAlign({{$content->id}}, 'center')" class="fa-solid fa-align-center"></i>
-                                                        <i onclick="changeTextAlign({{$content->id}}, 'right')" class="fa-solid fa-align-right"></i>
-                                                        <i onclick="changeTextAlign({{$content->id}}, 'justify')" class="fa-solid fa-align-justify"></i>
+                                                        <p class="mb-0 ml-4">Align Text</p>
+                                                        <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'left')" class="fa-solid fa-align-left fa-lg ml-2"></i>
+                                                        <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'center')" class="fa-solid fa-align-center fa-lg ml-2"></i>
+                                                        <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'right')" class="fa-solid fa-align-right fa-lg ml-2"></i>
+                                                        <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'justify')" class="fa-solid fa-align-justify fa-lg ml-2"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -137,7 +137,7 @@
                                             <div class="row col-12 mt-2 m-0 px-0">
                                                 <div class="form-group col-9 px-0 row">
                                                     <div class="col-12">
-                                                        <i onclick="deleteItem({{$content->id}})" class="fa-solid fa-trash"></i>
+                                                        <i style="cursor: pointer;" onclick="deleteItem({{$content->id}})" class="fa-solid fa-trash mr-2"></i>
                                                         <button onclick="setDefaultText({{$content->id}})" class="btn btn-sm btn-dark">Default</button>
                                                     </div>
                                                 </div>
@@ -157,8 +157,8 @@
 
         <!-- Preview -->
         <div class="p-1 mb-5 col-lg-6 col-md-12 col-sm-12 col-12" style="min-height: 600px;">
-            <div class="col-12">
-                <a href="{{url('preview')}}" target="_blank" class="btn btn-md btn-dark float-right">PREVIEW</a>
+            <div class="col-12 text-right pr-0">
+                <a href="{{url('page/preview')}}" target="_blank" class="btn btn-md btn-dark">PREVIEW</a>
             </div>
             <br>
             <div  class="w-100 d-flex justify-content-center" >
@@ -172,14 +172,14 @@
                         <div id="background-canvas" class="col-12 px-3 py-4 mb-3" height="30px" style="background-color: {{ $data->background_color ?? '#ffffff' }}; border-radius: 40px;">
                             <!-- CONTENT -->
                             <div class="row col-12 mr-0 pr-0">
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-4 px-0">
                                     <img id="preview-image" style="border:solid {{ $data->frame_color ?? '#ffffff' }} 2px ; object-fit: cover;" width="75px" height="75PX" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" class="rounded-circle" alt="Cinque Terre">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-8 pt-3 text-right">
-                                    <a href="{{url('download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="btn btn-sm btn-dark">SAVE CONTACT</a>
+                                    <a href="{{url('page/download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="btn btn-sm btn-dark border-0">SAVE CONTACT</a>
                                 </div>
                             </div>
-
+                            <br>
                             <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
                             <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
                             <p id="preview-bio">{{$data->bio}}</p>
@@ -189,7 +189,7 @@
                                 @foreach($list_contents as $content)
                                     @if($content->content_type_id == 1)
                                         <div id="div-preview-item-{{$content->id}}" data-real_id="{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
-                                            <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn btn-dark col-12 mb-3" style="background-color: {{$content->button_color}}">
+                                            <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn btn-dark col-12 mb-3 border-0" style="background-color: {{$content->button_color}}">
                                                 <i id="preview-icon-{{$content->id}}" class="{{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i> 
                                                 <span id="preview-text-button-name-{{$content->id}}" style="color: {{$content->text_color}}">{{$content->text}}</span>  
                                             </a>
@@ -260,7 +260,7 @@
                 new_index.push($(value).attr("data-real_id"))
             });
 
-            let form_url = "update_order";
+            let form_url = "/page/update_order";
             $.ajax({
                 url:form_url,
                 type:'POST',
@@ -295,7 +295,7 @@
             let link = `<li id="list-item-`+index+`" class="border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
-                                            <i class="fa-solid fa-grip-vertical"></i>
+                                            <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
                                             <div class="row col-12 mx-0 px-0 mb-2">
@@ -335,7 +335,7 @@
                                                 <div class="custom-control custom-switch ml-auto col-12 col-sm-12 col-lg-1 d-flex d-flex align-items-center pb-3 px-0 d-flex justify-content-end">
                                                     <p style="margin-right:5px">Icon</p>
                                                     <input checked onChange="onIconChange(`+index+`)" id="item-checkbox-icon-`+index+`" type="checkbox" class="custom-control-input" style="transform: scale(2);">
-                                                    <label class="custom-control-label" for="item-checkbox-icon-`+index+`"></label>
+                                                    <label style="cursor: pointer;" class="custom-control-label" for="item-checkbox-icon-`+index+`"></label>
                                                 </div>
                                             </div>
 
@@ -344,7 +344,7 @@
                                             <div class="row col-12 mt-2 m-0 px-0">
                                                 <div class="form-group col-6 col-sm-7 col-md-8 col-lg-8 px-0 row">
                                                     <div class="col-12">
-                                                        <i onclick="deleteItem(`+index+`)" class="fa-solid fa-trash"></i>
+                                                        <i style="cursor: pointer;" onclick="deleteItem(`+index+`)" class="fa-solid fa-trash mr-2"></i>
                                                         <button onClick="setDefaultLink(`+index+`)" class="btn btn-sm btn-dark">Default</button>
                                                     </div>
                                                 </div>
@@ -353,7 +353,7 @@
                                                     <div style="height:30px; width:1px; background-color:#DFDFDF; margin-left:10px; margin-right:5px"></div>
                                                     <div class="custom-control custom-switch" style="margin-right:-5px">
                                                         <input checked onChange="onDisplayChange(`+index+`)" type="checkbox" class="custom-control-input" id="item-checkbox-display-`+index+`">
-                                                        <label class="custom-control-label" for="item-checkbox-display-`+index+`"></label>
+                                                        <label style="cursor: pointer;" class="custom-control-label" for="item-checkbox-display-`+index+`"></label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -363,7 +363,7 @@
                                 </li>`;
             
                 $("#container-list").append(link);
-                let preview_button = `<div id="div-preview-item-`+index+`"><a href="https://instagram.com" target="_blank" id="preview-item-button-name-`+index+`"  class="btn btn-dark col-12 mb-3"><i id="preview-icon-`+index+`" class="fa-brands fa-instagram" ></i> <span id="preview-text-button-name-`+index+`"></span> </a></div>`;
+                let preview_button = `<div id="div-preview-item-`+index+`"><a href="https://instagram.com" target="_blank" id="preview-item-button-name-`+index+`"  class="btn btn-dark col-12 mb-3 border-0"><i id="preview-icon-`+index+`" class="fa-brands fa-instagram" ></i> <span id="preview-text-button-name-`+index+`"></span> </a></div>`;
                 $("#container-list-preview").append(preview_button);
 
                 $.get("add_link", function(data, status){
@@ -377,11 +377,11 @@
                 let divider = `<li id="list-item-`+index+`" class="border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
                                         <div class="col-1 pr-1 d-flex align-items-center">
-                                            <i class="fa-solid fa-grip-vertical"></i>
+                                            <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-11 px-0">
                                             <div class="col-12">
-                                                <i onclick="deleteItem(`+index+`)" class="fa-solid fa-trash"></i>
+                                                <i style="cursor: pointer;" onclick="deleteItem(`+index+`)" class="fa-solid fa-trash"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -404,7 +404,7 @@
                 let text = `<li id="list-item-`+index+`" class="border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
-                                            <i class="fa-solid fa-grip-vertical"></i>
+                                            <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
                                             <div class="col-12 px-0">
@@ -420,10 +420,10 @@
                                                     </div>
                                                     <div class="col-12 col-sm-6 col-md-9 col-lg-9">
                                                         <p class="mb-0">Align Text</p>
-                                                        <i onclick="changeTextAlign(`+index+`, 'left')" class="fa-solid fa-align-left"></i>
-                                                        <i onclick="changeTextAlign(`+index+`, 'center')" class="fa-solid fa-align-center"></i>
-                                                        <i onclick="changeTextAlign(`+index+`, 'right')" class="fa-solid fa-align-right"></i>
-                                                        <i onclick="changeTextAlign(`+index+`, 'justify')" class="fa-solid fa-align-justify"></i>
+                                                        <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'left')" class="fa-solid fa-align-left fa-lg ml-2"></i>
+                                                        <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'center')" class="fa-solid fa-align-center fa-lg ml-2"></i>
+                                                        <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'right')" class="fa-solid fa-align-right fa-lg ml-2"></i>
+                                                        <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'justify')" class="fa-solid fa-align-justify fa-lg ml-2"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -433,7 +433,7 @@
                                             <div class="row col-12 mt-2 m-0 px-0">
                                                 <div class="form-group col-9 px-0 row">
                                                     <div class="col-12">
-                                                        <i onclick="deleteItem(`+index+`)" class="fa-solid fa-trash"></i>
+                                                        <i style="cursor: pointer;" onclick="deleteItem(`+index+`)" class="fa-solid fa-trash mr-2"></i>
                                                         <button onclick="setDefaultText(`+index+`)" class="btn btn-sm btn-dark">Default</button>
                                                     </div>
                                                 </div>
@@ -492,7 +492,7 @@
 
         function update_text(id){
             let real_id = $("#list-item-"+id).data("real_id");
-            let form_url = "update_text/"+real_id;
+            let form_url = "/page/update_text/"+real_id;
 
             $.ajax({
                 url:form_url,
@@ -584,7 +584,7 @@
 
         function update_link(id){
             let real_id = $("#list-item-"+id).data("real_id");
-            let form_url = "update_link/"+real_id;
+            let form_url = "/page/update_link/"+real_id;
 
             $.ajax({
                 url:form_url,

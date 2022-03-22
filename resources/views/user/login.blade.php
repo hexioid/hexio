@@ -1,6 +1,6 @@
 @extends('user.auth_template')
 @section("content")
-    <form action="{{url('login')}}" method="POST">
+    <form action="{{url('page/login')}}" method="POST">
         @csrf
         <div class="text-center">
             <h2>LOGIN</h2>
@@ -21,17 +21,17 @@
 
         <div class="row col-12 m-0 p-0">
             <div class="form-check col-6">
-                <input type="checkbox" value="{{old('remember')}}" type="checkbox" name="remember" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Remeber Me</label>
+                <input style="cursor: pointer;" type="checkbox" value="{{old('remember')}}" type="checkbox" name="remember" class="form-check-input" id="exampleCheck1">
+                <label style="cursor: pointer;" class="form-check-label" for="exampleCheck1">Remeber Me</label>
             </div>
             <div class="col-6 text-right pr-0">
-                <a href="{{url('forget-password')}}" style="color: black">Forget Password</a>
+                <a href="{{url('page/forget-password')}}" style="color: black">Forget Password</a>
             </div>
         </div>
         <br>
 
         <button type="submit" class="btn btn-dark btn-lg col-12">LOGIN</button>
-        <a href="{{url('register')}}" class="btn btn-dark btn-lg col-12 mt-3">SIGN UP</a>
+        <a href="{{url('page/register')}}" class="btn btn-dark btn-lg col-12 mt-3">SIGN UP</a>
     </form>
 @endsection
 
