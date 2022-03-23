@@ -6,6 +6,20 @@
         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <title>Hexio</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <style>
+            
+            body 
+            {
+                font-family: 'Roboto';
+            }
+            img {
+                image-rendering: pixelated;
+                -ms-interpolation-mode: nearest-neighbor;
+            }
+        </style>
     </head>
     <body style="100%">
         <!-- Preview -->
@@ -49,7 +63,7 @@
                 </div>
                 
                 <div style="height:10vh; background-color: {{ $data->background_color ?? '#ffffff' }};" class="d-flex justify-content-center align-items-end pb-4">
-                    <img src="{{asset('images/logo_black_v2.png')}}" width="100" alt="">
+                    <img src="{{asset('images/logo_black_v2.svg')}}" width="100" alt="">
                 </div>
             </div>
             <div class="col-12 col-sm-1 col-md-2 col-lg-2"></div>

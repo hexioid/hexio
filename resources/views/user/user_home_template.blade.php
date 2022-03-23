@@ -54,6 +54,10 @@
             {
                 font-family: 'Roboto';
             }
+            img {
+                image-rendering: pixelated;
+                -ms-interpolation-mode: nearest-neighbor;
+            }
         </style>
         <link rel="stylesheet" href="{{asset('plugins/coloris/coloris.css')}}" />
         <script src="{{asset('plugins/coloris/coloris.js')}}"></script>
@@ -63,7 +67,7 @@
             <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="nav-link px-0" href="#_"><img src="{{asset('images/logo_white_v2.png')}}" width="100" alt=""></i></a> 
+            <a class="nav-link px-0" href="#_"><img src="{{asset('images/logo_white_v2.svg')}}" width="100" alt=""></i></a> 
             <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                 <ul class="navbar-nav mx-auto text-md-center text-left">
                     <li class="nav-item mx-4">
