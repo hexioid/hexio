@@ -107,7 +107,7 @@ class DatabaseSeeder extends Seeder
             [
                 "prefix"    => null,
                 "type"  => "Lainnya",
-                "icon"    => "fa-solid fa-hashtag",
+                "icon"    => "fa-solid fa-link",
                 "placeholder"    => "https://",
                 "created_at"    => $current_time
             ],

@@ -171,41 +171,44 @@
                     </div>
 
                     <div class="w-100 d-flex justify-content-center mt-3" >
-                        <div id="background-canvas" class="col-12 px-3 py-4 mb-3" height="30px" style="height:650px; overflow: auto; background-color: {{ $data->background_color ?? '#ffffff' }}; border-radius: 40px;">
-                            <!-- CONTENT -->
-                            <div class="row col-12 mr-0 pr-0">
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-4 px-0">
-                                    <img id="preview-image" style="border:solid {{ $data->frame_color ?? '#ffffff' }} 2px ; object-fit: cover;" width="95px" height="95PX" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" class="rounded-circle" alt="Cinque Terre">
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-8 col-8 pt-3 text-right">
-                                    <a href="{{url('page/download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="btn btn-sm btn-dark border-0">SAVE CONTACT</a>
-                                </div>
-                            </div>
-                            <br>
-                            <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
-                            <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
-                            <p id="preview-bio">{{$data->bio}}</p>
-                            <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address" class="pl-1">{{$data->address}}</span></p>
+                        <div id="background-canvas" class="col-12 px-0 py-0 mb-3" height="30px" style="height:650px; overflow: hidden; background-color: {{ $data->background_color ?? '#ffffff' }}; border-radius: 40px;">
                             
-                            <div id="container-list-preview">
-                                @foreach($list_contents as $content)
-                                    @if($content->content_type_id == 1)
-                                        <div id="div-preview-item-{{$content->id}}" data-real_id="{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
-                                            <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn btn-dark col-12 mb-3 border-0" style="background-color: {{$content->button_color}}">
-                                                <i id="preview-icon-{{$content->id}}" class="{{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i> 
-                                                <span id="preview-text-button-name-{{$content->id}}" style="color: {{$content->text_color}}">{{$content->text}}</span>  
-                                            </a>
-                                        </div>
-                                    @elseif($content->content_type_id == 2)
-                                        <div id="div-preview-item-{{$content->id}}" data-real_id="{{$content->id}}">
-                                            <br>
-                                        </div>
-                                    @else
-                                        <div id="div-preview-item-{{$content->id}}" data-real_id="{{$content->id}}" data-text-align="{{$content->text_align}}" style="text-align: {{$content->text_align}}">
-                                            <p id="list-preview-item-{{$content->id}}" data-text-color="{{$content->text_color}}" style="color: {{$content->text_color}}">{{$content->text}}</p>
-                                        </div>
-                                    @endif
-                                @endforeach
+                            <div id="check" class="px-3 py-4" style="height:650px; overflow:auto">
+                                <!-- CONTENT -->
+                                <div class="row col-12 mr-0 pr-0">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 px-0">
+                                        <img id="preview-image" style="border:solid {{ $data->frame_color ?? '#ffffff' }} 2px ; object-fit: cover;" width="95px" height="95PX" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" class="rounded-circle" alt="Cinque Terre">
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-8 pt-4 text-right">
+                                        <a href="{{url('page/download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="mt-2 btn btn-sm btn-dark border-0">SAVE CONTACT</a>
+                                    </div>
+                                </div>
+                                <br>
+                                <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
+                                <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
+                                <p id="preview-bio">{{$data->bio}}</p>
+                                <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address" class="pl-1">{{$data->address}}</span></p>
+                                
+                                <div id="container-list-preview">
+                                    @foreach($list_contents as $content)
+                                        @if($content->content_type_id == 1)
+                                            <div id="div-preview-item-{{$content->id}}" data-real_id="{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
+                                                <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn btn-dark col-12 mb-3 border-0" style="background-color: {{$content->button_color}}">
+                                                    <i id="preview-icon-{{$content->id}}" class="{{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i> 
+                                                    <span id="preview-text-button-name-{{$content->id}}" style="color: {{$content->text_color}}">{{$content->text}}</span>  
+                                                </a>
+                                            </div>
+                                        @elseif($content->content_type_id == 2)
+                                            <div id="div-preview-item-{{$content->id}}" data-real_id="{{$content->id}}">
+                                                <br>
+                                            </div>
+                                        @else
+                                            <div id="div-preview-item-{{$content->id}}" data-real_id="{{$content->id}}" data-text-align="{{$content->text_align}}" style="text-align: {{$content->text_align}}">
+                                                <p id="list-preview-item-{{$content->id}}" data-text-color="{{$content->text_color}}" style="color: {{$content->text_color}}">{{$content->text}}</p>
+                                            </div>
+                                        @endif
+                                    @endforeach
+                                </div>
                             </div>
 
                         </div>
@@ -367,7 +370,7 @@
                 $("#container-list").append(link);
                 let preview_button = `<div id="div-preview-item-`+index+`"><a href="https://instagram.com" target="_blank" id="preview-item-button-name-`+index+`"  class="btn btn-dark col-12 mb-3 border-0"><i id="preview-icon-`+index+`" class="fa-brands fa-instagram" ></i> <span id="preview-text-button-name-`+index+`"></span> </a></div>`;
                 $("#container-list-preview").append(preview_button);
-
+                
                 $.get("add_link", function(data, status){
                     $("#list-item-"+index).attr("data-real_id", data.data);
                     $("#div-preview-item-"+index).attr("data-real_id", data.data);

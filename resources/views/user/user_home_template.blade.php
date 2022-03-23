@@ -6,6 +6,9 @@
         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <title>Hexio</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <style>
             .clr-field{
                 visibility:hidden !important;
@@ -27,6 +30,29 @@
                 outline: none;   
                 cursor: inherit;
                 display: block;
+            }
+            /* width */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px transparant; 
+            }
+            
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: grey; 
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #5c5c5c; 
+            }
+            body 
+            {
+                font-family: 'Roboto';
             }
         </style>
         <link rel="stylesheet" href="{{asset('plugins/coloris/coloris.css')}}" />
