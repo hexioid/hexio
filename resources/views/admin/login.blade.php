@@ -1,6 +1,6 @@
 @extends('user.auth_template')
 @section("content")
-    <form action="{{url('login')}}" method="POST">
+    <form action="{{route('admin.login.post')}}" method="POST">
         @csrf
         <div class="text-center">
             <h2>ADMIN LOGIN</h2>

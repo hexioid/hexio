@@ -76,11 +76,24 @@ Route::group([
     Route::get("/preview", "UserController@preview");
 });
 
+
+
+
 Route::group([
     "prefix"    => "admin"
 ], function(){
-    Route::get("login", "AdminController@login");
-    Route::get("dashboard", "AdminController@dashboard");
+
+    Route::get('login', 'AdminController@login')->name('admin.login');
+    Route::post('login', 'AdminController@loginPost')->name('admin.login.post');
+    Route::get('logout', 'AdminController@logout')->name('admin.logout');
+    // Route::get("register", 'AdminController@register');
+
+    Route::group([
+        "middleware"    => "admin"
+    ], function(){
+        Route::get("customers", "AdminController@customers")->name("admin.customers");
+        Route::get("get_customers", "AdminController@get_customers")->name("admin.get_customers");
+    });
 });
 
 

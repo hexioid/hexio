@@ -36,4 +36,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function vcards(){
+        return $this->hasMany('App\Vcard', 'user_id');
+    }
+
+    public function singleVcard(){
+        $data = $this->vcards;
+        if(count($data) > 0){
+            return $data[0];
+        }else{
+            return null;
+        }
+    }
 }
