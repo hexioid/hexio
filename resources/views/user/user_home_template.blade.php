@@ -6,13 +6,38 @@
         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <title>Hexio</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <style>
+            .clr-field{
+                visibility:hidden !important;
+            }
+            .btn-file {
+                position: relative;
+                overflow: hidden;
+            }
+            .btn-file input[type=file] {
+                position: absolute;
+                top: 0;
+                right: 0;
+                min-width: 100%;
+                min-height: 100%;
+                font-size: 100px;
+                text-align: right;
+                filter: alpha(opacity=0);
+                opacity: 0;
+                outline: none;   
+                cursor: inherit;
+                display: block;
+            }
+        </style>
+        <link rel="stylesheet" href="{{asset('plugins/coloris/coloris.css')}}" />
+        <script src="{{asset('plugins/coloris/coloris.js')}}"></script>
     </head>
     <body >
         <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-md-center justify-content-start px-5">
             <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="nav-link" href="#_"><img src="{{asset('images/logo_white.png')}}" width="100" alt=""></i></a> 
+            <a class="nav-link px-0" href="#_"><img src="{{asset('images/logo_white_v2.png')}}" width="100" alt=""></i></a> 
             <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                 <ul class="navbar-nav mx-auto text-md-center text-left">
                     <li class="nav-item mx-4">

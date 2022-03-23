@@ -49,7 +49,7 @@
                 </div>
                 
                 <div style="height:10vh; background-color: {{ $data->background_color ?? '#ffffff' }};" class="d-flex justify-content-center align-items-end pb-4">
-                    <img src="{{asset('images/logo.png')}}" width="100" alt="">
+                    <img src="{{asset('images/logo_black_v2.png')}}" width="100" alt="">
                 </div>
             </div>
             <div class="col-12 col-sm-1 col-md-2 col-lg-2"></div>

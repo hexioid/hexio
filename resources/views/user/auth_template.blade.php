@@ -10,7 +10,7 @@
     <body >
         <div class="m-5 h-100">
             <div class="d-flex justify-content-center">
-                <img src="{{asset('images/logo.png')}}" style=" width:160px" alt="">
+                <img src="{{asset('images/logo_black_v2.png')}}" style=" width:160px" alt="">
             </div>
             <div class="row mt-4">
                 <div class="col-lg-3 col-md-0 col-sm-0"></div>

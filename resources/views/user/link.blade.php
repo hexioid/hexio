@@ -4,14 +4,16 @@
     <div class="row mt-4 col-12 px-5 mx-0">
 
         <div class="p-1 mb-5 col-lg-6 col-md-12 col-sm-12 col-12">
+           <div class="px-3">
             <button class="btn btn-dark col-12" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa-solid fa-plus"></i>ADD
-            </button>
-            <div class="collapse" id="collapseExample">
-                @foreach($list_content_types as $content_type)
-                    <button onclick="addContent({{$content_type->id}})" class="my-1 btn btn-dark col-12" id="{{$content_type->id}}"><i class="fa-solid fa-plus"></i>ADD {{$content_type->type}}</button>
-                @endforeach
-            </div>
+                    <i class="fa-solid fa-plus"></i>ADD
+                </button>
+                <div class="collapse" id="collapseExample">
+                    @foreach($list_content_types as $content_type)
+                        <button onclick="addContent({{$content_type->id}})" class="my-1 btn btn-dark col-12" id="{{$content_type->id}}"><i class="fa-solid fa-plus"></i>ADD {{$content_type->type}}</button>
+                    @endforeach
+                </div>
+           </div>
             <div class="card-body">
                 
                 <section>
@@ -56,7 +58,7 @@
                                                     <div class="col-6 col-sm-6 col-md-9 col-lg-9">
                                                         <p class="mb-0">Button Color</p>
                                                         <a href="#" onclick="openColorPicker({{$content->id}})"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
-                                                        <input type="color" onChange="changeButtonColor({{$content->id}})" name="button_colors[]" value="{{$content->button_color}}" style="visibility:hidden"  id="item-button-color-{{$content->id}}" title="Change Font Color" colorpick-eyedropper-active="true" />
+                                                        <input type="text" data-coloris onChange="changeButtonColor({{$content->id}})" name="button_colors[]" value="{{$content->button_color}}" style="visibility:hidden"  id="item-button-color-{{$content->id}}" title="Change Font Color" colorpick-eyedropper-active="true" />
                                                     </div>
                                                 </div>
                                                 
@@ -169,11 +171,11 @@
                     </div>
 
                     <div class="w-100 d-flex justify-content-center mt-3" >
-                        <div id="background-canvas" class="col-12 px-3 py-4 mb-3" height="30px" style="background-color: {{ $data->background_color ?? '#ffffff' }}; border-radius: 40px;">
+                        <div id="background-canvas" class="col-12 px-3 py-4 mb-3" height="30px" style="height:650px; overflow: auto; background-color: {{ $data->background_color ?? '#ffffff' }}; border-radius: 40px;">
                             <!-- CONTENT -->
                             <div class="row col-12 mr-0 pr-0">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-4 px-0">
-                                    <img id="preview-image" style="border:solid {{ $data->frame_color ?? '#ffffff' }} 2px ; object-fit: cover;" width="75px" height="75PX" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" class="rounded-circle" alt="Cinque Terre">
+                                    <img id="preview-image" style="border:solid {{ $data->frame_color ?? '#ffffff' }} 2px ; object-fit: cover;" width="95px" height="95PX" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" class="rounded-circle" alt="Cinque Terre">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-8 pt-3 text-right">
                                     <a href="{{url('page/download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="btn btn-sm btn-dark border-0">SAVE CONTACT</a>
@@ -328,7 +330,7 @@
                                                     <div class="col-6 col-sm-6 col-md-9 col-lg-9">
                                                         <p class="mb-0">Button Color</p>
                                                         <a href="#" onclick="openColorPicker(`+index+`)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
-                                                        <input id="item-button-color-`+index+`" onChange="changeButtonColor(`+index+`)" type="color" name="button_colors[]" style="visibility:hidden" title="Change Font Color" colorpick-eyedropper-active="true" />
+                                                        <input type="text" data-coloris id="item-button-color-`+index+`" onChange="changeButtonColor(`+index+`)" name="button_colors[]" style="visibility:hidden" title="Change Font Color" colorpick-eyedropper-active="true" />
                                                     </div>
                                                 </div>
                                                 

@@ -12,9 +12,15 @@
                     </div>
                     <div class="d-flex justify-content-center">
                         <label for="image">
-                            <input type="file" name="image" id="image" style="display:none;" onchange="onChangeImage(this)"/>
-                            <img id="input-profile-image" height="100" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" alt="">
+                            <input type="file" name="image" readonly id="image" onchange="onChangeImage(this)" style="display:none;"/>
                         </label>
+                        
+                        <div id="container-image-profile" style="position: relative;">
+                            <div data-toggle="modal" data-target="#exampleModal" class="rounded-circle text-center" style="cursor: pointer; bottom: 0; right: 0;background-color:grey; position: absolute; width: 25px; height: 25px" >
+                                <i class="fa-solid fa-pen-to-square" style="color:white"></i>
+                            </div>
+                            <img id="input-profile-image" class="rounded-circle" height="100" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" alt="">
+                        </div>
                     </div>
 
                         <div class="form-group">
@@ -52,17 +58,17 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                                 <p class="mb-0">Frame Color</p>
                                 <a href="#" onclick="myFunction(1)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
-                                <input type="color" style="visibility:hidden" name="frame_color" value="{{old('frame_color', $data->frame_color ?? '#ffffff')}}" id="fontColorButton1" title="Change Font Color" colorpick-eyedropper-active="true" />
+                                <input type="text" data-coloris style="visibility:hidden" name="frame_color" value="{{old('frame_color', $data->frame_color ?? '#ffffff')}}" id="fontColorButton1" title="Change Font Color" colorpick-eyedropper-active="true" />
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                                 <p class="mb-0">Background Color</p>
                                 <a href="#" onclick="myFunction(2)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
-                                <input type="color" style="visibility:hidden" name="background_color" value="{{old('background_color', $data->background_color ?? '#ffffff')}}" id="fontColorButton2" title="Change Font Color" colorpick-eyedropper-active="true" />
+                                <input type="text" data-coloris style="visibility:hidden" name="background_color" value="{{old('background_color', $data->background_color ?? '#ffffff')}}" id="fontColorButton2" title="Change Font Color" colorpick-eyedropper-active="true" />
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                                 <p class="mb-0">Save Button Color</p>
                                 <a href="#" onclick="myFunction(3)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
-                                <input type="color" style="visibility:hidden" name="save_color" id="fontColorButton3" title="Change Font Color" colorpick-eyedropper-active="true" />
+                                <input type="text" data-coloris style="visibility:hidden" name="save_color" id="fontColorButton3" title="Change Font Color" colorpick-eyedropper-active="true" />
                             </div>
                         </div>
                         <div class="w-100 mb-5">
@@ -92,12 +98,12 @@
                         </div>
                     </div>
 
-                    <div class="w-100 d-flex justify-content-center mt-3" >
-                        <div id="background-canvas" class="col-12 px-3 py-4 mb-3" height="30px" style="background-color: {{ $data->background_color ?? '#ffffff' }}; border-radius: 40px;">
+                    <div class="w-100 d-flex justify-content-center mt-3">
+                        <div id="background-canvas" class="col-12 px-3 py-4 mb-3" style="height:650px; overflow: auto; background-color: {{ $data->background_color ?? '#ffffff' }}; border-radius: 40px;">
                             <!-- CONTENT -->
                             <div class="row col-12 mr-0 pr-0">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-4 px-0">
-                                    <img id="preview-image" style="border:solid {{ $data->frame_color ?? '#ffffff' }} 2px ; object-fit: cover;" width="75px" height="75PX" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" class="rounded-circle" alt="Cinque Terre">
+                                    <img id="preview-image" style="border:solid {{ $data->frame_color ?? '#ffffff' }} 2px ; object-fit: cover;" width="95px" height="95PX" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" class="rounded-circle" alt="Cinque Terre">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-8 pt-3 text-right">
                                     <a href="{{url('page/download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="btn btn-sm btn-dark border-0">SAVE CONTACT</a>
@@ -135,8 +141,78 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal Upload Foto-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLabel">Perbarui Foto Profil</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div id="container-croppie" style="display:none">
+
+            </div>
+            <span class="col-12 btn btn-success btn-file">
+                Browse <input id="input-image" type="file">
+            </span>
+        </div>
+        <div class="modal-footer">
+            <button type="button" id="close-btn" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="save-changes" class="btn btn-primary">Save changes</button>
+        </div>
+        </div>
+    </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="{{asset('plugins/croppie/croppie.css')}}" />
+    <script src="{{asset('plugins/croppie/croppie.js')}}"></script>
     <script>
+        
+        
+        var image_crop = $('#container-croppie').croppie({
+            enableExif: true,
+            viewport: {
+                width: 200,
+                height: 200,
+                type: 'circle'
+            },
+            boundary: {
+                width: 300,
+                height: 300
+            }
+        });
+
+        $('#input-image').on('change', function(){
+            var reader = new FileReader();
+            reader.onload = function (event) {
+                image_crop.croppie('bind', {
+                    url: event.target.result,
+                });
+            }
+            reader.readAsDataURL(this.files[0]);
+            $("#container-croppie").css("display", "");
+        });
+
+        $("#save-changes").on("click", function(){
+            if($("#input-image").val() != null){
+                image_crop.croppie('result', {type: 'blob', format: 'png'}).then(function(blob) {
+                    document.getElementById('input-profile-image').src = window.URL.createObjectURL(blob);
+                    document.getElementById('preview-image').src = window.URL.createObjectURL(blob);
+                    let file = new File([blob], "img.jpg",{type:"image/png", lastModified:new Date().getTime()});
+                    let container = new DataTransfer();
+                    container.items.add(file);
+                    fileInputElement = document.getElementById("image");
+                    fileInputElement.files = container.files;
+                });
+            }
+            $('#close-btn').trigger("click");
+        })
+
+
         function myFunction(id) {
             document.getElementById("fontColorButton"+id).click(); 
         }
