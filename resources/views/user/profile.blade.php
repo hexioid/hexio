@@ -1,10 +1,28 @@
 @extends("user.user_home_template")
 
 @section("content")
+    <style>
+        .main {
+            border-radius: 190px;
+            height: 100px;
+            width: 100px;
+        }
+
+        .btm {
+            height: 51px;
+            background-color: #80C5A0;
+            border-radius: 50% / 100%;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            background: linear-gradient(to top, rgb(196,196,196) 65%, rgba(0, 0, 0, 0) 35%);
+            z-index: 99999;
+            position: relative;
+            cursor: pointer;
+        }
+    </style>
     <div class="row mt-4 col-12 mx-0 px-5">
         <div class="shadow mb-5 bg-white rounded col-lg-6 col-md-12 col-sm-12 col-12">
             <div class="card-body">
-                
                 <form action="{{url('page/update-profile')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="d-flex justify-content-center">
@@ -16,10 +34,17 @@
                         </label>
                         
                         <div id="container-image-profile" style="position: relative;">
-                            <div data-toggle="modal" data-target="#exampleModal" class="rounded-circle text-center" style="cursor: pointer; bottom: 0; right: 0;background-color:grey; position: absolute; width: 25px; height: 25px" >
-                                <i class="fa-solid fa-pen-to-square" style="color:white"></i>
-                            </div>
-                            <img id="input-profile-image" class="rounded-circle" height="100" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" alt="">
+                            <div class="main">
+                                <div style="height: 50px;">
+                                    <img id="input-profile-image" height="100" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" alt="">
+                                </div>
+                                <div data-toggle="modal" data-target="#exampleModal" class="btm text-center">
+                                    <div style="height:10px; background-color:transparant"></div>
+                                    <div style="padding-top:10px; font-size:14px">
+                                        <p>Edit Foto</p>
+                                    </div>
+                                </div>
+                            </div> 
                         </div>
                     </div>
 
