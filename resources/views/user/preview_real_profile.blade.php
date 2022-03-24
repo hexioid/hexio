@@ -22,9 +22,31 @@
             .btn{
                 word-wrap: break-word;
             }
+            #loading {
+                position: fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 1;
+                background-color: #fff;
+                z-index: 99;
+            }
+
+            #loading-image {
+                z-index: 100;
+            }
         </style>
     </head>
     <body style="100%">
+        <div id="loading">
+        <div id="loading-image" class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        </div>
         <!-- Preview -->
         <div class="row col-12 mx-0">
             <div class="col-12 col-sm-1 col-md-2 col-lg-2 "></div>
@@ -75,6 +97,27 @@
     <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
     <!-- <script src="{{asset('bootstrap/js/jquery-3.2.1.slim.min.js')}}"></script> -->
     <script src="{{asset('bootstrap/js/popper.min.js')}}"></script>
+    <script>
+        $( document ).ready(function() {
+            checkSize();
+            $('#loading').hide();
+        });
+        window.addEventListener('resize', function(event) {
+            checkSize();
+        }, true);
+
+        function checkSize(){
+            let width = $(window).width();
+
+            if(width < 768){
+                $("#preview-save-contact").removeClass("btn-lg");
+                $("#preview-save-contact").addClass("btn-md");
+            }else{
+                $("#preview-save-contact").removeClass("btn-md");
+                $("#preview-save-contact").addClass("btn-lg");
+            }
+        }
+    </script>
 </html>
 
 
