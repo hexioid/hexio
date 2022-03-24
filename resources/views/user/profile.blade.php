@@ -36,7 +36,7 @@
                         <div id="container-image-profile" style="position: relative;">
                             <div class="main">
                                 <div style="height: 50px;">
-                                    <img id="input-profile-image" height="100" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" alt="">
+                                    <img id="input-profile-image" style="object-fit: cover;" class="rounded-circle" height="100" width="100" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" alt="">
                                 </div>
                                 <div data-toggle="modal" data-target="#exampleModal" class="btm text-center">
                                     <div style="height:10px; background-color:transparant"></div>
@@ -124,8 +124,8 @@
                     </div>
 
                     <div class="w-100 d-flex justify-content-center mt-3">
-                        <div id="background-canvas" class="col-12 px-0 py-0 mb-3" style="height:650px; overflow: hidden; background-color: {{ $data->background_color ?? '#ffffff' }}; border-radius: 40px;">
-                            <div class="px-3 py-4" style="height:650px; overflow:auto">
+                        <div id="background-canvas" class="col-12 px-0 py-0 mb-3" style="height:570px; overflow: hidden; background-color: {{ $data->background_color ?? '#ffffff' }}; border-radius: 40px;">
+                            <div class="px-3 py-4" style="height:570px; overflow:auto">
                                 <!-- CONTENT -->
                                 <div class="row col-12 mr-0 pr-0">
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-4 px-0">
@@ -139,14 +139,14 @@
                                 <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
                                 <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
                                 <p id="preview-bio" style="line-height: 1.1;">{{$data->bio}}</p>
-                                <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address" class="pl-1">{{$data->address}}</span></p>
+                                <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
                             
                                 <div id="container-list-preview">
                                     @foreach($list_contents as $content)
                                         @if($content->content_type_id == 1)
                                             <div id="div-preview-item-{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
                                                 <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn btn-dark col-12 mb-3 border-0" style="background-color: {{$content->button_color}}">
-                                                    <i id="preview-icon-{{$content->id}}" class="{{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i> 
+                                                    <i id="preview-icon-{{$content->id}}" class="my-1 {{$content->text != null ? 'float-left' : ''}} {{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i> 
                                                     <span id="preview-text-button-name-{{$content->id}}" style="color: {{$content->text_color}}">{{$content->text}}</span>  
                                                 </a>
                                             </div>

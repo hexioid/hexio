@@ -19,6 +19,9 @@
                 image-rendering: pixelated;
                 -ms-interpolation-mode: nearest-neighbor;
             }
+            .btn{
+                word-wrap: break-word; 
+            }
         </style>
     </head>
     <body style="100%">
@@ -39,15 +42,15 @@
                     <br>
                     <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
                     <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
-                    <p id="preview-bio">{{$data->bio}}</p>
-                    <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address">{{$data->address}}</span></p>
+                    <p id="preview-bio" style="line-height: 1.1;">{{$data->bio}}</p>
+                    <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
                            
                     <div id="container-list-preview">
                         @foreach($list_contents as $content)
                             @if($content->content_type_id == 1)
                                 <div id="div-preview-item-{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
                                     <a href="{{url('open_link/'.$content->id)}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn btn-dark btn-lg col-12 mb-3 border-0" style="background-color: {{$content->button_color}}">
-                                        <i id="preview-icon-{{$content->id}}" class="{{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i> 
+                                        <i id="preview-icon-{{$content->id}}" class="my-1 {{$content->text != null ? 'float-left' : ''}} {{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i> 
                                         <span id="preview-text-button-name-{{$content->id}}" style="color: {{$content->text_color}}">{{$content->text}}</span>  
                                     </a>
                                 </div>

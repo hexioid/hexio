@@ -1,7 +1,7 @@
 @extends("user.user_home_template")
 
 @section("content")
-    <div class="row mt-4 col-12 px-5 mx-0">
+    <div class="row mt-4 col-12 px-5 mx-0" style="overflow-anchor: none;">
 
         <div class="p-1 mb-5 col-lg-6 col-md-12 col-sm-12 col-12">
            <div class="px-3">
@@ -28,7 +28,7 @@
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
-                                            <div class="row col-12 mx-0 px-0 mb-2">
+                                            <div class="row col-12 mx-0 px-0 mb-2 mt-3">
                                                 <select onchange="linkTypeChange({{$content->id}})" id="item-link_type-{{$content->id}}" name="link_types[]" class="custom-select col-6">
                                                     @foreach($list_link_types as $link_type)
                                                         <option data-placeholder="{{$link_type->placeholder}}" data-prefix="{{$link_type->prefix}}" data-icon="{{$link_type->icon}}" {{$content->link_type_id == $link_type->id ? 'selected' : ''}} value="{{$link_type->id}}">{{$link_type->type}}</option>
@@ -62,16 +62,18 @@
                                                     </div>
                                                 </div>
                                                 
-                                                <div class="custom-control custom-switch ml-auto col-12 col-sm-12 col-lg-1 d-flex d-flex align-items-center pb-3 px-0 d-flex justify-content-end">
-                                                    <p style="margin-right:5px">Icon</p>
-                                                    <input type="checkbox" onChange="onIconChange({{$content->id}})" id="item-checkbox-icon-{{$content->id}}" {{$content->is_icon_displayed ? 'checked' : ''}} class="custom-control-input" style="transform: scale(2);">
-                                                    <label style="cursor: pointer;" class="custom-control-label" for="item-checkbox-icon-{{$content->id}}"></label>
+                                                <div class="px-0 ml-auto mr-0 col-12 col-sm-12 col-lg-1">
+                                                    <p class=" d-flex justify-content-end mb-0">Icon</p>
+                                                    <div class=" d-flex justify-content-end custom-control custom-switch" style="margin-right:-5px">
+                                                        <input type="checkbox" onChange="onIconChange({{$content->id}})" id="item-checkbox-icon-{{$content->id}}" {{$content->is_icon_displayed ? 'checked' : ''}} class="custom-control-input" style="transform: scale(2);">
+                                                        <label style="cursor: pointer;" class="custom-control-label" for="item-checkbox-icon-{{$content->id}}"></label>
+                                                    </div>
                                                 </div>
                                             </div>
 
                                             <hr class="mt-0">
 
-                                            <div class="row col-12 mt-2 m-0 px-0">
+                                            <div class="row col-12 mt-2 m-0 px-0" style="height:auto !important;">
                                                 <div class="form-group col-6 col-sm-7 col-md-8 col-lg-8 px-0 row">
                                                     <div class="col-12">
                                                         <i style="cursor: pointer;" onclick="deleteItem({{$content->id}})" class="fa-solid fa-trash mr-2"></i>
@@ -125,7 +127,7 @@
                                                         <button onclick="changeTextColor({{$content->id}}, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
                                                     </div>
                                                     <div class="col-12 col-sm-6 col-md-9 col-lg-9">
-                                                        <p class="mb-0 ml-4">Align Text</p>
+                                                        <p class="mb-0 ml-2">Align Text</p>
                                                         <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'left')" class="fa-solid fa-align-left fa-lg ml-2"></i>
                                                         <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'center')" class="fa-solid fa-align-center fa-lg ml-2"></i>
                                                         <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'right')" class="fa-solid fa-align-right fa-lg ml-2"></i>
@@ -171,9 +173,9 @@
                     </div>
 
                     <div class="w-100 d-flex justify-content-center mt-3" >
-                        <div id="background-canvas" class="col-12 px-0 py-0 mb-3" height="30px" style="height:650px; overflow: hidden; background-color: {{ $data->background_color ?? '#ffffff' }}; border-radius: 40px;">
+                        <div id="background-canvas" class="col-12 px-0 py-0 mb-3" height="30px" style="height:570px; overflow: hidden; background-color: {{ $data->background_color ?? '#ffffff' }}; border-radius: 40px;">
                             
-                            <div id="check" class="px-3 py-4" style="height:650px; overflow:auto">
+                            <div id="check" class="px-3 py-4" style="height:570px; overflow:auto">
                                 <!-- CONTENT -->
                                 <div class="row col-12 mr-0 pr-0">
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-4 px-0">
@@ -187,15 +189,15 @@
                                 <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
                                 <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
                                 <p id="preview-bio">{{$data->bio}}</p>
-                                <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address" class="pl-1">{{$data->address}}</span></p>
+                                <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
                                 
                                 <div id="container-list-preview">
                                     @foreach($list_contents as $content)
                                         @if($content->content_type_id == 1)
                                             <div id="div-preview-item-{{$content->id}}" data-real_id="{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
                                                 <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn btn-dark col-12 mb-3 border-0" style="background-color: {{$content->button_color}}">
-                                                    <i id="preview-icon-{{$content->id}}" class="{{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i> 
-                                                    <span id="preview-text-button-name-{{$content->id}}" style="color: {{$content->text_color}}">{{$content->text}}</span>  
+                                                    <i id="preview-icon-{{$content->id}}" class="my-1 {{$content->text != null ? 'float-left' : ''}} {{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i> 
+                                                    <div id="preview-text-button-name-{{$content->id}}" style=" white-space: normal; color: {{$content->text_color}}">{{$content->text}}</div>  
                                                 </a>
                                             </div>
                                         @elseif($content->content_type_id == 2)
@@ -227,6 +229,7 @@
 
         function openColorPicker(id) {
             document.getElementById("item-button-color-"+id).click(); 
+            event.preventDefault(); 
         }
 
         function initSortList(){
@@ -337,11 +340,13 @@
                                                     </div>
                                                 </div>
                                                 
-                                                <div class="custom-control custom-switch ml-auto col-12 col-sm-12 col-lg-1 d-flex d-flex align-items-center pb-3 px-0 d-flex justify-content-end">
-                                                    <p style="margin-right:5px">Icon</p>
-                                                    <input checked onChange="onIconChange(`+index+`)" id="item-checkbox-icon-`+index+`" type="checkbox" class="custom-control-input" style="transform: scale(2);">
-                                                    <label style="cursor: pointer;" class="custom-control-label" for="item-checkbox-icon-`+index+`"></label>
-                                                </div>
+                                                <div class="px-0 ml-auto mr-0 col-12 col-sm-12 col-lg-1">
+                                                    <p class=" d-flex justify-content-end mb-0">Icon</p>
+                                                    <div class=" d-flex justify-content-end custom-control custom-switch" style="margin-right:-5px">
+                                                        <input checked onChange="onIconChange(`+index+`)" id="item-checkbox-icon-`+index+`" type="checkbox" class="custom-control-input" style="transform: scale(2);">
+                                                        <label style="cursor: pointer;" class="custom-control-label" for="item-checkbox-icon-`+index+`"></label>
+                                                    </div>
+                                                </div>  
                                             </div>
 
                                             <hr class="mt-0">
@@ -368,7 +373,7 @@
                                 </li>`;
             
                 $("#container-list").append(link);
-                let preview_button = `<div id="div-preview-item-`+index+`"><a href="https://instagram.com" target="_blank" id="preview-item-button-name-`+index+`"  class="btn btn-dark col-12 mb-3 border-0"><i id="preview-icon-`+index+`" class="fa-brands fa-instagram" ></i> <span id="preview-text-button-name-`+index+`"></span> </a></div>`;
+                let preview_button = `<div id="div-preview-item-`+index+`"><a href="https://instagram.com" target="_blank" id="preview-item-button-name-`+index+`"  class="btn btn-dark col-12 mb-3 border-0"><i id="preview-icon-`+index+`" class="my-1 fa-brands fa-instagram" ></i> <span id="preview-text-button-name-`+index+`"></span> </a></div>`;
                 $("#container-list-preview").append(preview_button);
                 
                 $.get("add_link", function(data, status){
@@ -424,7 +429,7 @@
                                                         <button onclick="changeTextColor(`+index+`, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
                                                     </div>
                                                     <div class="col-12 col-sm-6 col-md-9 col-lg-9">
-                                                        <p class="mb-0">Align Text</p>
+                                                        <p class="mb-0 ml-2">Align Text</p>
                                                         <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'left')" class="fa-solid fa-align-left fa-lg ml-2"></i>
                                                         <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'center')" class="fa-solid fa-align-center fa-lg ml-2"></i>
                                                         <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'right')" class="fa-solid fa-align-right fa-lg ml-2"></i>
@@ -525,6 +530,8 @@
         function onChangeButtonName(id){
             let value = $("#item-button-name-"+id).val();
             $("#preview-text-button-name-"+id).text(value);
+
+            iconAlign(value, id);
             update_link(id);
         }
 
@@ -560,6 +567,16 @@
             update_link(id);
         }
 
+        function iconAlign(value, id){
+            if(value != null && value != ''){
+                $("#preview-icon-"+id).addClass("my-1");
+                $("#preview-icon-"+id).addClass("float-left");
+            }else{
+                console.log("masok");
+                $("#preview-icon-"+id).removeClass("float-left");
+            }
+        }
+
         function linkTypeChange(id){
             let selected_option = $("#item-link_type-"+id).find(":selected");
             let prefix = $(selected_option).attr("data-prefix");
@@ -567,12 +584,13 @@
             let text = $(selected_option).text();
             let value = $("#item-link-"+id).val();
             let placeholder = $(selected_option).attr("data-placeholder");
+            let button_name = $("#item-button-name-"+id).val();
             
             $("#preview-icon-"+id).attr("class", icon);
             $("#item-prefix-"+id).html(prefix);
             $("#item-link-"+id).attr("placeholder", placeholder);
             $("#preview-item-button-name-"+id).attr("href", prefix+value);
-
+            iconAlign(button_name, id);
             update_link(id);
         }
 

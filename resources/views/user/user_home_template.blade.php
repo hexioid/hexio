@@ -58,6 +58,9 @@
                 image-rendering: pixelated;
                 -ms-interpolation-mode: nearest-neighbor;
             }
+            .btn{
+                word-wrap: break-word; 
+            }
         </style>
         <link rel="stylesheet" href="{{asset('plugins/coloris/coloris.css')}}" />
         <script src="{{asset('plugins/coloris/coloris.js')}}"></script>
@@ -74,9 +77,9 @@
                         <a class="nav-link" href="{{url('page/vcard')}}">
                             <div class=" row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
-                                    <i class="fa-solid fa-address-book fa-2xl"></i>
+                                    <i class="fa-solid fa-address-book fa-xl"></i>
                                 </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
+                                <div class="mt-2 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
                                     Vcard
                                 </div>
                             </div>
@@ -86,9 +89,9 @@
                         <a class="nav-link" href="{{url('page/link')}}">
                             <div class=" row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
-                                    <i class="fa-solid fa-link fa-2xl"></i>
+                                    <i class="fa-solid fa-link fa-xl"></i>
                                 </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
+                                <div class="mt-2 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
                                     Link
                                 </div>
                             </div>
@@ -98,9 +101,9 @@
                         <a class="nav-link" href="{{url('page/profile')}}">
                             <div class=" row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
-                                    <i class="fa-regular fa-user fa-2xl"></i>
+                                    <i class="fa-regular fa-user fa-xl"></i>
                                 </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
+                                <div class="mt-2 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
                                     Profile
                                 </div>
                             </div>
@@ -110,16 +113,16 @@
                         <a class="nav-link" href="{{url('page/qrcode')}}">
                             <div class=" row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
-                                    <i class="fa-solid fa-qrcode fa-2xl"></i>
+                                    <i class="fa-solid fa-qrcode fa-xl"></i>
                                 </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
+                                <div class="mt-2 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
                                     Qr Code
                                 </div>
                             </div>
                         </a> 
                     </li>
                 </ul>
-                <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-left flex-nowrap">
+                <ul style="width:100px" class="nav navbar-nav flex-row justify-content-md-center justify-content-left flex-nowrap">
                     <li class="nav-item">
                         <div class="dropdown">
                             <span class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
