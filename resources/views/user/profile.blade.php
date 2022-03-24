@@ -20,7 +20,7 @@
             cursor: pointer;
         }
     </style>
-    <div class="row mt-4 col-12 mx-0 px-5">
+    <div class="row mt-4 col-12 mx-0 px-4 px-lg-5">
         <div class="shadow mb-5 bg-white rounded col-lg-6 col-md-12 col-sm-12 col-12">
             <div class="card-body">
                 <form action="{{url('page/update-profile')}}" method="POST" enctype="multipart/form-data">

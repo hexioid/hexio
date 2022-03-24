@@ -9,7 +9,7 @@
                     <input type="text" name="username" readonly class="form-control" value="{{env('APP_URL').'/'.$data->username}}" placeholder="username">
                 </div>
                 <div class="text-center">
-                    <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(400)->generate(env('APP_URL').'/'.$data->username)) !!} ">
+                    <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->generate(env('APP_URL').'/'.$data->username)) !!} ">
                 </div>
 
                 <a href="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(400)->generate(env('APP_URL').'/'.$data->username)) !!} " class="btn btn-dark btn-md float-right" download>DOWNLOAD</a>

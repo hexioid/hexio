@@ -1,7 +1,7 @@
 @extends("user.user_home_template")
 
 @section("content")
-    <div class="row mt-4 col-12 px-5 mx-0" style="overflow-anchor: none;">
+    <div class="row mt-4 col-12 px-4 px-lg-5 mx-0" style="overflow-anchor: none;">
 
         <div class="p-1 mb-5 col-lg-6 col-md-12 col-sm-12 col-12">
            <div class="px-3">
