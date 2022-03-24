@@ -111,9 +111,9 @@
         </div>
 
         <!-- Preview -->
-        <div class="mb-5 col-lg-6 col-md-12 col-sm-12 col-12 px-0" style="min-height: 600px;">
-            <div class="col-12">
-                <a href="{{url('page/preview')}}" target="_blank" class="btn btn-md btn-dark float-right">PREVIEW</a>
+        <div class="p-1 mb-5 col-lg-6 col-md-12 col-sm-12 col-12 px-0" style="min-height: 600px;">
+            <div class="col-12 text-right pr-0">
+                <a href="{{url('page/preview')}}" target="_blank" class="btn btn-md btn-dark">PREVIEW</a>
             </div>
             <br>
             <div  class="w-100 d-flex justify-content-center" >

@@ -10,8 +10,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <style>
-            
-            body 
+
+            body
             {
                 font-family: 'Roboto';
             }
@@ -20,7 +20,7 @@
                 -ms-interpolation-mode: nearest-neighbor;
             }
             .btn{
-                word-wrap: break-word; 
+                word-wrap: break-word;
             }
         </style>
     </head>
@@ -36,7 +36,7 @@
                             <img id="preview-image" style="border:solid {{ $data->frame_color ?? '#ffffff' }} 2px ; object-fit: cover;" width="150px" height="150PX" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" class="rounded-circle" alt="Cinque Terre">
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-8 col-8 pt-5 px-0 text-right">
-                            <a href="{{url('download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="btn btn-lg btn-dark border-0">SAVE CONTACT</a>
+                            <a href="{{url('page/download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="btn btn-lg btn-dark border-0">SAVE CONTACT</a>
                         </div>
                     </div>
                     <br>
@@ -44,14 +44,14 @@
                     <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
                     <p id="preview-bio" style="line-height: 1.1;">{{$data->bio}}</p>
                     <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
-                           
+
                     <div id="container-list-preview">
                         @foreach($list_contents as $content)
                             @if($content->content_type_id == 1)
                                 <div id="div-preview-item-{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
                                     <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn btn-dark btn-lg col-12 mb-3 border-0" style="background-color: {{$content->button_color}}">
-                                        <i id="preview-icon-{{$content->id}}" class="my-1 {{$content->text != null ? 'float-left' : ''}} {{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i> 
-                                        <span id="preview-text-button-name-{{$content->id}}" style="color: {{$content->text_color}}">{{$content->text}}</span>  
+                                        <i id="preview-icon-{{$content->id}}" class="my-1 {{$content->text != null ? 'float-left' : ''}} {{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i>
+                                        <span id="preview-text-button-name-{{$content->id}}" style="color: {{$content->text_color}}">{{$content->text}}</span>
                                     </a>
                                 </div>
                             @elseif($content->content_type_id == 2)
@@ -64,7 +64,7 @@
                         @endforeach
                     </div>
                 </div>
-                
+
                 <div style="height:10vh; background-color: {{ $data->background_color ?? '#ffffff' }};" class="d-flex justify-content-center align-items-end pb-4">
                     <img src="{{asset('images/logo_black_v2.svg')}}" width="100" alt="">
                 </div>
