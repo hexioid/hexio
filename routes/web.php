@@ -23,6 +23,7 @@ Route::group([
     "prefix"    => "page"
 ], function(){
     Route::get("/register", "AuthController@create");
+    Route::get("download_vcard", "UserController@downloadVcard");
     Route::post("/register", "AuthController@store");
     Route::get("/login", "AuthController@login")->name("login");
     Route::post("/login", "AuthController@login_post");
@@ -52,26 +53,25 @@ Route::group([
     Route::get('link', 'UserController@link');
     Route::post("update-profile", "UserController@update_profile");
 
-    
+
     // ==========================================================
     Route::get("add_divider", "UserController@addDivider");
 
-    
+
     // ==========================================================
     Route::get("add_text", "UserController@addText");
     Route::post("update_text/{id}", "UserController@update_text");
     Route::get("delete_item/{id}", "UserController@delete_item");
 
-    
+
     // ==========================================================
     Route::get("add_link", "UserController@add_link");
     Route::post("update_link/{id}", "UserController@update_link");
 
 
 
-    
+
     Route::post("update_order", "UserController@update_order");
-    Route::get("download_vcard", "UserController@downloadVcard");
     Route::get("download_vcard_preview", "UserController@downloadVcardPreview");
     Route::get("/preview", "UserController@preview");
 });
