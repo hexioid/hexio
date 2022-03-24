@@ -27,7 +27,7 @@
                 text-align: right;
                 filter: alpha(opacity=0);
                 opacity: 0;
-                outline: none;   
+                outline: none;
                 cursor: inherit;
                 display: block;
             }
@@ -38,19 +38,19 @@
 
             /* Track */
             ::-webkit-scrollbar-track {
-                box-shadow: inset 0 0 5px transparant; 
+                box-shadow: inset 0 0 5px transparant;
             }
-            
+
             /* Handle */
             ::-webkit-scrollbar-thumb {
-                background: grey; 
+                background: grey;
             }
 
             /* Handle on hover */
             ::-webkit-scrollbar-thumb:hover {
-                background: #5c5c5c; 
+                background: #5c5c5c;
             }
-            body 
+            body
             {
                 font-family: 'Roboto';
             }
@@ -59,7 +59,11 @@
                 -ms-interpolation-mode: nearest-neighbor;
             }
             .btn{
-                word-wrap: break-word; 
+                word-wrap: break-word;
+            }
+            .btn-preview i{
+                margin-left:5px;
+                margin-right: -5px;
             }
         </style>
         <link rel="stylesheet" href="{{asset('plugins/coloris/coloris.css')}}" />
@@ -70,7 +74,7 @@
             <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="nav-link px-0" href="#_"><img src="{{asset('images/logo_white_v2.svg')}}" width="100" alt=""></i></a> 
+            <a class="nav-link ml-4 px-0" href="#_"><img src="{{asset('images/logo_white_v2.svg')}}" width="100" alt=""></i></a>
             <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                 <ul class="navbar-nav mx-auto text-md-center text-left">
                     <li class="nav-item mx-4">
@@ -83,7 +87,7 @@
                                     Vcard
                                 </div>
                             </div>
-                        </a> 
+                        </a>
                     </li>
                     <li class="nav-item mx-4">
                         <a class="nav-link" href="{{url('page/link')}}">
@@ -95,7 +99,7 @@
                                     Link
                                 </div>
                             </div>
-                        </a> 
+                        </a>
                     </li>
                     <li class="nav-item mx-4">
                         <a class="nav-link" href="{{url('page/profile')}}">
@@ -107,7 +111,7 @@
                                     Profile
                                 </div>
                             </div>
-                        </a> 
+                        </a>
                     </li>
                     <li class="nav-item mx-4">
                         <a class="nav-link" href="{{url('page/qrcode')}}">
@@ -119,11 +123,11 @@
                                     Qr Code
                                 </div>
                             </div>
-                        </a> 
+                        </a>
                     </li>
                 </ul>
                 <ul style="width:100px" class="nav navbar-nav flex-row justify-content-md-center justify-content-left flex-nowrap">
-                    <li class="nav-item">
+                    <li class="ml-4 nav-item">
                         <div class="dropdown">
                             <span class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa-solid fa-gear"></i>

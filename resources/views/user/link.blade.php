@@ -5,7 +5,7 @@
 
         <div class="p-1 mb-5 col-lg-6 col-md-12 col-sm-12 col-12">
            <div class="px-3">
-            <button class="btn btn-dark col-12" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn btn-dark col-12" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     <i class="fa-solid fa-plus"></i>ADD
                 </button>
                 <div class="collapse" id="collapseExample">
@@ -14,8 +14,9 @@
                     @endforeach
                 </div>
            </div>
+
             <div class="card-body">
-                
+
                 <section>
                     <ul id="container-list" class="list-group list-group-sortable-handles" >
 
@@ -47,7 +48,7 @@
                                                     <input placeholder="{{$content->linkType->placeholder}}" style="border-left:0" type="text" onchange="onLinkChange({{$content->id}})" id="item-link-{{$content->id}}" name="links[]" value="{{$content->link}}" class="form-control pl-0" aria-describedby="basic-addon3">
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="row col-12 mt-2 m-0 px-0">
                                                 <div class="form-group col-12 col-sm-12 col-lg-11 px-0 row">
                                                     <div class="col-6 col-sm-6 col-md-3 col-lg-3">
@@ -61,7 +62,7 @@
                                                         <input type="text" data-coloris onChange="changeButtonColor({{$content->id}})" name="button_colors[]" value="{{$content->button_color}}" style="visibility:hidden"  id="item-button-color-{{$content->id}}" title="Change Font Color" colorpick-eyedropper-active="true" />
                                                     </div>
                                                 </div>
-                                                
+
                                                 <div class="px-0 ml-auto mr-0 col-12 col-sm-12 col-lg-1">
                                                     <p class=" d-flex justify-content-end mb-0">Icon</p>
                                                     <div class=" d-flex justify-content-end custom-control custom-switch" style="margin-right:-5px">
@@ -81,7 +82,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row px-0 ml-auto mr-0 col-6 col-sm-5 col-md-4 col-lg-4 d-flex justify-content-end">
-                                                    <span>{{$content->total_clicked}} Klik <i class="fa-solid fa-chart-line"></i></span> 
+                                                    <span>{{$content->total_clicked}} Klik <i class="fa-solid fa-chart-line"></i></span>
                                                     <div style="height:30px; width:1px; background-color:#DFDFDF; margin-left:10px; margin-right:5px"></div>
                                                     <div class="custom-control custom-switch" style="margin-right:-5px">
                                                         <input onChange="onDisplayChange({{$content->id}})" id="item-checkbox-display-{{$content->id}}" {{$content->is_content_displayed ? 'checked' : ''}} type="checkbox" class="custom-control-input">
@@ -118,7 +119,7 @@
                                             <div class="col-12 px-0">
                                                 <input onchange="onChangeInputText({{$content->id}})" value="{{$content->text}}" id="item-input-text-{{$content->id}}" name="text[]" type="text" class="form-control" style="width:100%" placeholder="Text">
                                             </div>
-                                            
+
                                             <div class="row col-12 mt-2 m-0 px-0">
                                                 <div class="form-group col-12 px-0 row">
                                                     <div class="col-12 col-sm-6 col-md-3 col-lg-3">
@@ -157,6 +158,17 @@
 
 
             </div>
+
+            <div style="visibility: {{ count($list_contents) < 1 ? 'hidden' : 'visible' }} " id="container-add-bottom" class="px-3">
+                <button class="btn btn-dark col-12" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fa-solid fa-plus"></i>ADD
+                </button>
+                <div class="collapse" id="collapseExample2">
+                    @foreach($list_content_types as $content_type)
+                        <button onclick="addContent({{$content_type->id}})" class="my-1 btn btn-dark col-12" id="{{$content_type->id}}"><i class="fa-solid fa-plus"></i>ADD {{$content_type->type}}</button>
+                    @endforeach
+                </div>
+           </div>
         </div>
 
         <!-- Preview -->
@@ -174,7 +186,7 @@
 
                     <div class="w-100 d-flex justify-content-center mt-3" >
                         <div id="background-canvas" class="col-12 px-0 py-0 mb-3" height="30px" style="height:570px; overflow: hidden; background-color: {{ $data->background_color ?? '#ffffff' }}; border-radius: 40px;">
-                            
+
                             <div id="check" class="px-3 py-4" style="height:570px; overflow:auto">
                                 <!-- CONTENT -->
                                 <div class="row col-12 mr-0 pr-0">
@@ -190,14 +202,14 @@
                                 <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
                                 <p id="preview-bio">{{$data->bio}}</p>
                                 <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
-                                
+
                                 <div id="container-list-preview">
                                     @foreach($list_contents as $content)
                                         @if($content->content_type_id == 1)
                                             <div id="div-preview-item-{{$content->id}}" data-real_id="{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
-                                                <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn btn-dark col-12 mb-3 border-0" style="background-color: {{$content->button_color}}">
-                                                    <i id="preview-icon-{{$content->id}}" class="my-1 {{$content->text != null ? 'float-left' : ''}} {{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i> 
-                                                    <div id="preview-text-button-name-{{$content->id}}" style=" white-space: normal; color: {{$content->text_color}}">{{$content->text}}</div>  
+                                                <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn-preview btn btn-dark col-12 mb-3 border-0" style="background-color: {{$content->button_color}}">
+                                                    <i id="preview-icon-{{$content->id}}" class="my-1 {{$content->text != null ? 'float-left' : ''}} {{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i>
+                                                    <div id="preview-text-button-name-{{$content->id}}" style=" white-space: normal; color: {{$content->text_color}}">{{$content->text}}</div>
                                                 </a>
                                             </div>
                                         @elseif($content->content_type_id == 2)
@@ -223,13 +235,13 @@
 
     <script src="{{asset('js/jquery.sortable.js')}}"></script>
     <script>
-        
+
         initSortList();
         let current_item_length = 0;
 
         function openColorPicker(id) {
-            document.getElementById("item-button-color-"+id).click(); 
-            event.preventDefault(); 
+            document.getElementById("item-button-color-"+id).click();
+            event.preventDefault();
         }
 
         function initSortList(){
@@ -248,7 +260,7 @@
             $("#container-list-preview").empty();
 
             let el_preview = $("#container-list-preview");
-            
+
             for(i = 0; i < lists.length; i++){
                 for(j = 0; j < preview_lists.length; j++){
                     if($(lists[i]).attr("data-real_id") == $(preview_lists[j]).attr("data-real_id")){
@@ -325,7 +337,7 @@
                                                     <input placeholder="username" style="border-left:0" onChange="onLinkChange(`+index+`)" id="item-link-`+index+`" type="text" name="links[]" class="form-control pl-0" aria-describedby="basic-addon3">
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="row col-12 mt-2 m-0 px-0">
                                                 <div class="form-group col-12 col-sm-12 col-lg-11 px-0 row">
                                                     <div class="col-6 col-sm-6 col-md-3 col-lg-3">
@@ -339,14 +351,14 @@
                                                         <input type="text" data-coloris id="item-button-color-`+index+`" onChange="changeButtonColor(`+index+`)" name="button_colors[]" style="visibility:hidden" title="Change Font Color" colorpick-eyedropper-active="true" />
                                                     </div>
                                                 </div>
-                                                
+
                                                 <div class="px-0 ml-auto mr-0 col-12 col-sm-12 col-lg-1">
                                                     <p class=" d-flex justify-content-end mb-0">Icon</p>
                                                     <div class=" d-flex justify-content-end custom-control custom-switch" style="margin-right:-5px">
                                                         <input checked onChange="onIconChange(`+index+`)" id="item-checkbox-icon-`+index+`" type="checkbox" class="custom-control-input" style="transform: scale(2);">
                                                         <label style="cursor: pointer;" class="custom-control-label" for="item-checkbox-icon-`+index+`"></label>
                                                     </div>
-                                                </div>  
+                                                </div>
                                             </div>
 
                                             <hr class="mt-0">
@@ -359,7 +371,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row px-0 ml-auto mr-0 col-6 col-sm-5 col-md-4 col-lg-4 d-flex justify-content-end">
-                                                    <span>0 Klik <i class="fa-solid fa-chart-line"></i></span> 
+                                                    <span>0 Klik <i class="fa-solid fa-chart-line"></i></span>
                                                     <div style="height:30px; width:1px; background-color:#DFDFDF; margin-left:10px; margin-right:5px"></div>
                                                     <div class="custom-control custom-switch" style="margin-right:-5px">
                                                         <input checked onChange="onDisplayChange(`+index+`)" type="checkbox" class="custom-control-input" id="item-checkbox-display-`+index+`">
@@ -371,15 +383,16 @@
                                         </div>
                                     </div>
                                 </li>`;
-            
+
                 $("#container-list").append(link);
-                let preview_button = `<div id="div-preview-item-`+index+`"><a href="https://instagram.com" target="_blank" id="preview-item-button-name-`+index+`"  class="btn btn-dark col-12 mb-3 border-0"><i id="preview-icon-`+index+`" class="my-1 fa-brands fa-instagram" ></i> <span id="preview-text-button-name-`+index+`"></span> </a></div>`;
+                let preview_button = `<div id="div-preview-item-`+index+`"><a href="https://instagram.com" target="_blank" id="preview-item-button-name-`+index+`"  class="btn-preview btn btn-dark col-12 mb-3 border-0"><i id="preview-icon-`+index+`" class="my-1 fa-brands fa-instagram" ></i> <span id="preview-text-button-name-`+index+`"></span> </a></div>`;
                 $("#container-list-preview").append(preview_button);
-                
+
                 $.get("add_link", function(data, status){
                     $("#list-item-"+index).attr("data-real_id", data.data);
                     $("#div-preview-item-"+index).attr("data-real_id", data.data);
                 });
+                checkListCount()
         }
 
         function addDivider(){
@@ -396,7 +409,7 @@
                                         </div>
                                     </div>
                                 </li>`;
-            
+
                 $("#container-list").append(divider);
                 let preview_divider = `<div id="div-preview-item-`+index+`"><br></div>`;
                 $("#container-list-preview").append(preview_divider);
@@ -406,7 +419,8 @@
                     $("#list-item-"+index).attr("data-real_id", data.data);
                     $("#div-preview-item-"+index).attr("data-real_id", data.data);
                 });
-                
+                checkListCount()
+
         }
 
         function addText(){
@@ -420,7 +434,7 @@
                                             <div class="col-12 px-0">
                                                 <input onchange="onChangeInputText(`+index+`)" id="item-input-text-`+index+`" name="text[]" type="text" class="form-control" style="width:100%" placeholder="Text">
                                             </div>
-                                            
+
                                             <div class="row col-12 mt-2 m-0 px-0">
                                                 <div class="form-group col-12 px-0 row">
                                                     <div class="col-12 col-sm-6 col-md-3 col-lg-3">
@@ -452,7 +466,7 @@
                                         </div>
                                     </div>
                                 </li>`;
-            
+
                 $("#container-list").append(text);
                 let preview_text = `<div id="div-preview-item-`+index+`" data-text-align="left"><p id="list-preview-item-`+index+`" data-text-color="black"></p></div>`;
                 $("#container-list-preview").append(preview_text);
@@ -461,15 +475,17 @@
                     $("#list-item-"+index).attr("data-real_id", data.data);
                     $("#div-preview-item-"+index).attr("data-real_id", data.data);
                 });
+                checkListCount()
         }
 
         function deleteItem(id){
-            
+
             let real_id = $("#list-item-"+id).data("real_id");
             $("#list-item-"+id).remove();
             $("#div-preview-item-"+id).remove();
             $.get("delete_item/"+real_id, function(data, status){});
-            
+            checkListCount()
+
         }
 
 
@@ -585,7 +601,7 @@
             let value = $("#item-link-"+id).val();
             let placeholder = $(selected_option).attr("data-placeholder");
             let button_name = $("#item-button-name-"+id).val();
-            
+
             $("#preview-icon-"+id).attr("class", icon);
             $("#item-prefix-"+id).html(prefix);
             $("#item-link-"+id).attr("placeholder", placeholder);
@@ -637,6 +653,18 @@
             let value = $("#item-link-"+id).val();
             $("#preview-item-button-name-"+id).attr("href", prefix+value);
             update_link(id);
+        }
+
+        function checkListCount(){
+
+            let lists = $("#container-list").children();
+            let panjang_list = lists.length;
+
+            if(panjang_list < 1){
+                $("#container-add-bottom").css("visibility", "hidden");
+            }else{
+                $("#container-add-bottom").css("visibility", "visible");
+            }
         }
 
     </script>

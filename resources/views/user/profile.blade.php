@@ -32,7 +32,7 @@
                         <label for="image">
                             <input type="file" name="image" readonly id="image" onchange="onChangeImage(this)" style="display:none;"/>
                         </label>
-                        
+
                         <div id="container-image-profile" style="position: relative;">
                             <div class="main">
                                 <div style="height: 50px;">
@@ -41,10 +41,10 @@
                                 <div data-toggle="modal" data-target="#exampleModal" class="btm text-center">
                                     <div style="height:10px; background-color:transparant"></div>
                                     <div style="padding-top:10px; font-size:14px">
-                                        <p>Edit Foto</p>
+                                        <p>Edit</p>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                     </div>
 
@@ -61,7 +61,7 @@
                                 <label for="address" class="form-label">Address</label>
                                 <input type="text" id="address" value="{{old('address', $data->address)}}" name="address" class="form-control" placeholder="Address">
                             </div>
-                            
+
                             <div class="custom-control custom-switch col-2 col-sm-2 col-md-1 col-lg-1 d-flex align-items-center justify-content-end pb-3 px-0">
                                 <input type="checkbox" class="custom-control-input" name="is_address_displayed" id="is_address_displayed" style="transform: scale(2);" {{$data->is_address_displayed ? 'checked' : ''}}>
                                 <label style="cursor: pointer;" class="custom-control-label" for="is_address_displayed"></label>
@@ -72,7 +72,7 @@
                                 <label for="username" class="form-label">Username</label>
                                 <input type="text" id="username" value="{{old('username', $data->username)}}" name="username" class="form-control" placeholder="Username">
                             </div>
-                            
+
                             <div class="custom-control custom-switch col-2 col-sm-2 col-md-1 col-lg-1 d-flex align-items-center justify-content-end pb-3 px-0">
                                 <input type="checkbox" class="custom-control-input" name="is_username_displayed" id="is_username_displayed" style="transform: scale(2);" {{$data->is_username_displayed ? 'checked' : ''}}>
                                 <label style="cursor: pointer;" class="custom-control-label" for="is_username_displayed"></label>
@@ -97,14 +97,14 @@
                             </div>
                         </div>
                         <div class="w-100 mb-5">
-                            
+
                             <button id="default-btn" type="button" class="btn btn-dark btn-sm float-left">Default</button>
                         </div>
 
 
                         <button type="submit" class="btn btn-dark btn-md col-3 float-right mb-3">SAVE</button>
                 </form>
-                
+
 
 
             </div>
@@ -140,14 +140,14 @@
                                 <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
                                 <p id="preview-bio" style="line-height: 1.1;">{{$data->bio}}</p>
                                 <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
-                            
+
                                 <div id="container-list-preview">
                                     @foreach($list_contents as $content)
                                         @if($content->content_type_id == 1)
                                             <div id="div-preview-item-{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
-                                                <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn btn-dark col-12 mb-3 border-0" style="background-color: {{$content->button_color}}">
-                                                    <i id="preview-icon-{{$content->id}}" class="my-1 {{$content->text != null ? 'float-left' : ''}} {{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i> 
-                                                    <span id="preview-text-button-name-{{$content->id}}" style="color: {{$content->text_color}}">{{$content->text}}</span>  
+                                                <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn-preview btn btn-dark col-12 mb-3 border-0" style="background-color: {{$content->button_color}}">
+                                                    <i id="preview-icon-{{$content->id}}" class="my-1 {{$content->text != null ? 'float-left' : ''}} {{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i>
+                                                    <span id="preview-text-button-name-{{$content->id}}" style="color: {{$content->text_color}}">{{$content->text}}</span>
                                                 </a>
                                             </div>
                                         @elseif($content->content_type_id == 2)
@@ -198,8 +198,8 @@
     <link rel="stylesheet" href="{{asset('plugins/croppie/croppie.css')}}" />
     <script src="{{asset('plugins/croppie/croppie.js')}}"></script>
     <script>
-        
-        
+
+
         var image_crop = $('#container-croppie').croppie({
             enableExif: true,
             viewport: {
@@ -241,7 +241,7 @@
 
 
         function myFunction(id) {
-            document.getElementById("fontColorButton"+id).click(); 
+            document.getElementById("fontColorButton"+id).click();
         }
 
         // On Frame color changed
