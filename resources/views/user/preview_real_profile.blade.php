@@ -58,7 +58,7 @@
                             <img id="preview-image" style="border:solid {{ $data->frame_color ?? '#ffffff' }} 2px ; object-fit: cover;" width="150px" height="150PX" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" class="rounded-circle" alt="Cinque Terre">
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-8 col-8 pt-5 px-0 text-right">
-                            <a href="{{url('page/download_vcard')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="btn btn-lg btn-dark border-0">SAVE CONTACT</a>
+                            <a href="{{url('page/download_vcard').'/'.$data->id}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="btn btn-lg btn-dark border-0">SAVE CONTACT</a>
                         </div>
                     </div>
                     <br>

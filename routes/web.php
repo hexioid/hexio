@@ -23,7 +23,7 @@ Route::group([
     "prefix"    => "page"
 ], function(){
     Route::get("/register", "AuthController@create");
-    Route::get("download_vcard", "UserController@downloadVcard");
+    Route::get("download_vcard/{id}", "UserController@downloadVcard");
     Route::post("/register", "AuthController@store");
     Route::get("/login", "AuthController@login")->name("login");
     Route::post("/login", "AuthController@login_post");

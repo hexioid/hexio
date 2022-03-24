@@ -64,7 +64,7 @@ class UserController extends Controller
             $vcard->site_2 = $request->get("site_2");
             $vcard->site_3 = $request->get("site_3");
             $vcard->save();
-    
+
             return redirect()->back()->with(['success' => 'Success create vcard']);
         } catch (\Exception $e) {
             return redirect()->back()->with(['error' => $e->getMessage()]);
@@ -79,16 +79,16 @@ class UserController extends Controller
         $image      = \QrCode::format($type)
                      ->size(200)->errorCorrection('H')
                      ->generate('codingdriver');
-    
+
         \Storage::disk('public')->put($imageName.'.svg', $image);
-    
+
         // if ($qr_type == 'jpg') {
         //     $type = 'jpg';
         //     $image = imagecreatefrompng('storage/'.$imageName);
         //     imagejpeg($image, 'storage/'.$imageName, 100);
         //     imagedestroy($image);
         // }
-    
+
         return response()->download('storage/'.$imageName, $imageName.'.'.$type, $headers)->deleteFileAfterSend();
     }
 
@@ -97,7 +97,7 @@ class UserController extends Controller
         $user = User::findOrFail($id_user);
         return view("user.setting")->with(["data"   => $user]);
     }
-    
+
     public function link(){
         $id_user = Auth::user()->id;
         $list_content_types = ContentType::all();
@@ -116,7 +116,7 @@ class UserController extends Controller
 
     public function update_profile(Request $request){
         $user = User::findOrFail(Auth::user()->id);
-        
+
         $validatedData = $request->validate([
             'name' => 'required|string',
             'username' =>  [
@@ -131,8 +131,8 @@ class UserController extends Controller
 
         $image_path = null;
         if($request->has("image") != null){
-            $imageName = time().'.'.$request->image->extension();  
-         
+            $imageName = time().'.'.$request->image->extension();
+
             $request->image->move(public_path('images'), $imageName);
             $image_path = '/images/'.$imageName;
         }
@@ -146,7 +146,7 @@ class UserController extends Controller
         $user->save_color = $request->get("save_color");
         $user->is_address_displayed = $request->get("is_address_displayed") != null ? 1 : 0;
         $user->is_username_displayed = $request->get("is_username_displayed") != null ? 1 : 0;
-        
+
         if(!is_null($image_path)){
             $user->photo = $image_path;
         }
@@ -242,7 +242,7 @@ class UserController extends Controller
     }
 
     public function update_link(Request $request, $id){
-        
+
         $content = Content::find($id);
         $content->link_type_id = $request->get("link_type_id");
         $content->text = $request->get("text");
@@ -275,11 +275,9 @@ class UserController extends Controller
         ]);
     }
 
-    function downloadVcard(){
+    function downloadVcard($id){
 
-        $id_user = Auth::user()->id;
-
-        $data = Vcard::where("user_id", $id_user)->first();
+        $data = Vcard::where("user_id", $id)->first();
 
         if($data == null ){
             abort(404);
