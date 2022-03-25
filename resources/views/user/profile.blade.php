@@ -88,7 +88,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                                 <p class="mb-0">Background Color</p>
                                 <a href="#" onclick="myFunction(2)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
-                                <input type="text" data-coloris style="visibility:hidden" name="background_color" value="{{old('background_color', $data->background_color ?? '#ffffff')}}" id="fontColorButton2" title="Change Font Color" colorpick-eyedropper-active="true" />
+                                <input type="text" data-coloris style="width:10px; visibility:hidden" name="background_color" value="{{old('background_color', $data->background_color ?? '#ffffff')}}" id="fontColorButton2" title="Change Font Color" colorpick-eyedropper-active="true" />
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                                 <p class="mb-0">Save Button Color</p>
@@ -110,8 +110,8 @@
             </div>
         </div>
 
-        <!-- Preview -->
-        <div class="p-1 mb-5 col-lg-6 col-md-12 col-sm-12 col-12 px-0" style="min-height: 600px;">
+         <!-- Preview -->
+         <div class="p-1 mb-5 col-lg-6 col-md-12 col-sm-12 col-12 px-0" style="min-height: 600px;">
             <div class="col-12 text-right pr-0">
                 <a href="{{url('page/preview')}}" target="_blank" class="btn btn-md btn-dark">PREVIEW</a>
             </div>
@@ -167,6 +167,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- Modal Upload Foto-->

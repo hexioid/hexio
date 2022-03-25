@@ -1,10 +1,10 @@
 @extends("user.user_home_template")
 
 @section("content")
-    <div class="row mt-4 col-12 px-4 px-lg-5 mx-0" style="overflow-anchor: none;">
+    <div class="row mt-4 col-12 px-2 px-lg-5 mx-0" style="overflow-anchor: none;">
 
-        <div class="p-1 mb-5 col-lg-6 col-md-12 col-sm-12 col-12">
-           <div class="px-3">
+    <div class="p-1 mb-5 col-lg-6 col-md-12 col-sm-12 col-12">
+           <div class="px-2 px-lg-3">
                 <button class="btn btn-dark col-12" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     <i class="fa-solid fa-plus"></i>ADD
                 </button>
@@ -15,7 +15,7 @@
                 </div>
            </div>
 
-            <div class="card-body">
+            <div class="card-body px-2 px-lg-4">
 
                 <section>
                     <ul id="container-list" class="list-group list-group-sortable-handles" >
@@ -59,7 +59,7 @@
                                                     <div class="col-6 col-sm-6 col-md-9 col-lg-9">
                                                         <p class="mb-0">Button Color</p>
                                                         <a href="#" onclick="openColorPicker({{$content->id}})"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
-                                                        <input type="text" data-coloris onChange="changeButtonColor({{$content->id}})" name="button_colors[]" value="{{$content->button_color}}" style="visibility:hidden"  id="item-button-color-{{$content->id}}" title="Change Font Color" colorpick-eyedropper-active="true" />
+                                                        <input type="text" data-coloris onChange="changeButtonColor({{$content->id}})" name="button_colors[]" value="{{$content->button_color}}" style="width:10px; visibility:hidden"  id="item-button-color-{{$content->id}}" title="Change Font Color" colorpick-eyedropper-active="true" />
                                                     </div>
                                                 </div>
 
