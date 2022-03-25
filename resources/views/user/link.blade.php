@@ -189,11 +189,11 @@
 
                             <div id="check" class="px-3 py-4" style="height:570px; overflow:auto">
                                 <!-- CONTENT -->
-                                <div class="row col-12 mr-0 pr-0">
+                                <div class="row col-12 mx-0 px-0">
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-4 px-0">
                                         <img id="preview-image" style="border:solid {{ $data->frame_color ?? '#ffffff' }} 2px ; object-fit: cover;" width="95px" height="95PX" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" class="rounded-circle" alt="Cinque Terre">
                                     </div>
-                                    <div class="col-lg-8 col-md-8 col-sm-8 col-8 pt-4 text-right">
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-8 pt-4 px-0 text-right">
                                         <a href="{{url('page/download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="mt-2 btn btn-sm btn-dark border-0">SAVE CONTACT</a>
                                     </div>
                                 </div>
