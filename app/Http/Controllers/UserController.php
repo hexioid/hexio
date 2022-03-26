@@ -11,6 +11,7 @@ use App\Vcard;
 use Auth;
 use Carbon\Carbon;
 use JeroenDesloovere\VCard\VCard as VCard2;
+use Illuminate\Http\Response;
 
 class UserController extends Controller
 {
@@ -301,7 +302,15 @@ class UserController extends Controller
         $vcard->addPhoneNumber($data->phone);
         $vcard->addAddress(null, null, $data->address, null, null, null, null);
         $vcard->addURL($data->site_1." ".$data->site_2." ".$data->site_3);
-        return $vcard->download();
+        
+        $response = new Response();
+        $response->setContent($vcard->getOutput());
+        $response->setStatusCode(200);
+        $response->headers->set('Content-Type', 'text/x-vcard');
+        $response->headers->set('Content-Disposition', 'attachment; filename="' . $data->name . '.vcf"');
+        $response->headers->set('Content-Length', mb_strlen($vcard->getOutput(), 'utf-8'));
+
+        return $response;
     }
 
     function preview(){
@@ -368,6 +377,14 @@ class UserController extends Controller
         $vcard->addPhoneNumber($data->phone);
         $vcard->addAddress(null, null, $data->address, null, null, null, null);
         $vcard->addURL($data->site_1." ".$data->site_2." ".$data->site_3);
-        return $vcard->download();
+        
+        $response = new Response();
+        $response->setContent($vcard->getOutput());
+        $response->setStatusCode(200);
+        $response->headers->set('Content-Type', 'text/x-vcard');
+        $response->headers->set('Content-Disposition', 'attachment; filename="' . $data->name . '.vcf"');
+        $response->headers->set('Content-Length', mb_strlen($vcard->getOutput(), 'utf-8'));
+
+        return $response;
     }
 }

@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <div class="row col-12 m-0 p-0">
+        <div class="row col-12 m-0 p-0 mb-3">
             <div class="form-check col-6">
                 <input style="cursor: pointer;" type="checkbox" value="{{old('remember')}}" type="checkbox" name="remember" class="form-check-input" id="exampleCheck1">
                 <label style="cursor: pointer;" class="form-check-label" for="exampleCheck1">Remeber Me</label>
@@ -28,7 +28,6 @@
                 <a href="{{url('page/forget-password')}}" style="color: black">Forget Password</a>
             </div>
         </div>
-        <br>
 
         <button type="submit" class="btn btn-dark btn-lg col-12">LOGIN</button>
         <a href="{{url('page/register')}}" class="btn btn-dark btn-lg col-12 mt-3">SIGN UP</a>

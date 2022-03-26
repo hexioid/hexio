@@ -63,7 +63,6 @@
             }
             .btn-preview i{
                 margin-left:5px;
-                margin-right: -5px;
             }
         </style>
         <link rel="stylesheet" href="{{asset('plugins/coloris/coloris.css')}}" />

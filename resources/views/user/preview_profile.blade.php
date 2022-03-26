@@ -39,6 +39,10 @@
             #loading-image {
                 z-index: 100;
             }
+            .btn-preview i{
+                margin-left:8px;
+            }
+            
         </style>
     </head>
     <body style="100%">
@@ -61,19 +65,19 @@
                             <a href="{{url('page/download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="btn btn-lg btn-dark border-0">SAVE CONTACT</a>
                         </div>
                     </div>
-                    <br>
+                    <br><br>
                     <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
                     <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
                     <p id="preview-bio" style="line-height: 1.1;">{{$data->bio}}</p>
-                    <p id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-location-dot"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
-
+                    <p class="mb-2" id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-map-pin"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
+                    <br>
                     <div id="container-list-preview">
                         @foreach($list_contents as $content)
                             @if($content->content_type_id == 1)
                                 <div id="div-preview-item-{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
-                                    <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn btn-dark btn-lg col-12 mb-3 border-0" style="background-color: {{$content->button_color}}">
-                                        <i id="preview-icon-{{$content->id}}" class="my-1 {{$content->text != null ? 'float-left' : ''}} {{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i>
-                                        <span id="preview-text-button-name-{{$content->id}}" style="color: {{$content->text_color}}">{{$content->text}}</span>
+                                    <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="{{$content->text != null && $content->is_icon_displayed ? 'pl-5' : ''}} btn-preview btn btn-dark btn-lg col-12 mb-3 border-0" style="min-height:50px !important; background-color: {{$content->button_color}}">
+                                        <i id="preview-icon-{{$content->id}}" class="my-2 {{$content->linkType->icon}} fa-lg" style="{{$content->text != null ? 'position: absolute; left: 23px; top:15px;' : ''}} display: {{$content->is_icon_displayed ? '' : 'none'}}"></i>
+                                        <span class="ml-1" id="preview-text-button-name-{{$content->id}}" style="color: {{$content->text_color}}">{{$content->text}}&nbsp;</span>
                                     </a>
                                 </div>
                             @elseif($content->content_type_id == 2)
