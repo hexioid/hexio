@@ -235,9 +235,7 @@
     
 @endsection
 @section('script')
-    <script src="{{asset('js/jquery.sortable.js')}}"></script>
     <script>
-
         initSortList();
         let current_item_length = 0;
 
@@ -248,11 +246,11 @@
 
         function initSortList(){
             $('.list-group-sortable-handles').sortable({
-                placeholderClass: 'list-group-item',
-                handle: 'i'
-            }).bind('sortupdate', function(e, ui) {
-                updatePreviewUI();
-                getNewOrder();
+                handle: 'i',
+                stop: function( event, ui ) {
+                    updatePreviewUI();
+                    getNewOrder();
+                }
             });
         }
 
@@ -262,7 +260,7 @@
             $("#container-list-preview").empty();
 
             let el_preview = $("#container-list-preview");
-
+            console.log(el_preview);
             for(i = 0; i < lists.length; i++){
                 for(j = 0; j < preview_lists.length; j++){
                     if($(lists[i]).attr("data-real_id") == $(preview_lists[j]).attr("data-real_id")){

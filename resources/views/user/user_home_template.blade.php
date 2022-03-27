@@ -3,12 +3,12 @@
     <head>
         <meta content='maximum-scale=1.0, initial-scale=1.0, width=device-width' name='viewport'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <title>Hexio</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
         <style>
             .clr-field{
                 visibility:hidden !important;
@@ -170,11 +170,12 @@
             </div>
             @yield("content")
         </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
         <!-- <script src="{{asset('bootstrap/js/jquery-3.2.1.slim.min.js')}}"></script> -->
         <script src="{{asset('bootstrap/js/popper.min.js')}}"></script>
-        <script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
-        <script src="{{asset('plugins/jquery-ui-touch-punch-master/jquery.ui.touch-punch.min.js')}}"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="{{asset('plugins/jquery-ui-touch-punch-master/jquery.ui.touch-punch.js')}}"></script>
         @yield('script')
     </body>
 </html>
