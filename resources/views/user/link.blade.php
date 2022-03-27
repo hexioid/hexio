@@ -232,7 +232,9 @@
             </div>
         </div>
     </div>
-
+    
+@endsection
+@section('script')
     <script src="{{asset('js/jquery.sortable.js')}}"></script>
     <script>
 

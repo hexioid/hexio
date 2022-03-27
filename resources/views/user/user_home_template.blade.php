@@ -173,5 +173,8 @@
         <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
         <!-- <script src="{{asset('bootstrap/js/jquery-3.2.1.slim.min.js')}}"></script> -->
         <script src="{{asset('bootstrap/js/popper.min.js')}}"></script>
+        <script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
+        <script src="{{asset('plugins/jquery-ui-touch-punch-master/jquery.ui.touch-punch.min.js')}}"></script>
+        @yield('script')
     </body>
 </html>
