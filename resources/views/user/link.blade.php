@@ -197,7 +197,7 @@
                                         <a href="{{url('page/download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="mt-2 btn btn-sm btn-dark border-0">SAVE CONTACT</a>
                                     </div>
                                 </div>
-                                <br><br>
+                                <br>
                                 <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
                                 <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
                                 <p id="preview-bio" style="line-height: 1.1;">{{$data->bio}}</p>

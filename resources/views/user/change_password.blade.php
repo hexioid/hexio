@@ -1,8 +1,8 @@
 @extends("user.user_home_template")
 
 @section("content")
-    <div class="row mt-4 col-12">
-        <div class="col-lg-3 col-md-2 col-sm-1 col-0"></div>
+    <div class="row mx-2 px-2 mt-4">
+        <div class="px-0 col-lg-3 col-md-2 col-sm-1 col-0"></div>
         <div class="shadow p-3 mb-5 bg-white rounded col-lg-6 col-md-8 col-sm-10 col-12">
             <div class="card-body">
                 <form action="{{url('page/change-password')}}" method="POST">
@@ -10,6 +10,7 @@
                     <div class="text-left">
                         <h4>Change Password</h4>
                     </div>
+                    <br>
                     <div class="form-group">
                         <label for="current_password" class="form-label">Current Password</label>
                         <input type="password" name="current_password" class="form-control" placeholder="Current Passowrd">
@@ -29,6 +30,6 @@
                 </form>
             </div>
         </div>
-        <div class="col-lg-3 col-md-2 col-sm-1 col-0"></div>
+        <div class="px-0 col-lg-3 col-md-2 col-sm-1 col-0"></div>
     </div>
 @endsection
