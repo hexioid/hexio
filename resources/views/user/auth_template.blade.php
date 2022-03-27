@@ -5,7 +5,6 @@
         <meta content='maximum-scale=1.0, initial-scale=1.0, width=device-width' name='viewport'>
         <title>Hexio</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        @yield("head")
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -19,6 +18,7 @@
                 -ms-interpolation-mode: nearest-neighbor;
             }
         </style>
+        @yield("head")
     </head>
     <body >
         <div class="m-5 h-100">
