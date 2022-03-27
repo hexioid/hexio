@@ -22,7 +22,7 @@
         <div class="row col-12 m-0 p-0 mb-3">
             <div class="form-check col-6">
                 <input style="cursor: pointer;" type="checkbox" value="{{old('remember')}}" type="checkbox" name="remember" class="form-check-input" id="exampleCheck1">
-                <label style="cursor: pointer;" class="form-check-label" for="exampleCheck1">Remeber Me</label>
+                <label style="cursor: pointer;" class="form-check-label" for="exampleCheck1">Remember Me</label>
             </div>
             <div class="col-6 text-right pr-0">
                 <a href="{{url('page/forget-password')}}" style="color: black">Forget Password</a>
