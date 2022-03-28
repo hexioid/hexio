@@ -43,7 +43,7 @@
                         @foreach($list_contents as $content)
                             @if($content->content_type_id == 1)
                                 <!-- LINK -->
-                                <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}"  class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
+                                <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}"  class="py-0 shadow-sm border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row px-3 mr-0">
                                         <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
@@ -114,7 +114,7 @@
                                 </li>
                             @elseif($content->content_type_id == 2)
                                 <!-- DIVIDER -->
-                                <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
+                                <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="py-0  shadow-sm border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row px-3 mr-0">
                                         <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
@@ -128,7 +128,7 @@
                                 </li>
                             @else
                                 <!-- TEXT -->
-                                <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
+                                <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="py-0  shadow-sm border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row px-3 mr-0">
                                         <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
@@ -347,7 +347,7 @@
 
         function addLink(){
                 let index = ++current_item_length;
-            let link = `<li id="list-item-`+index+`" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
+            let link = `<li id="list-item-`+index+`" class="py-0  shadow-sm border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row px-3 mr-0">
                                         <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
@@ -430,7 +430,7 @@
 
         function addDivider(){
                 let index = ++current_item_length;
-                let divider = `<li id="list-item-`+index+`" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
+                let divider = `<li id="list-item-`+index+`" class="py-0  shadow-sm border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row px-3 mr-0">
                                         <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
@@ -458,7 +458,7 @@
 
         function addText(){
                 let index = ++current_item_length;
-                let text = `<li id="list-item-`+index+`" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
+                let text = `<li id="list-item-`+index+`" class="py-0  shadow-sm border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row px-3 mr-0">
                                         <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
