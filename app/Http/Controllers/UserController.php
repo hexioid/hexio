@@ -279,7 +279,7 @@ class UserController extends Controller
     function downloadVcard($id){
 
         $data = Vcard::where("user_id", $id)->first();
-        $user = User::find($id_user);
+        $user = User::find($id);
 
         if($data == null ){
             abort(404);
