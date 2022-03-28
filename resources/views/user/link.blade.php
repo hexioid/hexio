@@ -44,11 +44,11 @@
                             @if($content->content_type_id == 1)
                                 <!-- LINK -->
                                 <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}"  class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
-                                    <div class="row pl-3 pr-1 mr-0">
+                                    <div class="row px-3 mr-0">
                                         <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 px-0 my-2">
+                                        <div class="col px-0 my-2">
                                             <div class="pl-3 row col-12 mx-0 px-0 mb-2 mt-3">
                                                 <select onchange="linkTypeChange({{$content->id}})" id="item-link_type-{{$content->id}}" name="link_types[]" class="border border-dark custom-select col-6">
                                                     @foreach($list_link_types as $link_type)
@@ -115,11 +115,11 @@
                             @elseif($content->content_type_id == 2)
                                 <!-- DIVIDER -->
                                 <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
-                                    <div class="row pl-3 pr-1 mr-0">
+                                    <div class="row px-3 mr-0">
                                         <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0 my-3">
+                                        <div class="col px-0 my-3">
                                             <div class="col-12">
                                                 <i style="cursor: pointer;" onclick="deleteItem({{$content->id}})" class="fa-solid fa-trash"></i>
                                             </div>
@@ -129,11 +129,11 @@
                             @else
                                 <!-- TEXT -->
                                 <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
-                                    <div class="row pl-3 pr-1 mr-0">
+                                    <div class="row px-3 mr-0">
                                         <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 px-0 my-2">
+                                        <div class="col px-0 my-2">
                                             <div class="col-12 pr-0 pl-3  mt-3">
                                                 <input onchange="onChangeInputText({{$content->id}})" value="{{$content->text}}" id="item-input-text-{{$content->id}}" name="text[]" type="text" class="border border-dark form-control" style="width:100%" placeholder="Text">
                                             </div>
@@ -348,11 +348,11 @@
         function addLink(){
                 let index = ++current_item_length;
             let link = `<li id="list-item-`+index+`" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
-                                    <div class="row pl-3 pr-1 mr-0">
+                                    <div class="row px-3 mr-0">
                                         <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 px-0 my-2">
+                                        <div class="col px-0 my-2">
                                             <div class="pl-3 row col-12 mx-0 px-0 mb-2 mt-3">
                                                 <select onchange="linkTypeChange(`+index+`)" id="item-link_type-`+index+`" name="link_types[]" class="border border-dark custom-select col-6">
                                                     @foreach($list_link_types as $link_type)
@@ -431,11 +431,11 @@
         function addDivider(){
                 let index = ++current_item_length;
                 let divider = `<li id="list-item-`+index+`" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
-                                    <div class="row pl-3 pr-1 mr-0">
+                                    <div class="row px-3 mr-0">
                                         <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0 my-3">
+                                        <div class="col px-0 my-3">
                                             <div class="col-12">
                                                 <i style="cursor: pointer;" onclick="deleteItem(`+index+`)" class="fa-solid fa-trash"></i>
                                             </div>
@@ -459,11 +459,11 @@
         function addText(){
                 let index = ++current_item_length;
                 let text = `<li id="list-item-`+index+`" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
-                                    <div class="row pl-3 pr-1 mr-0">
+                                    <div class="row px-3 mr-0">
                                         <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 px-0 my-2">
+                                        <div class="col px-0 my-2">
                                             <div class="col-12 pr-0 pl-3  mt-3">
                                                 <input onchange="onChangeInputText(`+index+`)" id="item-input-text-`+index+`" name="text[]" type="text" class="border border-dark form-control" style="width:100%" placeholder="Text">
                                             </div>
