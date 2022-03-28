@@ -133,7 +133,7 @@
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
-                                            <div class="col-12 px-0">
+                                            <div class="col-12 px-0 mt-3">
                                                 <input onchange="onChangeInputText({{$content->id}})" value="{{$content->text}}" id="item-input-text-{{$content->id}}" name="text[]" type="text" class="form-control" style="width:100%" placeholder="Text">
                                             </div>
 
@@ -464,7 +464,7 @@
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
-                                            <div class="col-12 px-0">
+                                            <div class="col-12 px-0 mt-3">
                                                 <input onchange="onChangeInputText(`+index+`)" id="item-input-text-`+index+`" name="text[]" type="text" class="form-control" style="width:100%" placeholder="Text">
                                             </div>
 
