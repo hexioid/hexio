@@ -4,7 +4,7 @@
     <div class="row mx-2 px-2 mt-4">
         <div class="px-0 col-lg-3 col-md-2 col-sm-1 col-0"></div>
         <div class="shadow p-3 mb-5 bg-white rounded col-lg-6 col-md-8 col-sm-10 col-12">
-            <div class="card-body">
+            <div class="card-body px-0 px-lg-2 px-md-2 px-sm-1">
                 <div class="col-12 row mx-0 pr-0">
                     <div class="col-4 pl-0">
                         <i class="fa-regular fa-envelope"></i> Email

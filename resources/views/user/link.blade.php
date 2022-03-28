@@ -43,13 +43,13 @@
                         @foreach($list_contents as $content)
                             @if($content->content_type_id == 1)
                                 <!-- LINK -->
-                                <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}"  class="shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
+                                <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}"  class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
-                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
+                                        <div class="border border-top-0 border-left-0 border-bottom-0 col-2 col-sm-1 col-md-1 col-lg-1 pr-0 d-flex align-items-center">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
-                                            <div class="row col-12 mx-0 px-0 mb-2 mt-3">
+                                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 px-0 my-2">
+                                            <div class="pl-3 row col-12 mx-0 px-0 mb-2 mt-3">
                                                 <select onchange="linkTypeChange({{$content->id}})" id="item-link_type-{{$content->id}}" name="link_types[]" class="border border-dark custom-select col-6">
                                                     @foreach($list_link_types as $link_type)
                                                         <option data-placeholder="{{$link_type->placeholder}}" data-prefix="{{$link_type->prefix}}" data-icon="{{$link_type->icon}}" {{$content->link_type_id == $link_type->id ? 'selected' : ''}} value="{{$link_type->id}}">{{$link_type->type}}</option>
@@ -59,7 +59,7 @@
                                                     <input id="item-button-name-{{$content->id}}" onchange="onChangeButtonName({{$content->id}})" type="text" name="button_texts[]" value="{{$content->text}}" class="border border-dark form-control" style="width:100%" placeholder="Button Name">
                                                 </div>
                                             </div>
-                                            <div class="col-12 px-0">
+                                            <div class="pl-3 col-12 px-0">
                                                 <!-- <input type="text" class="form-control" style="width:100%" value="https://"> -->
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
@@ -69,23 +69,21 @@
                                                 </div>
                                             </div>
 
-                                            <div class="row col-12 mt-2 m-0 px-0">
-                                                <div class="form-group col-12 col-sm-12 col-lg-11 px-0 row">
-                                                    <div class="col-5 col-sm-6 col-md-3 col-lg-3 pr-lg-2 pr-md-2 pr-0">
-                                                        <p class="mb-0">Text Color</p>
-                                                        <button onClick="changeButtonTextColor({{$content->id}}, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
-                                                        <button onClick="changeButtonTextColor({{$content->id}}, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
-                                                    </div>
-                                                    <div class="col-6 col-sm-6 col-md-9 col-lg-9">
-                                                        <p class="mb-0">Button Color</p>
-                                                        <a href="#" onclick="openColorPicker({{$content->id}})"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
-                                                        <input type="text" data-coloris onChange="changeButtonColor({{$content->id}})" name="button_colors[]" value="{{$content->button_color}}" style="width:10px; visibility:hidden"  id="item-button-color-{{$content->id}}" title="Change Font Color" colorpick-eyedropper-active="true" />
-                                                    </div>
+                                            <div class="row mt-2 m-0 pr-0 pl-3 mb-3">
+                                                <div class="col-4 col-sm-4 col-md-3 col-lg-3 pl-0 pr-lg-2 pr-md-2 pr-0">
+                                                    <p class="mb-0">Text Color</p>
+                                                    <button onClick="changeButtonTextColor({{$content->id}}, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
+                                                    <button onClick="changeButtonTextColor({{$content->id}}, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
+                                                </div>
+                                                <div class="col-6 col-sm-6 col-md-7 col-lg-7 pr-0">
+                                                    <p class="mb-0">Button Color</p>
+                                                    <a href="#" onclick="openColorPicker({{$content->id}})"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
+                                                    <input type="text" data-coloris onChange="changeButtonColor({{$content->id}})" name="button_colors[]" value="{{$content->button_color}}" style="width:10px; visibility:hidden"  id="item-button-color-{{$content->id}}" title="Change Font Color" colorpick-eyedropper-active="true" />
                                                 </div>
 
-                                                <div class="px-0 ml-auto mr-0 col-1 col-sm-1 col-lg-1">
+                                                <div class="px-0 ml-auto mr-0 col-2 col-sm-2 col-md-2 col-lg-2">
                                                     <p class=" d-flex justify-content-end mb-0">Icon</p>
-                                                    <div class=" d-flex justify-content-end custom-control custom-switch mr-lg-n1 mr-md-n1 ml-n2">
+                                                    <div class="custom-control custom-switch float-right" style="margin-right:-5px">
                                                         <input type="checkbox" onChange="onIconChange({{$content->id}})" id="item-checkbox-icon-{{$content->id}}" {{$content->is_icon_displayed ? 'checked' : ''}} class="custom-control-input" style="transform: scale(2);">
                                                         <label style="cursor: pointer;" class="custom-control-label" for="item-checkbox-icon-{{$content->id}}"></label>
                                                     </div>
@@ -94,9 +92,9 @@
 
                                             <hr class="mt-0">
 
-                                            <div class="row col-12 mt-2 m-0 px-0" style="height:auto !important;">
+                                            <div class="row col-12 mt-2 m-0 pr-0 pl-3" style="height:auto !important;">
                                                 <div class="form-group col-6 col-sm-7 col-md-8 col-lg-8 px-0 row">
-                                                    <div class="col-12">
+                                                    <div class="col-12 pr-0">
                                                         <i style="cursor: pointer;" onclick="deleteItem({{$content->id}})" class="fa-solid fa-trash mr-2"></i>
                                                         <button  onClick="setDefaultLink({{$content->id}})" class="btn btn-sm btn-dark">Default</button>
                                                     </div>
@@ -116,12 +114,12 @@
                                 </li>
                             @elseif($content->content_type_id == 2)
                                 <!-- DIVIDER -->
-                                <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
+                                <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
-                                        <div class="col-1 pr-1 d-flex align-items-center">
+                                        <div class="border border-top-0 border-left-0 border-bottom-0 col-2 col-sm-1 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-11 px-0">
+                                        <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0 my-3">
                                             <div class="col-12">
                                                 <i style="cursor: pointer;" onclick="deleteItem({{$content->id}})" class="fa-solid fa-trash"></i>
                                             </div>
@@ -130,36 +128,34 @@
                                 </li>
                             @else
                                 <!-- TEXT -->
-                                <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
+                                <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
-                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
+                                        <div class="border border-top-0 border-left-0 border-bottom-0 col-2 col-sm-1 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
-                                            <div class="col-12 px-0 mt-3">
+                                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 px-0 my-2">
+                                            <div class="col-12 pr-0 pl-3  mt-3">
                                                 <input onchange="onChangeInputText({{$content->id}})" value="{{$content->text}}" id="item-input-text-{{$content->id}}" name="text[]" type="text" class="border border-dark form-control" style="width:100%" placeholder="Text">
                                             </div>
 
-                                            <div class="row col-12 mt-2 m-0 px-0">
-                                                <div class="form-group col-12 px-0 row">
-                                                    <div class="col-5 col-sm-6 col-md-3 col-lg-3">
-                                                        <p class="mb-0">Text Color</p>
-                                                        <button onclick="changeTextColor({{$content->id}}, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
-                                                        <button onclick="changeTextColor({{$content->id}}, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
-                                                    </div>
-                                                    <div class="col-7 col-sm-6 col-md-9 col-lg-9">
-                                                        <p class="mb-0 ml-2">Align Text</p>
-                                                        <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'left')" class="fa-solid fa-align-left fa-lg ml-2"></i>
-                                                        <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'center')" class="fa-solid fa-align-center fa-lg ml-2"></i>
-                                                        <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'right')" class="fa-solid fa-align-right fa-lg ml-2"></i>
-                                                        <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'justify')" class="fa-solid fa-align-justify fa-lg ml-2"></i>
-                                                    </div>
+                                            <div class="row col-12 mt-2 mb-3 m-0 pl-3 pr-0">
+                                                <div class="col-5 col-sm-6 col-md-3 col-lg-3 px-0">
+                                                    <p class="mb-0">Text Color</p>
+                                                    <button onclick="changeTextColor({{$content->id}}, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
+                                                    <button onclick="changeTextColor({{$content->id}}, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
+                                                </div>
+                                                <div class="col-7 col-sm-6 col-md-9 col-lg-9 px-0">
+                                                    <p class="mb-0 ml-2">Align Text</p>
+                                                    <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'left')" class="fa-solid fa-align-left fa-lg ml-2"></i>
+                                                    <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'center')" class="fa-solid fa-align-center fa-lg ml-2"></i>
+                                                    <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'right')" class="fa-solid fa-align-right fa-lg ml-2"></i>
+                                                    <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'justify')" class="fa-solid fa-align-justify fa-lg ml-2"></i>
                                                 </div>
                                             </div>
 
                                             <hr class="mt-0">
 
-                                            <div class="row col-12 mt-2 m-0 px-0">
+                                            <div class="row col-12 mt-2 m-0 pr-0 pl-3">
                                                 <div class="form-group col-9 px-0 row">
                                                     <div class="col-12">
                                                         <i style="cursor: pointer;" onclick="deleteItem({{$content->id}})" class="fa-solid fa-trash mr-2"></i>
@@ -351,13 +347,13 @@
 
         function addLink(){
                 let index = ++current_item_length;
-            let link = `<li id="list-item-`+index+`" class="shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
+            let link = `<li id="list-item-`+index+`" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
-                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
+                                        <div class="border border-top-0 border-left-0 border-bottom-0 col-2 col-sm-1 col-md-1 col-lg-1 pr-0 d-flex align-items-center">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
-                                            <div class="row col-12 mx-0 px-0 mb-2 mt-3">
+                                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 px-0 my-2">
+                                            <div class="pl-3 row col-12 mx-0 px-0 mb-2 mt-3">
                                                 <select onchange="linkTypeChange(`+index+`)" id="item-link_type-`+index+`" name="link_types[]" class="border border-dark custom-select col-6">
                                                     @foreach($list_link_types as $link_type)
                                                         <option data-placeholder="{{$link_type->placeholder}}" data-prefix="{{$link_type->prefix}}" data-icon="{{$link_type->icon}}" value="{{$link_type->id}}">{{$link_type->type}}</option>
@@ -367,7 +363,7 @@
                                                     <input type="text" onchange="onChangeButtonName(`+index+`)" id="item-button-name-`+index+`" name="button_texts[]" class="border border-dark form-control" style="width:100%" placeholder="Button Name">
                                                 </div>
                                             </div>
-                                            <div class="col-12 px-0">
+                                            <div class="pl-3 col-12 px-0">
                                                 <!-- <input type="text" class="form-control" style="width:100%" value="https://"> -->
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
@@ -377,23 +373,21 @@
                                                 </div>
                                             </div>
 
-                                            <div class="row col-12 mt-2 m-0 px-0">
-                                                <div class="form-group col-12 col-sm-12 col-lg-11 px-0 row">
-                                                    <div class="col-5 col-sm-6 col-md-3 col-lg-3 pr-lg-2 pr-md-2 pr-0">
-                                                        <p class="mb-0">Text Color</p>
-                                                        <button onClick="changeButtonTextColor(`+index+`, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
-                                                        <button onClick="changeButtonTextColor(`+index+`, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
-                                                    </div>
-                                                    <div class="col-6 col-sm-6 col-md-9 col-lg-9">
-                                                        <p class="mb-0">Button Color</p>
-                                                        <a href="#" onclick="openColorPicker(`+index+`)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
-                                                        <input type="text" data-coloris id="item-button-color-`+index+`" onChange="changeButtonColor(`+index+`)" name="button_colors[]" style="visibility:hidden" title="Change Font Color" colorpick-eyedropper-active="true" />
-                                                    </div>
+                                            <div class="row mt-2 m-0 pr-0 pl-3 mb-3">
+                                                <div class="col-4 col-sm-4 col-md-3 col-lg-3 pl-0 pr-lg-2 pr-md-2 pr-0">
+                                                    <p class="mb-0">Text Color</p>
+                                                    <button onClick="changeButtonTextColor(`+index+`, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
+                                                    <button onClick="changeButtonTextColor(`+index+`, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
+                                                </div>
+                                                <div class="col-6 col-sm-6 col-md-7 col-lg-7 pr-0">
+                                                    <p class="mb-0">Button Color</p>
+                                                    <a href="#" onclick="openColorPicker(`+index+`)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
+                                                    <input type="text" data-coloris id="item-button-color-`+index+`" onChange="changeButtonColor(`+index+`)" name="button_colors[]" style="visibility:hidden" title="Change Font Color" colorpick-eyedropper-active="true" />
                                                 </div>
 
-                                                <div class="px-0 ml-auto mr-0 col-1 col-sm-1 col-lg-1">
+                                                <div class="px-0 ml-auto mr-0 col-2 col-sm-2 col-md-2 col-lg-2">
                                                     <p class=" d-flex justify-content-end mb-0">Icon</p>
-                                                    <div class=" d-flex justify-content-end custom-control custom-switch mr-lg-n1 mr-md-n1 ml-n2">
+                                                    <div class="custom-control custom-switch float-right" style="margin-right:-5px">
                                                         <input checked onChange="onIconChange(`+index+`)" id="item-checkbox-icon-`+index+`" type="checkbox" class="custom-control-input" style="transform: scale(2);">
                                                         <label style="cursor: pointer;" class="custom-control-label" for="item-checkbox-icon-`+index+`"></label>
                                                     </div>
@@ -402,9 +396,9 @@
 
                                             <hr class="mt-0">
 
-                                            <div class="row col-12 mt-2 m-0 px-0">
+                                            <div class="row col-12 mt-2 m-0 pr-0 pl-3" style="height:auto !important;">
                                                 <div class="form-group col-6 col-sm-7 col-md-8 col-lg-8 px-0 row">
-                                                    <div class="col-12">
+                                                    <div class="col-12 pr-0">
                                                         <i style="cursor: pointer;" onclick="deleteItem(`+index+`)" class="fa-solid fa-trash mr-2"></i>
                                                         <button onClick="setDefaultLink(`+index+`)" class="btn btn-sm btn-dark">Default</button>
                                                     </div>
@@ -436,12 +430,12 @@
 
         function addDivider(){
                 let index = ++current_item_length;
-                let divider = `<li id="list-item-`+index+`" class="shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
+                let divider = `<li id="list-item-`+index+`" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
-                                        <div class="col-1 pr-1 d-flex align-items-center">
+                                        <div class="border border-top-0 border-left-0 border-bottom-0 col-2 col-sm-1 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-11 px-0">
+                                        <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0 my-3">
                                             <div class="col-12">
                                                 <i style="cursor: pointer;" onclick="deleteItem(`+index+`)" class="fa-solid fa-trash"></i>
                                             </div>
@@ -464,36 +458,34 @@
 
         function addText(){
                 let index = ++current_item_length;
-                let text = `<li id="list-item-`+index+`" class="shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
+                let text = `<li id="list-item-`+index+`" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
                                     <div class="row col-12 pr-0 mr-0">
-                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
+                                        <div class="border border-top-0 border-left-0 border-bottom-0 col-2 col-sm-1 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
-                                        <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0">
-                                            <div class="col-12 px-0 mt-3">
+                                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 px-0 my-2">
+                                            <div class="col-12 pr-0 pl-3  mt-3">
                                                 <input onchange="onChangeInputText(`+index+`)" id="item-input-text-`+index+`" name="text[]" type="text" class="border border-dark form-control" style="width:100%" placeholder="Text">
                                             </div>
 
-                                            <div class="row col-12 mt-2 m-0 px-0">
-                                                <div class="form-group col-12 px-0 row">
-                                                    <div class="col-5 col-sm-6 col-md-3 col-lg-3">
-                                                        <p class="mb-0">Text Color</p>
-                                                        <button onclick="changeTextColor(`+index+`, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
-                                                        <button onclick="changeTextColor(`+index+`, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
-                                                    </div>
-                                                    <div class="col-7 col-sm-6 col-md-9 col-lg-9">
-                                                        <p class="mb-0 ml-2">Align Text</p>
-                                                        <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'left')" class="fa-solid fa-align-left fa-lg ml-2"></i>
-                                                        <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'center')" class="fa-solid fa-align-center fa-lg ml-2"></i>
-                                                        <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'right')" class="fa-solid fa-align-right fa-lg ml-2"></i>
-                                                        <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'justify')" class="fa-solid fa-align-justify fa-lg ml-2"></i>
-                                                    </div>
+                                            <div class="row col-12 mt-2 mb-3 m-0 pl-3 pr-0">
+                                                <div class="col-5 col-sm-6 col-md-3 col-lg-3 px-0">
+                                                    <p class="mb-0">Text Color</p>
+                                                    <button onclick="changeTextColor(`+index+`, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
+                                                    <button onclick="changeTextColor(`+index+`, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
+                                                </div>
+                                                <div class="col-7 col-sm-6 col-md-9 col-lg-9 px-0">
+                                                    <p class="mb-0 ml-2">Align Text</p>
+                                                    <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'left')" class="fa-solid fa-align-left fa-lg ml-2"></i>
+                                                    <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'center')" class="fa-solid fa-align-center fa-lg ml-2"></i>
+                                                    <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'right')" class="fa-solid fa-align-right fa-lg ml-2"></i>
+                                                    <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'justify')" class="fa-solid fa-align-justify fa-lg ml-2"></i>
                                                 </div>
                                             </div>
 
                                             <hr class="mt-0">
 
-                                            <div class="row col-12 mt-2 m-0 px-0">
+                                            <div class="row col-12 mt-2 m-0 pr-0 pl-3">
                                                 <div class="form-group col-9 px-0 row">
                                                     <div class="col-12">
                                                         <i style="cursor: pointer;" onclick="deleteItem(`+index+`)" class="fa-solid fa-trash mr-2"></i>

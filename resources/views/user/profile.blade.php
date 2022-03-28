@@ -100,7 +100,7 @@
 
                             <button id="default-btn" type="button" class="btn btn-dark btn-sm float-left">Default</button>
                         </div>
-
+                        <br>
 
                         <button type="submit" class="btn btn-dark btn-md px-5 float-right" style="margin-bottom:20px">SAVE</button>
                 </form>
