@@ -10,7 +10,7 @@
                 </div>
                 <br>
                 <div class="mb-2 text-center">
-                    <img width="80%" height="80%" class="img-fluid"  src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(400)->generate(env('APP_URL').'/'.$data->username)) !!} ">
+                    <img width="50%" height="50%" class="img-fluid"  src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(400)->generate(env('APP_URL').'/'.$data->username)) !!} ">
                 </div>
                 <br>
                 <a style="margin-bottom:20px" href="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(400)->generate(env('APP_URL').'/'.$data->username)) !!} " class="btn btn-dark btn-md float-right" download>DOWNLOAD</a>
