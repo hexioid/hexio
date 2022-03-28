@@ -279,6 +279,7 @@ class UserController extends Controller
     function downloadVcard($id){
 
         $data = Vcard::where("user_id", $id)->first();
+        $user = User::find($id_user);
 
         if($data == null ){
             abort(404);
@@ -301,7 +302,10 @@ class UserController extends Controller
         $vcard->addCompany($data->business);
         $vcard->addPhoneNumber($data->phone);
         $vcard->addAddress(null, null, $data->address, null, null, null, null);
-        $vcard->addURL($data->site_1." ".$data->site_2." ".$data->site_3);
+        $vcard->addURL($data->site_1);
+        if(!is_null($user->photo)){
+            $vcard->addPhoto(env('APP_URL').$user->photo);
+        }
         
         $response = new Response();
         $response->setContent($vcard->getOutput());
@@ -357,6 +361,7 @@ class UserController extends Controller
         $id_user = Auth::user()->id;
 
         $data = Vcard::where("user_id", $id_user)->first();
+        $user = User::find($id_user);
 
         if($data == null ){
             abort(404);
@@ -376,7 +381,11 @@ class UserController extends Controller
         $vcard->addCompany($data->business);
         $vcard->addPhoneNumber($data->phone);
         $vcard->addAddress(null, null, $data->address, null, null, null, null);
-        $vcard->addURL($data->site_1." ".$data->site_2." ".$data->site_3);
+        $vcard->addURL($data->site_1);
+
+        if(!is_null($user->photo)){
+            $vcard->addPhoto(env('APP_URL').$user->photo);
+        }
         
         $response = new Response();
         $response->setContent($vcard->getOutput());
