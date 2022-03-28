@@ -303,9 +303,9 @@ class UserController extends Controller
         $vcard->addPhoneNumber($data->phone);
         $vcard->addAddress(null, null, $data->address, null, null, null, null);
         $vcard->addURL($data->site_1);
-        // if(!is_null($user->photo)){
-        //     $vcard->addPhoto("https://upload.wikimedia.org/wikipedia/commons/3/38/JPEG_example_JPG_RIP_001.jpg");
-        // }
+        if(!is_null($user->photo)){
+            $vcard->addPhoto(env('APP_URL').$user->photo);
+        }
         
         $response = new Response();
         $response->setContent($vcard->getOutput());
@@ -383,9 +383,9 @@ class UserController extends Controller
         $vcard->addAddress(null, null, $data->address, null, null, null, null);
         $vcard->addURL($data->site_1);
 
-        // if(!is_null($user->photo)){
-        //     $vcard->addPhoto(env('APP_URL').$user->photo);
-        // }
+        if(!is_null($user->photo)){
+            $vcard->addPhoto(env('APP_URL').$user->photo);
+        }
         
         $response = new Response();
         $response->setContent($vcard->getOutput());
