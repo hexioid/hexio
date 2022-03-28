@@ -9,7 +9,7 @@
                     <input type="text" name="username" readonly class="form-control" value="{{env('APP_URL').'/'.$data->username}}" placeholder="username">
                 </div>
                 <br>
-                <div class="h-25  mb-2 text-center">
+                <div class="h-25  mb-3 text-center">
                     <img class="img-fluid"  src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(400)->generate(env('APP_URL').'/'.$data->username)) !!} ">
                 </div>
                 <br>
