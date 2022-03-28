@@ -6,11 +6,28 @@
     <div class="p-1 mb-5 col-lg-6 col-md-12 col-sm-12 col-12">
            <div class="px-2 px-lg-3">
                 <button class="btn btn-dark col-12" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <i class="fa-solid fa-plus"></i>ADD
+                    <div class="row">
+                        <div class="col-4 col-lg-5 text-right pr-0">
+                            <img style="position:relative" src="{{asset('images/Plus.svg')}}" alt="">
+                        </div>
+                        <div class="col-lg-3 col-5 text-center pl-0">
+                            ADD
+                        </div>
+                    </div>
                 </button>
                 <div class="collapse" id="collapseExample">
                     @foreach($list_content_types as $content_type)
-                        <button onclick="addContent({{$content_type->id}})" class="my-1 btn btn-dark col-12" id="{{$content_type->id}}"><i class="fa-solid fa-plus"></i>ADD {{$content_type->type}}</button>
+                        <button onclick="addContent({{$content_type->id}})" class="my-1 btn btn-dark col-12" id="{{$content_type->id}}"> 
+                            <div class="row">
+                                <div class="col-4 col-lg-5 text-right pr-0">
+                                    <img style="position:relative" src="{{asset('images/Plus.svg')}}" alt="">
+                                </div>
+                                <div class="col-lg-3 col-5 text-center pl-0">
+                                ADD {{$content_type->type}}
+                                </div>
+                            </div>
+                        
+                        </button>
                     @endforeach
                 </div>
            </div>
@@ -161,11 +178,27 @@
 
             <div style="visibility: {{ count($list_contents) < 1 ? 'hidden' : 'visible' }} " id="container-add-bottom" class="px-3">
                 <button class="btn btn-dark col-12" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-                    <i class="fa-solid fa-plus"></i>ADD
+                    <div class="row">
+                        <div class="col-4 col-lg-5 text-right pr-0">
+                            <img style="position:relative" src="{{asset('images/Plus.svg')}}" alt="">
+                        </div>
+                        <div class="col-lg-3 col-5 text-center pl-0">
+                            ADD
+                        </div>
+                    </div>
                 </button>
                 <div class="collapse" id="collapseExample2">
                     @foreach($list_content_types as $content_type)
-                        <button onclick="addContent({{$content_type->id}})" class="my-1 btn btn-dark col-12" id="{{$content_type->id}}"><i class="fa-solid fa-plus"></i>ADD {{$content_type->type}}</button>
+                        <button onclick="addContent({{$content_type->id}})" class="my-1 btn btn-dark col-12" id="{{$content_type->id}}">
+                            <div class="row">
+                                <div class="col-4 col-lg-5 text-right pr-0">
+                                    <img style="position:relative" src="{{asset('images/Plus.svg')}}" alt="">
+                                </div>
+                                <div class="col-lg-3 col-5 text-center pl-0">
+                                ADD {{$content_type->type}}
+                                </div>
+                            </div>
+                        </button>
                     @endforeach
                 </div>
            </div>
