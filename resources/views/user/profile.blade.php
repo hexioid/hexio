@@ -80,20 +80,20 @@
                         </div>
 
                         <div class="row col-12 mb-2" >
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                            <div class="pl-0 mb-2 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <p class="mb-0">Frame Color</p>
                                 <a href="#" onclick="myFunction(1)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
-                                <input type="text" data-coloris style="visibility:hidden" name="frame_color" value="{{old('frame_color', $data->frame_color ?? '#ffffff')}}" id="fontColorButton1" title="Change Font Color" colorpick-eyedropper-active="true" />
+                                <input type="text" data-coloris style="width:10px;  style="visibility:hidden" name="frame_color" value="{{old('frame_color', $data->frame_color ?? '#ffffff')}}" id="fontColorButton1" title="Change Font Color" colorpick-eyedropper-active="true" />
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                            <div class="pl-0 mb-2 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <p class="mb-0">Background Color</p>
                                 <a href="#" onclick="myFunction(2)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
                                 <input type="text" data-coloris style="width:10px; visibility:hidden" name="background_color" value="{{old('background_color', $data->background_color ?? '#ffffff')}}" id="fontColorButton2" title="Change Font Color" colorpick-eyedropper-active="true" />
                             </div>
-                            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                            <div class="pl-0 mb-2 col-lg-4 col-md-12 col-sm-12 col-12">
                                 <p class="mb-0">Save Button Color</p>
                                 <a href="#" onclick="myFunction(3)"><img height="20px" src="{{asset('images/paint.png')}}" alt=""></a>
-                                <input type="text" data-coloris style="visibility:hidden" name="save_color" id="fontColorButton3" title="Change Font Color" colorpick-eyedropper-active="true" />
+                                <input type="text" data-coloris style="width:10px;  style="visibility:hidden" name="save_color" id="fontColorButton3" title="Change Font Color" colorpick-eyedropper-active="true" />
                             </div>
                         </div>
                         <div class="w-100 mb-5">
@@ -102,7 +102,7 @@
                         </div>
 
 
-                        <button type="submit" class="btn btn-dark btn-md px-5 float-right mb-3">SAVE</button>
+                        <button type="submit" class="btn btn-dark btn-md px-5 float-right" style="margin-bottom:20px">SAVE</button>
                 </form>
 
 

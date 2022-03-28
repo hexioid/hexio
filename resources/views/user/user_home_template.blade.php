@@ -68,12 +68,21 @@
         <link rel="stylesheet" href="{{asset('plugins/coloris/coloris.css')}}" />
         <script src="{{asset('plugins/coloris/coloris.js')}}"></script>
     </head>
-    <body >
-        <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-md-center justify-content-start px-5">
+    <body  style="background-color: #E5E5E5">
+        <nav class=" justify-content-between navbar navbar-dark navbar-expand-md bg-dark justify-content-md-center justify-content-start px-3 px-md-5 px-lg-5">
             <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="nav-link ml-4 px-0" href="#_"><img src="{{asset('images/logo_white_v2.svg')}}" width="100" alt=""></i></a>
+            <a class="nav-link ml-lg-4 ml-md-4 ml-0 px-0" href="#_"><img src="{{asset('images/logo_white_v2.svg')}}" width="100" alt=""></i></a>
+            <div id="menu-setting-main" class="dropdown">
+                <span class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                </span>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="{{url('page/setting')}}">Setting</a>
+                    <a class="dropdown-item" href="{{url('page/logout')}}">Logout</a>
+                </div>
+            </div>
             <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                 <ul class="navbar-nav mx-auto text-md-center text-left">
                     <li class="nav-item mx-4">
@@ -82,7 +91,7 @@
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
                                     <i class="fa-solid fa-address-book fa-xl"></i>
                                 </div>
-                                <div class="mt-2 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
+                                <div class="mt-0 mt-lg-2 mt-md-2 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
                                     Vcard
                                 </div>
                             </div>
@@ -94,7 +103,7 @@
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
                                     <i class="fa-solid fa-link fa-xl"></i>
                                 </div>
-                                <div class="mt-2 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
+                                <div class="mt-0 mt-lg-2 mt-md-2 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
                                     Link
                                 </div>
                             </div>
@@ -106,7 +115,7 @@
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
                                     <i class="fa-regular fa-user fa-xl"></i>
                                 </div>
-                                <div class="mt-2 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
+                                <div class="mt-0 mt-lg-2 mt-md-2 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
                                     Profile
                                 </div>
                             </div>
@@ -118,14 +127,14 @@
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
                                     <i class="fa-solid fa-qrcode fa-xl"></i>
                                 </div>
-                                <div class="mt-2 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
+                                <div class="mt-0 mt-lg-2 mt-md-2 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
                                     Qr Code
                                 </div>
                             </div>
                         </a>
                     </li>
                 </ul>
-                <ul style="width:100px" class="nav navbar-nav flex-row justify-content-md-center justify-content-left flex-nowrap">
+                <ul id="menu-setting-collapes" style="width:100px" class="nav navbar-nav flex-row justify-content-md-center justify-content-left flex-nowrap">
                     <li class="ml-4 nav-item">
                         <div class="dropdown">
                             <span class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -142,7 +151,7 @@
         </nav>
 
 
-        <div class="mt-2">
+        <div style="background-color: #E5E5E5" class="pt-2">
             <div class="d-flex justify-content-center">
                  @if ($errors->any())
                         <div class="alert alert-danger">
@@ -176,6 +185,27 @@
         <script src="{{asset('bootstrap/js/popper.min.js')}}"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="{{asset('plugins/jquery-ui-touch-punch-master/jquery.ui.touch-punch.js')}}"></script>
+        <script>
+            
+            $( document ).ready(function() {
+                checkSize();
+            });
+            window.addEventListener('resize', function(event) {
+                checkSize();
+            }, true);
+
+            function checkSize(){
+                let width = $(window).width();
+
+                if(width < 768){
+                    $("#menu-setting-main").css("display", "");
+                    $("#menu-setting-collapes").css("display", "none");
+                }else{
+                    $("#menu-setting-main").css("display", "none");
+                    $("#menu-setting-collapes").css("display", "");
+                }
+            }
+        </script>
         @yield('script')
     </body>
 </html>
