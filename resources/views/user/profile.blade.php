@@ -243,6 +243,7 @@
 
         function myFunction(id) {
             document.getElementById("fontColorButton"+id).click();
+            event.preventDefault();
         }
 
         // On Frame color changed
