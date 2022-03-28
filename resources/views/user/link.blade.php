@@ -44,8 +44,8 @@
                             @if($content->content_type_id == 1)
                                 <!-- LINK -->
                                 <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}"  class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
-                                    <div class="row col-12 pr-0 mr-0">
-                                        <div class="border border-top-0 border-left-0 border-bottom-0 col-2 col-sm-1 col-md-1 col-lg-1 pr-0 d-flex align-items-center">
+                                    <div class="row pl-3 pr-1 mr-0">
+                                        <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-10 col-sm-11 col-md-11 col-lg-11 px-0 my-2">
@@ -115,8 +115,8 @@
                             @elseif($content->content_type_id == 2)
                                 <!-- DIVIDER -->
                                 <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
-                                    <div class="row col-12 pr-0 mr-0">
-                                        <div class="border border-top-0 border-left-0 border-bottom-0 col-2 col-sm-1 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
+                                    <div class="row pl-3 pr-1 mr-0">
+                                        <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0 my-3">
@@ -129,8 +129,8 @@
                             @else
                                 <!-- TEXT -->
                                 <li id="list-item-{{$content->id}}" data-real_id="{{$content->id}}" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
-                                    <div class="row col-12 pr-0 mr-0">
-                                        <div class="border border-top-0 border-left-0 border-bottom-0 col-2 col-sm-1 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
+                                    <div class="row pl-3 pr-1 mr-0">
+                                        <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-10 col-sm-11 col-md-11 col-lg-11 px-0 my-2">
@@ -348,8 +348,8 @@
         function addLink(){
                 let index = ++current_item_length;
             let link = `<li id="list-item-`+index+`" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
-                                    <div class="row col-12 pr-0 mr-0">
-                                        <div class="border border-top-0 border-left-0 border-bottom-0 col-2 col-sm-1 col-md-1 col-lg-1 pr-0 d-flex align-items-center">
+                                    <div class="row pl-3 pr-1 mr-0">
+                                        <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-10 col-sm-11 col-md-11 col-lg-11 px-0 my-2">
@@ -431,8 +431,8 @@
         function addDivider(){
                 let index = ++current_item_length;
                 let divider = `<li id="list-item-`+index+`" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
-                                    <div class="row col-12 pr-0 mr-0">
-                                        <div class="border border-top-0 border-left-0 border-bottom-0 col-2 col-sm-1 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
+                                    <div class="row pl-3 pr-1 mr-0">
+                                        <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-10 col-sm-10 col-md-11 col-lg-11 px-0 my-3">
@@ -459,8 +459,8 @@
         function addText(){
                 let index = ++current_item_length;
                 let text = `<li id="list-item-`+index+`" class="py-0 shadow border-top list-group-item pl-1 pr-0 my-2" style="background-color: #ffffff; border-radius: 20px;">
-                                    <div class="row col-12 pr-0 mr-0">
-                                        <div class="border border-top-0 border-left-0 border-bottom-0 col-2 col-sm-1 col-md-1 col-lg-1 pr-1 d-flex align-items-center">
+                                    <div class="row pl-3 pr-1 mr-0">
+                                        <div style="min-width:30px; max-width:50px" class="border border-top-0 border-left-0 border-bottom-0 d-flex align-items-center pl-lg-2 pl-md-2 pl-sm-2 pl-2">
                                             <i style="cursor: pointer;" class="fa-solid fa-grip-vertical"></i>
                                         </div>
                                         <div class="col-10 col-sm-11 col-md-11 col-lg-11 px-0 my-2">
