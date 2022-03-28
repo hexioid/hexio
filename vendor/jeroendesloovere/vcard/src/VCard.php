@@ -232,9 +232,9 @@ class VCard
         //Is this URL for a remote resource?
         if (filter_var($url, FILTER_VALIDATE_URL) !== false) {
             $headers = get_headers($url, 1);
-
-            if (array_key_exists('content-Type', $headers)) {
-                $mimeType = $headers['content-Type'];
+            
+            if (array_key_exists('content-type', $headers)) {
+                $mimeType = $headers['content-type'];
                 if (is_array($mimeType)) {
                     $mimeType = end($mimeType);
                 }
