@@ -303,9 +303,10 @@ class UserController extends Controller
         $vcard->addPhoneNumber($data->phone);
         $vcard->addAddress(null, null, $data->address, null, null, null, null);
         $vcard->addURL($data->site_1);
-        if(!is_null($user->photo)){
-            $vcard->addPhoto(env('APP_URL').$user->photo);
-        }
+        // if(!is_null($user->photo)){
+        //     $vcard->addPhoto(env('APP_URL').$user->photo);
+        // }
+        dd(env('APP_URL').$user->photo);
         
         $response = new Response();
         $response->setContent($vcard->getOutput());
