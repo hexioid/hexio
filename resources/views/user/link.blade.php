@@ -242,9 +242,11 @@
                                     @foreach($list_contents as $content)
                                         @if($content->content_type_id == 1)
                                             <div id="div-preview-item-{{$content->id}}" data-real_id="{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
-                                                <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn-preview btn btn-dark col-12 mb-3 border-0" style="min-height:37px !important; background-color: {{$content->button_color}}">
-                                                    <i id="preview-icon-{{$content->id}}" class="my-1 {{$content->text != null ? 'float-left' : ''}} {{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i>
-                                                    <div id="preview-text-button-name-{{$content->id}}" style=" white-space: normal; color: {{$content->text_color}}">{{$content->text}}</div>
+                                                <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn-preview btn btn-dark col-12 mb-3 border-0" style="min-height:37px; background-color: {{$content->button_color}}">
+                                                    <div class="justify-content-center row mx-0">
+                                                        <i id="preview-icon-{{$content->id}}" class="my-1 {{$content->linkType->icon}}" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i>
+                                                        <span class="px-1" id="preview-text-button-name-{{$content->id}}" style="max-width:90%; color: {{$content->text_color}}">{{$content->text}}</span>
+                                                    </div>
                                                 </a>
                                             </div>
                                         @elseif($content->content_type_id == 2)
@@ -418,7 +420,7 @@
                                 </li>`;
 
                 $("#container-list").append(link);
-                let preview_button = `<div id="div-preview-item-`+index+`"><a style="min-height:37px"  href="https://instagram.com" target="_blank" id="preview-item-button-name-`+index+`"  class="btn-preview btn btn-dark col-12 mb-3 border-0"><i id="preview-icon-`+index+`" class="my-1 fa-brands fa-instagram" ></i> <span id="preview-text-button-name-`+index+`"></span> </a></div>`;
+                let preview_button = `<div id="div-preview-item-`+index+`"><a style="min-height:37px"  href="https://instagram.com" target="_blank" id="preview-item-button-name-`+index+`"  class="btn-preview btn btn-dark col-12 mb-3 border-0"><div class="justify-content-center row mx-0"><i id="preview-icon-`+index+`" class="my-1 fa-brands fa-instagram" ></i> <span class="px-1" id="preview-text-button-name-`+index+`" style="max-width:90%;"></span></div> </a></div>`;
                 $("#container-list-preview").append(preview_button);
 
                 $.get("add_link", function(data, status){
@@ -586,7 +588,7 @@
             let value = $("#item-button-name-"+id).val();
             $("#preview-text-button-name-"+id).text(value);
 
-            iconAlign(value, id);
+            // iconAlign(value, id);
             update_link(id);
         }
 
@@ -641,11 +643,11 @@
             let placeholder = $(selected_option).attr("data-placeholder");
             let button_name = $("#item-button-name-"+id).val();
 
-            $("#preview-icon-"+id).attr("class", icon);
+            $("#preview-icon-"+id).attr("class", "my-1 "+icon);
             $("#item-prefix-"+id).html(prefix);
             $("#item-link-"+id).attr("placeholder", placeholder);
             $("#preview-item-button-name-"+id).attr("href", prefix+value);
-            iconAlign(button_name, id);
+            // iconAlign(button_name, id);
             update_link(id);
         }
 

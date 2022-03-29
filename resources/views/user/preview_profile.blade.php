@@ -16,6 +16,10 @@
                 font-family: 'Rubik';
                 font-weight: 300;
             }
+            .btn span{
+                font-family: 'Rubik';
+                font-weight: 300;
+            }
             img {
                 image-rendering: pixelated;
                 -ms-interpolation-mode: nearest-neighbor;
@@ -39,9 +43,6 @@
 
             #loading-image {
                 z-index: 100;
-            }
-            .btn-preview i{
-                margin-left:8px;
             }
             .btn-dark{
                 background-color: #262626;
@@ -79,9 +80,11 @@
                         @foreach($list_contents as $content)
                             @if($content->content_type_id == 1)
                                 <div id="div-preview-item-{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
-                                    <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="{{$content->text != null && $content->is_icon_displayed ? 'pl-5' : ''}} btn-preview btn btn-dark btn-lg col-12 mb-3 border-0" style="min-height:50px !important; background-color: {{$content->button_color}}">
-                                        <i id="preview-icon-{{$content->id}}" class="my-2 {{$content->linkType->icon}} fa-lg" style="{{$content->text != null ? 'position: absolute; left: 23px; top:15px;' : ''}} display: {{$content->is_icon_displayed ? '' : 'none'}}"></i>
-                                        <span class="ml-1" id="preview-text-button-name-{{$content->id}}" style="font-size:18px; color: {{$content->text_color}}">{{$content->text}}&nbsp;</span>
+                                    <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn-preview btn btn-dark btn-lg col-12 mb-3 border-0" style=" background-color: {{$content->button_color}}">
+                                        <div class="justify-content-center row mx-0">
+                                            <i id="preview-icon-{{$content->id}}" class="mt-2 pt-1 {{$content->linkType->icon}} fa-lg" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i>
+                                            <span class="px-1" id="preview-text-button-name-{{$content->id}}" style="max-width:90%; font-size:18px; color: {{$content->text_color}}">{{$content->text}}&nbsp;</span>
+                                       </div>
                                     </a>
                                 </div>
                             @elseif($content->content_type_id == 2)
