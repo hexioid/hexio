@@ -54,7 +54,7 @@
                         </div>
                         <div class="form-group">
                             <label for="bio" class="form-label">Bio</label>
-                            <input type="text" id="bio" value="{{old('bio', $data->bio)}}" name="bio" class="form-control" placeholder="Bio">
+                            <textarea class="form-control " name="bio" id="bio" cols="30" rows="3" placeholder="Bio">{{old('bio', $data->bio)}}</textarea>
                         </div>
                         <div class="row col-12 m-0 px-0">
                             <div class="form-group col-10 col-sm-10 col-md-11 col-lg-11 px-0">
@@ -97,7 +97,6 @@
                             </div>
                         </div>
                         <div class="w-100 mb-5">
-
                             <button id="default-btn" type="button" class="btn btn-dark btn-sm float-left">Default</button>
                         </div>
                         <br>
@@ -132,13 +131,13 @@
                                         <img id="preview-image" style="border:solid {{ $data->frame_color ?? '#ffffff' }} 2px ; object-fit: cover;" width="95px" height="95PX" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" class="rounded-circle" alt="Cinque Terre">
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-8 col-8 pt-4 px-0 text-right">
-                                        <a href="{{url('page/download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="mt-2 btn btn-sm btn-dark border-0">SAVE CONTACT</a>
+                                        <a href="{{url('page/download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#262626' }};" class="mt-2 btn btn-sm btn-dark border-0">SAVE CONTACT</a>
                                     </div>
                                 </div>
                                 <br>
                                 <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
                                 <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
-                                <p id="preview-bio" style="line-height: 1.1;">{{$data->bio}}</p>
+                                <p id="preview-bio" style="white-space: pre-wrap; line-height: 1.1;">{{$data->bio}}</p>
                                 <p class="mb-2" id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-map-pin"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
                                 <br>
                                 <div id="container-list-preview">
@@ -300,18 +299,16 @@
 
         // On bio changed
         $("#bio").change(function(){
-            $("#preview-bio").text($(this).val())
+            console.log($(this).val());
+            $("#preview-bio").text($( this ).val() )
         })
 
         // On default button change
         $("#default-btn").click(function(){
-            $("#fontColorButton1").val("#ffffff");
-            $("#fontColorButton2").val("#ffffff");
-            $("#fontColorButton3").val("#343A40");
+            $("#preview-image").css("border", "solid #ffffff 2px");
+            $("#background-canvas").css("background-color", "#ffffff");
+            $("#preview-save-contact").css("background-color", "#262626");
 
-            $("#fontColorButton1").trigger("change");
-            $("#fontColorButton2").trigger("change");
-            $("#fontColorButton3").trigger("change");
         });
 
         function onChangeImage(e){

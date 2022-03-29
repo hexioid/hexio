@@ -20,7 +20,7 @@ class AuthController extends Controller
             'username' => 'required|alpha_num|unique:users,username',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|string|between:8,20',
-            'telephone' => 'required|numeric|unique:users,phone',
+            'telephone' => 'required|numeric',
             'g-recaptcha-response' => 'recaptcha',
         ]);
         try {
@@ -47,11 +47,15 @@ class AuthController extends Controller
 
     public function login_post(Request $request){
         $validatedData = $request->validate([
-            'email' => 'required|email',
+            'email' => 'required|string',
             'password' => 'required|string',
         ]);
         if (Auth::attempt(["email"  => $request->get("email"), "password" => $request->get("password")], $request->has("remember") ? true : false)){
-            return redirect("page/vcard");
+            return redirect("page/link");
+        }
+
+        if (Auth::attempt(["username"  => $request->get("email"), "password" => $request->get("password")], $request->has("remember") ? true : false)){
+            return redirect("page/link");
         }
         
         return redirect()->back()->with(['error' => "Invalid email/password"]);

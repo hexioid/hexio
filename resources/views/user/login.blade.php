@@ -8,7 +8,7 @@
         </div>
         <div class="form-group">
             <label for="email" class="form-label">Email</label>
-            <input type="email" value="{{old('email')}}" name="email" class="form-control" placeholder="Email">
+            <input type="text" value="{{old('email')}}" name="email" class="form-control" placeholder="Email">
         </div>
         
         <label for="password" class="form-label">Password</label>

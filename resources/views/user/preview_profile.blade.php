@@ -8,12 +8,13 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
         <style>
 
             body
             {
-                font-family: 'Roboto';
+                font-family: 'Rubik';
+                font-weight: 300;
             }
             img {
                 image-rendering: pixelated;
@@ -42,10 +43,13 @@
             .btn-preview i{
                 margin-left:8px;
             }
+            .btn-dark{
+                background-color: #262626;
+            }
             
         </style>
     </head>
-    <body style="100%">
+    <body style="background-color: {{ $data->background_color ?? '#ffffff' }};100%">
         <div id="loading">
         <div id="loading-image" class="spinner-border" role="status">
             <span class="sr-only">Loading...</span>
@@ -55,20 +59,20 @@
         <div class="row col-12 mx-0">
             <div class="col-12 col-sm-1 col-md-2 col-lg-2 "></div>
             <div class="col-12 col-sm-10 col-md-8 col-lg-8 px-0">
-                <div id="background-canvas" class="col-12 px-0 pb-4 pt-5 mb-0" style="min-height:90vh; background-color: {{ $data->background_color ?? '#ffffff' }};">
+                <div id="background-canvas" class="col-12 px-0 pb-4 pt-5 mb-0" style="min-height:90vh; ">
                     <!-- CONTENT -->
                     <div class="row col-12 mr-0 pr-0">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-4 px-0">
                             <img id="preview-image" style="border:solid {{ $data->frame_color ?? '#ffffff' }} 2px ; object-fit: cover;" width="150px" height="150PX" src="{{$data->photo ? env('APP_URL').$data->photo : asset('assets/default_image.png') }}" class="rounded-circle" alt="Cinque Terre">
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-8 col-8 pt-5 px-0 text-right">
-                            <a href="{{url('page/download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#343A40' }};" class="btn btn-lg btn-dark border-0">SAVE CONTACT</a>
+                            <a href="{{url('page/download_vcard_preview')}}" id="preview-save-contact" style="background-color: {{ $data->save_color ?? '#262626' }};" class="btn btn-lg btn-dark border-0">SAVE CONTACT</a>
                         </div>
                     </div>
                     <br>
-                    <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
+                    <p class="mb-0" style="font-weight:900;">{{$data->name}}</p>
                     <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
-                    <p id="preview-bio" style="line-height: 1.1;">{{$data->bio}}</p>
+                    <p id="preview-bio" style="white-space: pre-wrap; line-height: 1.1;">{{$data->bio}}</p>
                     <p class="mb-2" id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-map-pin"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
                     <br>
                     <div id="container-list-preview">
@@ -77,7 +81,7 @@
                                 <div id="div-preview-item-{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
                                     <a href="{{$content->linkType->prefix.$content->link}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="{{$content->text != null && $content->is_icon_displayed ? 'pl-5' : ''}} btn-preview btn btn-dark btn-lg col-12 mb-3 border-0" style="min-height:50px !important; background-color: {{$content->button_color}}">
                                         <i id="preview-icon-{{$content->id}}" class="my-2 {{$content->linkType->icon}} fa-lg" style="{{$content->text != null ? 'position: absolute; left: 23px; top:15px;' : ''}} display: {{$content->is_icon_displayed ? '' : 'none'}}"></i>
-                                        <span class="ml-1" id="preview-text-button-name-{{$content->id}}" style="color: {{$content->text_color}}">{{$content->text}}&nbsp;</span>
+                                        <span class="ml-1" id="preview-text-button-name-{{$content->id}}" style="font-size:18px; color: {{$content->text_color}}">{{$content->text}}&nbsp;</span>
                                     </a>
                                 </div>
                             @elseif($content->content_type_id == 2)
@@ -92,7 +96,7 @@
                 </div>
 
                 <div style="height:10vh; background-color: {{ $data->background_color ?? '#ffffff' }};" class="d-flex justify-content-center align-items-end pb-4">
-                    <img src="{{asset('images/logo_black_v2.svg')}}" width="100" alt="">
+                    <img src="{{asset('images/logo_black_v2.svg')}}" width="80" alt="">
                 </div>
             </div>
             <div class="col-12 col-sm-1 col-md-2 col-lg-2"></div>

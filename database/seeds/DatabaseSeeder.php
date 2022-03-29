@@ -98,6 +98,34 @@ class DatabaseSeeder extends Seeder
                 "created_at"    => $current_time
             ],
             [
+                "prefix"    => "https://www.linkedin.com/in/",
+                "type"  => "Linkedin",
+                "icon"    => "fa-brands fa-linkedin",
+                "placeholder"    => "username",
+                "created_at"    => $current_time
+            ],
+            [
+                "prefix"    => null,
+                "type"  => "Maps",
+                "icon"    => "fa-solid fa-map-location",
+                "placeholder"    => "https://",
+                "created_at"    => $current_time
+            ],
+            [
+                "prefix"    => "mailto:",
+                "type"  => "Email",
+                "icon"    => "fa-solid fa-envelope",
+                "placeholder"    => "email@xxx.xxx",
+                "created_at"    => $current_time
+            ],
+            [
+                "prefix"    => "https://telegram.me/",
+                "type"  => "Telegram",
+                "icon"    => "fa-brands fa-telegram",
+                "placeholder"    => "username",
+                "created_at"    => $current_time
+            ],
+            [
                 "prefix"    => "tel:",
                 "type"  => "Nomor Telepon",
                 "icon"    => "fa-solid fa-phone",

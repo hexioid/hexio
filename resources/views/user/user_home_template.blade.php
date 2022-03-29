@@ -7,8 +7,9 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+        
         <style>
             .clr-field{
                 visibility:hidden !important;
@@ -52,7 +53,7 @@
             }
             body
             {
-                font-family: 'Roboto';
+                font-family: 'Rubik';
             }
             img {
                 image-rendering: pixelated;
@@ -63,6 +64,9 @@
             }
             .btn-preview i{
                 margin-left:5px;
+            }
+            .btn-dark{
+                background-color: #262626;
             }
         </style>
         <link rel="stylesheet" href="{{asset('plugins/coloris/coloris.css')}}" />
@@ -86,7 +90,7 @@
             <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                 <ul class="navbar-nav mx-auto text-md-center text-left">
                     <li class="nav-item mx-4">
-                        <a class="nav-link" href="{{url('page/vcard')}}">
+                        <a class="nav-link {{ Request::path() ==  'page/vcard' ? 'active' : ''  }}" href="{{url('page/vcard')}}">
                             <div class=" row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
                                     <i class="fa-solid fa-address-book fa-xl"></i>
@@ -98,7 +102,7 @@
                         </a>
                     </li>
                     <li class="nav-item mx-4">
-                        <a class="nav-link" href="{{url('page/link')}}">
+                        <a class="nav-link {{ Request::path() ==  'page/link' ? 'active' : ''  }}" href="{{url('page/link')}}">
                             <div class=" row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
                                     <i class="fa-solid fa-link fa-xl"></i>
@@ -110,7 +114,7 @@
                         </a>
                     </li>
                     <li class="nav-item mx-4">
-                        <a class="nav-link" href="{{url('page/profile')}}">
+                        <a class="nav-link {{ Request::path() ==  'page/profile' ? 'active' : ''  }}" href="{{url('page/profile')}}">
                             <div class=" row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
                                     <i class="fa-regular fa-user fa-xl"></i>
@@ -122,7 +126,7 @@
                         </a>
                     </li>
                     <li class="nav-item mx-4">
-                        <a class="nav-link" href="{{url('page/qrcode')}}">
+                        <a class="nav-link {{ Request::path() ==  'page/qrcode' ? 'active' : ''  }}" href="{{url('page/qrcode')}}">
                             <div class=" row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
                                     <i class="fa-solid fa-qrcode fa-xl"></i>
