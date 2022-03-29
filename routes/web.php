@@ -31,6 +31,7 @@ Route::group([
     Route::get("/forget-password", function(){
         return view("user.forget_password");
     });
+    Route::post("/forget", "AuthController@forget_password");
 });
 
 

@@ -97,4 +97,36 @@ class AuthController extends Controller
         }
     }
 
+    public function forget_password(Request $request){
+        $validatedData = $request->validate([
+            'email' => 'required|email',
+        ]);
+
+        try {
+            
+            $email = $request->get("email");
+            $password = rand(11111111, 99999999);
+
+            $user = User::where("email", $email)->first();
+            if($user == null){
+                return redirect()->back()->with(['error' => "User not found"]);
+            }
+            $user->password = Hash::make($password);
+            $user->save();
+
+            $details = [
+                'title' => 'Forget Password Hexio.id',
+                'body' => 'We generate your new password',
+                'email' => $email,
+                'password'  => $password
+            ];
+        
+            \Mail::to($request->get("email"))->send(new \App\Mail\MyTestMail($details));
+
+            return redirect()->back()->with(['success' => "Check your email"]);
+        } catch (\Throwable $th) {
+            return redirect()->back()->with(['error' => $e->getMessage()]);
+        }
+    }
+
 }
