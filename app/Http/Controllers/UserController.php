@@ -43,7 +43,9 @@ class UserController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|string',
             'business' => 'nullable|string',
-            'telephone' => 'required|numeric',
+            'phone_1' => 'required|numeric',
+            'phone_2' => 'nullable|numeric',
+            'phone_3' => 'nullable|numeric',
             'address' => 'nullable|string',
             'site_1' => 'nullable|string',
             'site_2' => 'nullable|string',
@@ -59,7 +61,9 @@ class UserController extends Controller
             $vcard->user_id = Auth::user()->id;
             $vcard->name = $request->get("name");
             $vcard->business = $request->get("business");
-            $vcard->phone = $request->get("telephone");
+            $vcard->phone_1 = $request->get("phone_1");
+            $vcard->phone_2 = $request->get("phone_2");
+            $vcard->phone_3 = $request->get("phone_3");
             $vcard->address = $request->get("address");
             $vcard->site_1 = $request->get("site_1");
             $vcard->site_2 = $request->get("site_2");
@@ -300,9 +304,13 @@ class UserController extends Controller
 
         // add work data
         $vcard->addCompany($data->business);
-        $vcard->addPhoneNumber($data->phone);
+        $vcard->addPhoneNumber($data->phone_1, 'TEL');
+        $vcard->addPhoneNumber($data->phone_2, 'TEL');
+        $vcard->addPhoneNumber($data->phone_3, 'TEL');
         $vcard->addAddress(null, null, $data->address, null, null, null, null);
         $vcard->addURL($data->site_1);
+        $vcard->addURL($data->site_2);
+        $vcard->addURL($data->site_3);
         if(!is_null($user->photo)){
             $vcard->addPhoto(env('APP_URL').$user->photo);
         }
@@ -379,9 +387,13 @@ class UserController extends Controller
 
         // add work data
         $vcard->addCompany($data->business);
-        $vcard->addPhoneNumber($data->phone);
+        $vcard->addPhoneNumber($data->phone_1, 'TEL');
+        $vcard->addPhoneNumber($data->phone_2, 'TEL');
+        $vcard->addPhoneNumber($data->phone_3, 'TEL');
         $vcard->addAddress(null, null, $data->address, null, null, null, null);
         $vcard->addURL($data->site_1);
+        $vcard->addURL($data->site_2);
+        $vcard->addURL($data->site_3);
 
         if(!is_null($user->photo)){
             $vcard->addPhoto(env('APP_URL').$user->photo);

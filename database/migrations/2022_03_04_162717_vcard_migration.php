@@ -18,7 +18,9 @@ class VcardMigration extends Migration
             $table->unsignedBigInteger('user_id');
             $table->string('name');
             $table->string('business')->nullable();
-            $table->string('phone');
+            $table->string('phone_1');
+            $table->string('phone_2')->nullable();
+            $table->string('phone_3')->nullable();
             $table->string('address')->nullable();
             $table->string('site_1')->nullable();
             $table->string('site_2')->nullable();

@@ -16,8 +16,16 @@
                         <input type="text" value="{{old('business', $data->business ?? '')}}" name="business" class="form-control" placeholder="Business">
                     </div>
                     <div class="form-group">
-                        <label for="telephone" class="form-label">Telephone</label>
-                        <input type="number" value="{{old('telephone', $data->phone ?? '')}}" name="telephone" class="form-control" placeholder="Telephone">
+                        <label for="telephone" class="form-label">Phone</label>
+                        <input type="number" value="{{old('phone_1', $data->phone_1 ?? '')}}" name="phone_1" class="form-control" placeholder="Telephone">
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone" class="form-label">Phone</label>
+                        <input type="number" value="{{old('phone_2', $data->phone_2 ?? '')}}" name="phone_2" class="form-control" placeholder="Telephone">
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone" class="form-label">Phone</label>
+                        <input type="number" value="{{old('phone_3', $data->phone_3 ?? '')}}" name="phone_3" class="form-control" placeholder="Telephone">
                     </div>
                     <div class="form-group">
                         <label for="address" class="form-label">Address</label>
