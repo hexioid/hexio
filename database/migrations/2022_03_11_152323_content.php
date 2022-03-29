@@ -28,6 +28,9 @@ class Content extends Migration
             $table->string("text_color")->nullable();
             $table->string("is_icon_displayed")->nullable();
             $table->enum('text_align', ['left', 'center', 'right', 'justify'])->nullable();
+            $table->boolean("is_bold")->default(0);
+            $table->boolean("is_italic")->default(0);
+            $table->boolean("is_underline")->default(0);
             $table->boolean("is_content_displayed")->default(1);
             $table->unsignedInteger("total_clicked")->default(0);
             $table->timestamps();

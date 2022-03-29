@@ -139,17 +139,23 @@
                                             </div>
 
                                             <div class="row col-12 mt-2 mb-3 m-0 pl-3 pr-0">
-                                                <div class="col-5 col-sm-6 col-md-3 col-lg-3 px-0">
+                                                <div class="col-5 col-sm-3 col-md-3 col-lg-3 px-0">
                                                     <p class="mb-0">Text Color</p>
                                                     <button onclick="changeTextColor({{$content->id}}, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
                                                     <button onclick="changeTextColor({{$content->id}}, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
                                                 </div>
-                                                <div class="col-7 col-sm-6 col-md-9 col-lg-9 px-0">
+                                                <div class="col-7 col-sm-4 col-md-4 col-lg-4 px-0">
                                                     <p class="mb-0 ml-2">Align Text</p>
                                                     <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'left')" class="fa-solid fa-align-left fa-lg ml-2"></i>
                                                     <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'center')" class="fa-solid fa-align-center fa-lg ml-2"></i>
                                                     <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'right')" class="fa-solid fa-align-right fa-lg ml-2"></i>
                                                     <i style="cursor: pointer;" onclick="changeTextAlign({{$content->id}}, 'justify')" class="fa-solid fa-align-justify fa-lg ml-2"></i>
+                                                </div>
+                                                <div class="mt-2 mt-sm-0 mt-md-0 mt-lg-0 ml-n2 ml-sm-0 ml-md-0 ml-lg-0">
+                                                    <p class="mb-0 ml-2">Text Effect</p>
+                                                    <i style="cursor: pointer;" onclick="boldText({{$content->id}})" class="fa-solid fa-bold fa-lg ml-2"></i>
+                                                    <i style="cursor: pointer;" onclick="italicText({{$content->id}})" class="fa-solid fa-italic fa-lg ml-2"></i>
+                                                    <i style="cursor: pointer;" onclick="underlineText({{$content->id}})" class="fa-solid fa-underline fa-lg ml-2"></i>
                                                 </div>
                                             </div>
 
@@ -255,7 +261,13 @@
                                             </div>
                                         @else
                                             <div id="div-preview-item-{{$content->id}}" data-real_id="{{$content->id}}" data-text-align="{{$content->text_align}}" style="text-align: {{$content->text_align}}">
-                                                <p id="list-preview-item-{{$content->id}}" data-text-color="{{$content->text_color}}" style="color: {{$content->text_color}}">{{$content->text}}</p>
+                                                @if($content->is_underline)
+                                                    <U>
+                                                        <p class="{{$content->is_bold ? 'font-weight-bold' : ''}} {{$content->is_italic ? 'font-italic' : ''}} " id="list-preview-item-{{$content->id}}" data-text-color="{{$content->text_color}}" style="color: {{$content->text_color}}">{{$content->text}}</p>
+                                                    </U>
+                                                @else
+                                                    <p class="{{$content->is_bold ? 'font-weight-bold' : ''}} {{$content->is_italic ? 'font-italic' : ''}} " id="list-preview-item-{{$content->id}}" data-text-color="{{$content->text_color}}" style="color: {{$content->text_color}}">{{$content->text}}</p>
+                                                @endif
                                             </div>
                                         @endif
                                     @endforeach
@@ -473,17 +485,23 @@
                                             </div>
 
                                             <div class="row col-12 mt-2 mb-3 m-0 pl-3 pr-0">
-                                                <div class="col-5 col-sm-6 col-md-3 col-lg-3 px-0">
+                                                <div class="col-5 col-sm-3 col-md-3 col-lg-3 px-0">
                                                     <p class="mb-0">Text Color</p>
                                                     <button onclick="changeTextColor(`+index+`, 'black')" class="btn btn-dark"  style="border-radius: 20px; height:25px"></button>
                                                     <button onclick="changeTextColor(`+index+`, 'white')" class="btn btn-outline-light border"  style="backgroun-color:#ffffff; border-radius: 20px; height:25px"></button>
                                                 </div>
-                                                <div class="col-7 col-sm-6 col-md-9 col-lg-9 px-0">
+                                                <div class="col-7 col-sm-4 col-md-4 col-lg-4 px-0">
                                                     <p class="mb-0 ml-2">Align Text</p>
                                                     <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'left')" class="fa-solid fa-align-left fa-lg ml-2"></i>
                                                     <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'center')" class="fa-solid fa-align-center fa-lg ml-2"></i>
                                                     <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'right')" class="fa-solid fa-align-right fa-lg ml-2"></i>
                                                     <i style="cursor: pointer;" onclick="changeTextAlign(`+index+`, 'justify')" class="fa-solid fa-align-justify fa-lg ml-2"></i>
+                                                </div>
+                                                <div class="mt-2 mt-sm-0 mt-md-0 mt-lg-0 ml-n2 ml-sm-0 ml-md-0 ml-lg-0">
+                                                    <p class="mb-0 ml-2">Text Effect</p>
+                                                    <i style="cursor: pointer;" onclick="boldText(`+index+`)" class="fa-solid fa-bold fa-lg ml-2"></i>
+                                                    <i style="cursor: pointer;" onclick="italicText(`+index+`)" class="fa-solid fa-italic fa-lg ml-2"></i>
+                                                    <i style="cursor: pointer;" onclick="underlineText(`+index+`)" class="fa-solid fa-underline fa-lg ml-2"></i>
                                                 </div>
                                             </div>
 
@@ -560,6 +578,35 @@
         function update_text(id){
             let real_id = $("#list-item-"+id).data("real_id");
             let form_url = "/page/update_text/"+real_id;
+            let is_bold = false;
+            let is_italic = false;
+            let is_underline = false;
+
+            let val = $("#list-preview-item-"+id).attr("class");
+            let el = $("#list-preview-item-"+id);
+            
+            if(val){
+                // Check if bold
+                if(val.includes("font-weight-bold")){
+                    is_bold = true;
+                }else{
+                    is_bold = false;
+                }
+
+                // Check if italic
+                if(val.includes("font-italic")){
+                    is_italic = true;
+                }else{
+                    is_italic = false;
+                }
+            }
+            
+            // Check if underline
+            if(el.parent().get( 0 ).tagName == 'U'){
+                is_underline = true;
+            }else{
+                is_underline = false;
+            }
 
             $.ajax({
                 url:form_url,
@@ -568,6 +615,9 @@
                     text: $("#item-input-text-"+id).val(),
                     text_align: $("#div-preview-item-"+id).attr("data-text-align"),
                     text_color: $("#list-preview-item-"+id).attr("data-text-color"),
+                    is_bold: is_bold,
+                    is_italic: is_italic,
+                    is_underline: is_underline,
                     _token: "{{ csrf_token() }}",
                 },
                 dataType: 'json',
@@ -578,6 +628,45 @@
                     console.log(ts.responseText)
                 }
             });
+        }
+
+        function boldText(id){
+            let val = $("#list-preview-item-"+id).attr("class");
+            if(val){
+                if(val.includes("font-weight-bold")){
+                    $("#list-preview-item-"+id).removeClass("font-weight-bold");
+                }else{
+                    $("#list-preview-item-"+id).addClass("font-weight-bold");
+                }
+            }else{
+                $("#list-preview-item-"+id).addClass("font-weight-bold");
+            }
+            update_text(id);
+        }
+
+        function italicText(id){
+            let val = $("#list-preview-item-"+id).attr("class");
+            if(val){
+                if(val.includes("font-italic")){
+                    $("#list-preview-item-"+id).removeClass("font-italic");
+                }else{
+                    $("#list-preview-item-"+id).addClass("font-italic");
+                }
+            }else{
+                $("#list-preview-item-"+id).addClass("font-italic");
+            }
+            update_text(id);
+        }
+        
+        function underlineText(id){
+            let el = $("#list-preview-item-"+id);
+            console.log(el.parent());
+            if(el.parent().get( 0 ).tagName == 'U'){
+                el.unwrap();
+            }else{
+                el.wrap("<u></u>");
+            }
+            update_text(id);
         }
 
 

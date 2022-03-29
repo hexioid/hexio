@@ -154,8 +154,14 @@
                                         @elseif($content->content_type_id == 2)
                                             <br>
                                         @else
-                                            <div id="div-preview-item-{{$content->id}}" data-text-align="{{$content->text_align}}" style="text-align: {{$content->text_align}}">
-                                                <p id="list-preview-item-{{$content->id}}" data-text-color="{{$content->text_color}}" style="color: {{$content->text_color}}">{{$content->text}}</p>
+                                            <div id="div-preview-item-{{$content->id}}" data-real_id="{{$content->id}}" data-text-align="{{$content->text_align}}" style="text-align: {{$content->text_align}}">
+                                                @if($content->is_underline)
+                                                    <U>
+                                                        <p class="{{$content->is_bold ? 'font-weight-bold' : ''}} {{$content->is_italic ? 'font-italic' : ''}} " id="list-preview-item-{{$content->id}}" data-text-color="{{$content->text_color}}" style="color: {{$content->text_color}}">{{$content->text}}</p>
+                                                    </U>
+                                                @else
+                                                    <p class="{{$content->is_bold ? 'font-weight-bold' : ''}} {{$content->is_italic ? 'font-italic' : ''}} " id="list-preview-item-{{$content->id}}" data-text-color="{{$content->text_color}}" style="color: {{$content->text_color}}">{{$content->text}}</p>
+                                                @endif
                                             </div>
                                         @endif
                                     @endforeach

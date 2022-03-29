@@ -205,6 +205,9 @@ class UserController extends Controller
         $content->text = $request->get("text");
         $content->text_color = $request->get("text_color");
         $content->text_align = $request->get("text_align");
+        $content->is_bold = $request->get("is_bold") == "true" ? 1 : 0;
+        $content->is_italic = $request->get("is_italic") == "true" ? 1 : 0;
+        $content->is_underline = $request->get("is_underline") == "true" ? 1 : 0;
 
         $content->save();
 
