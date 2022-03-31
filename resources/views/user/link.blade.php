@@ -20,7 +20,7 @@
                 </button>
                 <div class="collapse" id="collapseExample">
                     @foreach($list_content_types as $content_type)
-                        <button onclick="addContent({{$content_type->id}})" class="my-1 btn btn-dark col-12" id="{{$content_type->id}}"> 
+                        <button style="background-color:#5d5d5d" onclick="addContent({{$content_type->id}})" class="border-0 my-1 btn btn-dark col-12" id="{{$content_type->id}}"> 
                             <div class="row">
                                 <div class="col-5 col-lg-6 text-right">
                                     <img style="margin-bottom:3.5px" style="position:relative" src="{{asset('images/Plus.svg')}}" alt="">
@@ -197,7 +197,7 @@
                 </button>
                 <div class="collapse" id="collapseExample2">
                     @foreach($list_content_types as $content_type)
-                        <button onclick="addContent({{$content_type->id}})" class="my-1 btn btn-dark col-12" id="{{$content_type->id}}">
+                        <button style="background-color:#5d5d5d" onclick="addContent({{$content_type->id}})" class="border-0 my-1 btn btn-dark col-12" id="{{$content_type->id}}">
                             <div class="row">
                                 <div class="col-5 col-lg-6 text-right">
                                     <img style="margin-bottom:3.5px" style="position:relative" src="{{asset('images/Plus.svg')}}" alt="">
