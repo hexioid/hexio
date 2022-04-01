@@ -533,12 +533,22 @@
         }
 
         function deleteItem(id){
-
-            let real_id = $("#list-item-"+id).data("real_id");
-            $("#list-item-"+id).remove();
-            $("#div-preview-item-"+id).remove();
-            $.get("delete_item/"+real_id, function(data, status){});
-            checkListCount()
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#262626',
+                confirmButtonText: 'Yes, delete it!'
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    let real_id = $("#list-item-"+id).data("real_id");
+                    $("#list-item-"+id).remove();
+                    $("#div-preview-item-"+id).remove();
+                    $.get("delete_item/"+real_id, function(data, status){});
+                    checkListCount()
+                }
+            })
 
         }
 

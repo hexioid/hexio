@@ -189,6 +189,7 @@
         <script src="{{asset('bootstrap/js/popper.min.js')}}"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="{{asset('plugins/jquery-ui-touch-punch-master/jquery.ui.touch-punch.js')}}"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>
             
             $( document ).ready(function() {

@@ -7,8 +7,8 @@
                 <p>Login and create your Link now!</p>
         </div>
         <div class="form-group">
-            <label for="email" class="form-label">Email</label>
-            <input type="text" value="{{old('email')}}" name="email" class="form-control" placeholder="Email">
+            <label for="email" class="form-label">Email or Username</label>
+            <input type="text" value="{{old('email')}}" name="email" class="form-control" placeholder="Email or Username">
         </div>
         
         <label for="password" class="form-label">Password</label>

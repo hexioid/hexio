@@ -313,6 +313,10 @@
 
         // On default button change
         $("#default-btn").click(function(){
+            $("#fontColorButton1").val("#ffffff");
+            $("#fontColorButton2").val("#ffffff");
+            $("#fontColorButton3").val("#262626");
+
             $("#preview-image").css("border", "solid #ffffff 2px");
             $("#background-canvas").css("background-color", "#ffffff");
             $("#preview-save-contact").css("background-color", "#262626");
