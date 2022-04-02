@@ -87,13 +87,30 @@ Route::group([
     Route::get('login', 'AdminController@login')->name('admin.login');
     Route::post('login', 'AdminController@loginPost')->name('admin.login.post');
     Route::get('logout', 'AdminController@logout')->name('admin.logout');
-    // Route::get("register", 'AdminController@register');
+    Route::get("register", 'AdminController@register');
 
     Route::group([
         "middleware"    => "admin"
     ], function(){
+        // Vcard
+        Route::get("vcards", "AdminController@vcards")->name("admin.vcards");
+        Route::get("get_vcards", "AdminController@get_vcards")->name("admin.get_vcards");
+        Route::get("vcard/{id}/delete", "AdminController@delete_vcard")->name("admin.delete_vcard");
+        Route::post("vcard/edit", "AdminController@editVcard")->name("admin.edit_vcard");
+        Route::post("vcard/create", "AdminController@createVcard")->name("admin.create_vcard");
+
+
+        // Traffic
+        Route::get("traffics", "AdminController@traffics")->name("admin.traffics");
+        Route::get("get_traffics", "AdminController@get_traffics")->name("admin.get_traffics");
+
+        // Customers
         Route::get("customers", "AdminController@customers")->name("admin.customers");
         Route::get("get_customers", "AdminController@get_customers")->name("admin.get_customers");
+        Route::get("customer/{id}/delete", "AdminController@delete_customer")->name("admin.delete_customer");
+        Route::post("customer/edit", "AdminController@editCustomer")->name("admin.edit_customer");
+        Route::post("customer/create", "AdminController@createCustomer")->name("admin.create_customer");
+
     });
 });
 

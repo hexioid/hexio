@@ -16,7 +16,8 @@ class Content extends Migration
         Schema::create('content', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_user');
-            $table->foreign('id_user')->references('id')->on('users');
+            $table->foreign('id_user')->references('id')->on('users')
+            ->onDelete('cascade');
             $table->unsignedInteger('order_number');
             $table->unsignedBigInteger('content_type_id');
             $table->foreign('content_type_id')->references('id')->on('content_type');
