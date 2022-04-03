@@ -10,6 +10,9 @@
                 <button type="button" class="float-right btn btn-primary" data-toggle="modal" data-target="#modalCreate">
                   Create Vcard
                 </button>
+                <a href="{{route('admin.export-vcards')}}" class=" mx-1 float-right btn btn-success">
+                  Export
+                </a>
               </div>
               <div class="card-body">
                 <table id="example2" class="table table-bordered table-hover">
@@ -174,24 +177,25 @@
 <script>
     selectedArrayForEdit = [];
 
-    $('#example2').DataTable({
+    var table = $('#example2').DataTable({
       "paging": true,
+      "scrollX": true,
       "lengthChange": true,
       "searching": true,
       "ordering": false,
       "info": true,
-      "autoWidth": false,
-      "responsive": true,
+      "autoWidth": true,
       "processing": true,
       "serverSide": true,
       "ajax": "{{route('admin.get_vcards')}}",
+      "fixedColumns": true,
       "columnDefs": [
+            { width: 120, targets: '_all' },
             {
                 // The `data` parameter refers to the data for the cell (defined by the
                 // `data` option, which defaults to the column being worked with, in
                 // this case `data: 0`.
                 "render": function ( data, type, row ) {
-                  console.log(data);
                   return `
                     <div class="row mx-0">
                       <button onclick="openEditModal('`+row+`')" class="btn btn-warning btn-sm mr-2"><i class="fa-solid fa-pen-to-square"></i></button>
@@ -200,8 +204,11 @@
                 },
                 "targets": -1
             },
-        ]
+        ],
     });
+
+    
+    table.columns.adjust().draw();
 
 
     function deleteItem(id){

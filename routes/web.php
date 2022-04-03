@@ -115,6 +115,11 @@ Route::group([
         Route::get("social", "AdminController@social")->name("admin.social");
         Route::get("get_social", "AdminController@get_social")->name("admin.get_social");
 
+        Route::get("export-customers", "AdminController@exportCustomers")->name("admin.export-customers");
+        Route::get("export-vcards", "AdminController@exportVcards")->name("admin.export-vcards");
+        Route::get("export-traffics", "AdminController@exportTraffics")->name("admin.export-traffics");
+        Route::get("export-social-media", "AdminController@exportSocialMedia")->name("admin.export-social-media");
+
     });
 });
 

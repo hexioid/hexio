@@ -7,6 +7,9 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Daftar Traffic User</h3>
+                <a href="{{route('admin.export-traffics')}}" class=" mx-1 float-right btn btn-success">
+                  Export
+                </a>
               </div>
               <div class="card-body">
                 <table id="example2" class="table table-bordered table-hover">

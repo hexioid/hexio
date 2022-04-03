@@ -9,6 +9,8 @@ use App\Vcard;
 use App\LinkType;
 use Illuminate\Support\Facades\Hash;
 use Auth;
+use App\Exports\ArrayExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class AdminController extends Controller
 {
@@ -459,6 +461,122 @@ class AdminController extends Controller
         $response["data"] = $new_data;
 
         return $response;
+    }
+
+    public function exportCustomers(){
+
+        $dataExport = [];
+        $data = User::all();
+
+        array_push($dataExport, ["ID", "Username", "Name", "Email", "Phone", "Address", "Bio", "Total Visited", "Created At"]);
+
+        foreach ($data as $key => $value) {
+            $temp  = [];
+            array_push($temp, $value->id);
+            array_push($temp, $value->username);
+            array_push($temp, $value->name);
+            array_push($temp, $value->email);
+            array_push($temp, $value->phone);
+            array_push($temp, $value->address);
+            array_push($temp, $value->bio);
+            array_push($temp, $value->total_visited);
+            array_push($temp, $value->created_at);
+
+            array_push($dataExport, $temp);
+        }
+
+        $export = new ArrayExport($dataExport);
+    
+        return Excel::download($export, 'customers.xlsx');
+    }
+
+    public function exportVcards(){
+        $dataExport = [];
+        $data = Vcard::all();
+
+        array_push($dataExport, ["ID", "Name", "Business", "Phone 1", "Phone 2", "Phone 3", "Address", "Site 1", "Site 2", "Site 3", "Total Clicked", "Created At"]);
+
+        foreach ($data as $key => $value) {
+            $temp  = [];
+            array_push($temp, $value->id);
+            array_push($temp, $value->name);
+            array_push($temp, $value->business);
+            array_push($temp, $value->phone_1);
+            array_push($temp, $value->phone_2);
+            array_push($temp, $value->phone_3);
+            array_push($temp, $value->address);
+            array_push($temp, $value->site_1);
+            array_push($temp, $value->site_2);
+            array_push($temp, $value->site_3);
+            array_push($temp, $value->total_clicked);
+            array_push($temp, $value->created_at);
+
+            array_push($dataExport, $temp);
+        }
+
+        $export = new ArrayExport($dataExport);
+    
+        return Excel::download($export, 'vcards.xlsx');
+
+    }
+
+    public function exportTraffics(){
+        $dataExport = [];
+        $data = User::all();
+        
+        array_push($dataExport, ["ID", "Name", "Traffic Link", "Traffic Save Contact"]);
+        
+        foreach ($data as $key => $value) {
+            $temp  = [];
+            array_push($temp, $value->id);
+            array_push($temp, $value->name);
+            array_push($temp, $value->total_visit);
+            array_push($temp, $value->singleVcard()->total_clicked ?? 0);
+
+            array_push($dataExport, $temp);
+        }
+
+        $export = new ArrayExport($dataExport);
+    
+        return Excel::download($export, 'Traffics.xlsx');
+
+    }
+
+    public function exportSocialMedia(){
+        
+        $dataExport = [];
+        $data = User::all();
+
+        $array_header = ["ID", "Username"];
+
+        $link_type = LinkType::all();
+
+        foreach ($link_type as $index => $link) {
+            array_push($array_header, $link->type);
+        }
+
+        
+        array_push($dataExport, $array_header);
+        foreach ($data as $key => $value) {
+            $temp  = [];
+            array_push($temp, $value->id);
+            array_push($temp, $value->username);
+            
+            foreach ($link_type as $real_link) {
+                $tempTotal = 0;
+                foreach ($value->linkTypes as $link_types) {
+                    if($link_types->id == $real_link->id){
+                        $tempTotal += $link_types->pivot->total_clicked; 
+                    }
+                }
+                array_push($temp, $tempTotal);
+            }
+
+            array_push($dataExport, $temp);
+        }
+
+        $export = new ArrayExport($dataExport);
+        return Excel::download($export, 'Social Media.xlsx');
     }
 
 }

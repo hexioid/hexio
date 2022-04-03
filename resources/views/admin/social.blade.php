@@ -7,6 +7,9 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Social Media Customers</h3>
+                <a href="{{route('admin.export-social-media')}}" class=" mx-1 float-right btn btn-success">
+                  Export
+                </a>
               </div>
               <div class="card-body">
                 <table id="example2" class="table table-bordered table-hover">
@@ -89,14 +92,13 @@
       "ordering": false,
       "info": true,
       "autoWidth": true,
-      "responsive": true,
       "processing": true,
       "serverSide": true,
       "ajax": "{{route('admin.get_social')}}",
       "columnDefs": [
-            { width: 100, targets: '_all' }
-        ],
-        "fixedColumns": true
+        { width: 100, targets: '_all' }
+      ],
+      "fixedColumns": true
     });
 
     table.columns.adjust().draw();

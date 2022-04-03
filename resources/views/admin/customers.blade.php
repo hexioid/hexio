@@ -10,6 +10,11 @@
                 <button type="button" class="float-right btn btn-primary" data-toggle="modal" data-target="#modalCreate">
                   Create Customers
                 </button>
+                <a href="{{route('admin.export-customers')}}" class=" mx-1 float-right btn btn-success">
+                  Export
+                </a>
+
+                
               </div>
               <div class="card-body">
                 <table id="example2" class="table table-bordered table-hover">
@@ -134,6 +139,7 @@
 
     $('#example2').DataTable({
       "paging": true,
+      "scrollX": true,
       "lengthChange": true,
       "searching": true,
       "ordering": false,
