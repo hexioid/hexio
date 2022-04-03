@@ -6,6 +6,9 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+use App\LinkType;
+use App\Content;
+
 class User extends Authenticatable
 {
     use Notifiable;
@@ -48,5 +51,13 @@ class User extends Authenticatable
         }else{
             return null;
         }
+    }
+
+    public function linkTypes(){
+        return $this->belongsToMany(LinkType::class, 'content', 'id_user', 'link_type_id')->withPivot('total_clicked');
+    }
+
+    public function contents(){
+        return $this->hasMany(Content::class, "id_user");
     }
 }

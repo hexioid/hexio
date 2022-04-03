@@ -42,6 +42,14 @@
                 </p>
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="{{route('admin.social')}}" class="nav-link {{ Request::path() ==  'admin/social' ? 'active' : ''  }}">
+                <i class="fa-solid fa-share-nodes"></i>
+                <p>
+                    Social Media Customers
+                </p>
+                </a>
+            </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

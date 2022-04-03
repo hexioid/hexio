@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Admin;
 use App\Vcard;
+use App\LinkType;
 use Illuminate\Support\Facades\Hash;
 use Auth;
 
@@ -349,6 +350,113 @@ class AdminController extends Controller
     
         $data->save();
         return redirect()->back()->with(['success' => "Success"]);
+    }
+    
+    public function social(){
+        $link_type = LinkType::all();
+        return view("admin.social")->with([
+            "data"  => $link_type
+        ]);
+    }
+
+    public function get_social(Request $request){
+
+        $draw = $request->get("draw");
+        $limit = $request->get("length");
+        $offset = $request->get("start");
+        $search = $request->get("search")["value"] ?? null;
+        
+        $query = User::query();
+
+        $total_records = $query->count();
+        $data = $query->with(['linkTypes', 'contents'])->where(function($query) use($search){
+                if(!is_null($search)){
+                    $query->where("name", "LIkE", "%$search%");
+                }
+            })->skip($offset)
+            ->take($limit)
+            ->get();
+
+        $total_filtered = count($data);
+
+
+        $link_type = LinkType::all();
+
+        $new_data = [];
+        foreach ($data as $key => $value) {
+            $temp  = [];
+            array_push($temp, $value->id);
+            array_push($temp, $value->username);
+            
+            foreach ($link_type as $real_link) {
+                $tempTotal = 0;
+                foreach ($value->linkTypes as $link_type) {
+                    if($link_type->id == $real_link->id){
+                        $tempTotal += $link_type->pivot->total_clicked; 
+                    }
+                }
+
+                $detail_link = '';
+                foreach ($value->contents as $exmp) {
+                    if($exmp->link_type_id == $real_link->id ){
+                       $detail_link .= '<tr><td>'.$exmp->id.'</td><td>'.($exmp->text ?? '-').'</td><td>'.$exmp->total_clicked.'</td></tr>';
+                    }
+                }
+
+                if($tempTotal > 0){
+                    $tempTotal = ' 
+                        <div class="row mx-0">
+                            <span class=""> '.$tempTotal.' </span>
+                            <button class="px-3 float-right ml-auto btn btn-xs btn-dark" data-toggle="modal" data-target="#exampleModal-'.$value->id.'-'.$real_link->id.'"><i class="fa-solid fa-info"></i></button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal-'.$value->id.'-'.$real_link->id.'" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Detail Link</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <table  class="table table-striped  table-bordered" >
+                                    <thead>
+                                        <tr>
+                                        <th>ID</th>
+                                        <th>Link Name</th>
+                                        <th>Total Clicked</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    '.$detail_link.'
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>';
+                }else{
+                    $tempTotal = '<div class="row mx-0">
+                        <span class=""> '.$tempTotal.' </span>
+                    </div>';
+                }
+                array_push($temp, $tempTotal);
+            }
+
+            array_push($new_data, $temp);
+        }
+
+
+        $response["draw"] = $draw;
+        $response["recordsTotal"] = $total_records;
+        $response["recordsFiltered"] = $total_filtered;
+        $response["data"] = $new_data;
+
+        return $response;
     }
 
 }

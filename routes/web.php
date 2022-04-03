@@ -111,6 +111,10 @@ Route::group([
         Route::post("customer/edit", "AdminController@editCustomer")->name("admin.edit_customer");
         Route::post("customer/create", "AdminController@createCustomer")->name("admin.create_customer");
 
+        // Social Media
+        Route::get("social", "AdminController@social")->name("admin.social");
+        Route::get("get_social", "AdminController@get_social")->name("admin.get_social");
+
     });
 });
 
