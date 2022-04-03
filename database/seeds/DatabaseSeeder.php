@@ -98,7 +98,7 @@ class DatabaseSeeder extends Seeder
                 "created_at"    => $current_time
             ],
             [
-                "prefix"    => "https://www.linkedin.com/in/",
+                "prefix"    => "https://www.linkedin.com/",
                 "type"  => "Linkedin",
                 "icon"    => "fa-brands fa-linkedin",
                 "placeholder"    => "username",
@@ -121,7 +121,7 @@ class DatabaseSeeder extends Seeder
             [
                 "prefix"    => "https://telegram.me/",
                 "type"  => "Telegram",
-                "icon"    => "fa-brands fa-telegram",
+                "icon"    => "fa-solid fa-paper-plane",
                 "placeholder"    => "username",
                 "created_at"    => $current_time
             ],

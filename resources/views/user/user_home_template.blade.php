@@ -117,7 +117,7 @@
                         <a class="nav-link {{ Request::path() ==  'page/profile' ? 'active' : ''  }}" href="{{url('page/profile')}}">
                             <div class=" row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-1 col-2">
-                                    <i class="fa-regular fa-user fa-xl"></i>
+                                    <i class="fa-solid fa-user fa-xl"></i>
                                 </div>
                                 <div class="mt-0 mt-lg-2 mt-md-2 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-10" >
                                     Profile
