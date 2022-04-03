@@ -46,19 +46,20 @@ class AdminController extends Controller
         $search = $request->get("search")["value"] ?? null;
         
         $query = User::query();
-
+        $query = $query->with("vcards")
+                    ->whereHas("vcards");
         $total_records = $query->count();
-        $data = $query->with("vcards")
-            ->whereHas("vcards")
-            ->where(function($query) use($search){
+        $query = $query->where(function($query) use($search){
                 if(!is_null($search)){
                     $query->where("name", "LIkE", "%$search%");
                 }
-            })->skip($offset)
-            ->take($limit)
-            ->get();
+            });
 
-        $total_filtered = count($data);
+        $total_filtered = count($query->get());
+
+        $data = $query->skip($offset)
+        ->take($limit)
+        ->get();
 
         // return response()->json($data->userasd);
 
@@ -207,16 +208,16 @@ class AdminController extends Controller
         $query = User::query();
 
         $total_records = $query->count();
-        $data = $query->where(function($query) use($search){
+        $query = $query->where(function($query) use($search){
                 if(!is_null($search)){
                     $query->where("name", "LIkE", "%$search%");
                 }
-            })->skip($offset)
-            ->take($limit)
-            ->get();
+            });
 
-        $total_filtered = count($data);
-
+        $total_filtered = count($query->get());
+        $data = $query->skip($offset)
+        ->take($limit)
+        ->get();
 
         $new_data = [];
         foreach ($data as $key => $value) {
@@ -252,16 +253,16 @@ class AdminController extends Controller
         $query = User::query();
 
         $total_records = $query->count();
-        $data = $query->where(function($query) use($search){
+        $query = $query->where(function($query) use($search){
                 if(!is_null($search)){
                     $query->where("name", "LIkE", "%$search%");
                 }
-            })->skip($offset)
-            ->take($limit)
-            ->get();
+            });
 
-        $total_filtered = count($data);
-
+        $total_filtered = count($query->get());
+        $data = $query->skip($offset)
+                    ->take($limit)
+                    ->get();
 
         $new_data = [];
         foreach ($data as $key => $value) {
@@ -369,16 +370,17 @@ class AdminController extends Controller
         $query = User::query();
 
         $total_records = $query->count();
-        $data = $query->with(['linkTypes', 'contents'])->where(function($query) use($search){
+        $query = $query->with(['linkTypes', 'contents'])
+            ->where(function($query) use($search){
                 if(!is_null($search)){
                     $query->where("name", "LIkE", "%$search%");
                 }
-            })->skip($offset)
-            ->take($limit)
-            ->get();
+            });
 
-        $total_filtered = count($data);
-
+        $total_filtered = count($query->get());
+        $data = $query->skip($offset)
+                ->take($limit)
+                ->get();
 
         $link_type = LinkType::all();
 
