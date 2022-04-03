@@ -107,7 +107,7 @@ class DatabaseSeeder extends Seeder
             [
                 "prefix"    => null,
                 "type"  => "Maps",
-                "icon"    => "fa-solid fa-map-location",
+                "icon"    => "fa-solid fa-location-dot",
                 "placeholder"    => "https://",
                 "created_at"    => $current_time
             ],
