@@ -392,7 +392,7 @@ class AdminController extends Controller
             
             foreach ($link_type as $real_link) {
                 $tempTotal = 0;
-                foreach ($value->linkTypes as $link_type) {
+                foreach ($value->link_types as $link_type) {
                     if($link_type->id == $real_link->id){
                         $tempTotal += $link_type->pivot->total_clicked; 
                     }
