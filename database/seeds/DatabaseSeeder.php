@@ -92,7 +92,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 "prefix"    => "tel:",
-                "type"  => "Nomor Handphone",
+                "type"  => "Mobile",
                 "icon"    => "fa-solid fa-mobile-screen-button",
                 "placeholder"    => "62821xxxxxxxx",
                 "created_at"    => $current_time
@@ -127,7 +127,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 "prefix"    => "tel:",
-                "type"  => "Nomor Telepon",
+                "type"  => "Phone",
                 "icon"    => "fa-solid fa-phone",
                 "placeholder"    => "62821xxxxxxxx",
                 "created_at"    => $current_time
