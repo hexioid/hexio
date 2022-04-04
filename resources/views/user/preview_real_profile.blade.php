@@ -47,6 +47,9 @@
             .btn-dark{
                 background-color: #262626;
             }
+            .icon-phone{
+                font-size: 0.875em !important;
+            }
         </style>
     </head>
     <body style="background-color: {{ $data->background_color ?? '#ffffff' }};100%">
