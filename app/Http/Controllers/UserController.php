@@ -123,14 +123,15 @@ class UserController extends Controller
         $user = User::findOrFail(Auth::user()->id);
 
         $validatedData = $request->validate([
-            'name' => 'required|string',
+            'name' => 'required|string|max:191',
             'username' =>  [
+                '|max:191',
                 'required',
                 'alpha_num',
                 Rule::unique('users')->ignore($user->id),
             ],
-            'bio' => 'nullable|string',
-            'address' => 'nullable|string',
+            'bio' => 'nullable|string|max:500',
+            'address' => 'nullable|string|max:500',
             'image' => 'nullable|mimes:jpeg,jpg,png|max:5120',
         ]);
 
@@ -317,7 +318,7 @@ class UserController extends Controller
         if(!is_null($user->photo)){
             $vcard->addPhoto(env('APP_URL').$user->photo);
         }
-        
+
         $response = new Response();
         $response->setContent($vcard->getOutput());
         $response->setStatusCode(200);
@@ -401,7 +402,7 @@ class UserController extends Controller
         if(!is_null($user->photo)){
             $vcard->addPhoto(env('APP_URL').$user->photo);
         }
-        
+
         $response = new Response();
         $response->setContent($vcard->getOutput());
         $response->setStatusCode(200);
