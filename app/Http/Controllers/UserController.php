@@ -125,7 +125,7 @@ class UserController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|string|max:191',
             'username' =>  [
-                '|max:191',
+                'max:191',
                 'required',
                 'alpha_num',
                 Rule::unique('users')->ignore($user->id),
