@@ -1,0 +1,209 @@
+.la-portfolio-listing + .la-pagination {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.la-portfolio-masonry .elm-loadmore-ajax {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.pf-masonry{
+  .portfolio-item{
+    &:not(.showmenow){
+      opacity: 0;
+    }
+  }
+}
+.portfolios-loop{
+  .item--thumbnail{
+    img{
+      width: 100%;
+    }
+  }
+  .item-inner{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+  .portfolio-item{
+    float: left;
+    .item-thumb-cover{
+      display: block;
+      position: relative;
+      height: 100%;
+    }
+    .cover-img{
+      a{
+        display: block;
+        height: 100%;
+      }
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+    .item--link-overlay{
+      span{
+        display: none;
+      }
+    }
+    .item--action{
+      a{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: #fff;
+        color: #272727;
+        font-size: 16px;
+        margin: 5px;
+        @include border-radius(50%);
+        &:hover{
+          background-color: #272727;
+          color: #fff;
+        }
+      }
+    }
+  }
+  &.cover-img-bg{
+    .portfolio-item{
+      .cover-img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        img{
+          display: none;
+        }
+      }
+    }
+  }
+  &.grid-items{
+    .item-inner{
+      margin-bottom: 0;
+    }
+    .cover-img{
+      background-position: 0 0;
+      background-size: cover;
+      img{
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &.pf-style-1{
+    .item--holder{
+      visibility: hidden;
+      opacity: 0;
+      z-index: 4;
+      top: 50%;
+      transform: translate(0, -50%) scale(1.2);
+      -ms-transform: translate(0, -50%) scale(1.2);
+      -webkit-transform: translate(0, -50%) scale(1.2);
+      transition: all .4s ease;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    }
+    .item--link-overlay{
+      transition: all .4s ease;
+      visibility: hidden;
+      opacity: 0;
+      background-color: #232324;
+      &:before,
+      &:after{
+        display: none;
+      }
+    }
+    .item-inner:hover{
+      .item--link-overlay{
+        opacity: 0.7;
+        visibility: visible;
+      }
+      .item--holder{
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -50%) scale(1);
+        -ms-transform: translate(0, -50%) scale(1);
+        -webkit-transform: translate(0, -50%) scale(1);
+      }
+    }
+    .entry-title{
+      color: #fff !important;
+      font-size: 14px;
+      a{
+        color: inherit;
+      }
+    }
+  }
+  &.pf-style-2{
+    .item-thumb-cover{
+      .cover-img{
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        @include transition(all .3s ease-in-out);
+      }
+    }
+    .item--info{
+      position: absolute;
+      left: 0;
+      bottom: -50px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      padding: 15px 20px;
+      opacity: 0;
+      visibility: hidden;
+      @extend %background-color-primary;
+      @include transition(all .3s ease-in-out);
+      a{
+        color: inherit;
+      }
+    }
+    .item--link-overlay{
+      display: none;
+    }
+    .entry-title{
+      font-size: 14px;
+      margin: 10px 0;
+      color: inherit;
+    }
+    .item-inner{
+      &:hover{
+        .item--info{
+          bottom: 0;
+          opacity: 1;
+          visibility: visible;
+        }
+        .item-thumb-cover{
+          .cover-img{
+            filter: grayscale(0);
+            -webkit-filter: grayscale(0);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .portfolios-loop{
+    &.cover-img-bg{
+      .portfolio-item{
+        .cover-img{
+          position: static;
+          img{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

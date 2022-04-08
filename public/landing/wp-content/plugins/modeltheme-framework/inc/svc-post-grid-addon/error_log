@@ -1,0 +1,1 @@
+[11-Dec-2016 19:53:34 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/modelthe/public_html/mt_eagle/wp-content/plugins/modeltheme-framework/inc/svc-post-grid-addon/vc-addon.php on line 21

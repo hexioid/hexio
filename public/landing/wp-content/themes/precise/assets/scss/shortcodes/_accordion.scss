@@ -1,0 +1,125 @@
+.wpb-js-composer .vc_tta.vc_tta-accordion{
+  &.vc_tta-style-la-1{
+    .vc_tta-panel-heading{
+      margin: 0;
+      border: none;
+    }
+    .vc_tta-panel-title{
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 30px;
+      border-width: 0 0 1px;
+      border-style: solid;
+      @extend %border-color;
+      padding: 10px 0;
+      margin-bottom: 20px;
+      a{
+        padding: 0;
+      }
+      &.vc_tta-controls-icon-position-right{
+        .vc_tta-controls-icon{
+          right: 0;
+        }
+        .vc_tta-controls-icon-triangle{
+          top: 4px;
+          @include transform(none);
+          &:before{
+            display: none;
+          }
+          &:after{
+            content: "\f107";
+            font-family: FontAwesome;
+          }
+        }
+      }
+    }
+    .vc_active{
+      .vc_tta-panel-title{
+        &.vc_tta-controls-icon-position-right{
+          .vc_tta-controls-icon-triangle{
+            &:after{
+              content: "\f106";
+            }
+          }
+        }
+      }
+    }
+    .vc_tta-controls-icon{
+      font-style: normal;
+    }
+    .vc_tta-panel-body{
+      padding: 0 0 10px;
+      border: none;
+    }
+  }
+  &.vc_tta-style-la-2{
+    .vc_tta-panel{
+      &.vc_active{
+        .vc_tta-panel-title{
+          @extend %text-color-primary;
+        }
+      }
+      .vc_tta-panel-title{
+        line-height: inherit;
+      }
+    }
+    .vc_tta-panel-heading{
+      border: none;
+    }
+    .vc_tta-panel-body{
+      margin: 0;
+      border: none;
+      padding-top: 5px;
+      font-size: 15px;
+    }
+    &.vc_tta-controls-align-left{
+      .vc_tta-panel-title{
+        >a{
+          padding-left: 40px;
+        }
+      }
+      .vc_tta-controls-icon{
+        left: 0;
+      }
+      .vc_tta-panel-body{
+        padding-left: 40px;
+      }
+    }
+  }
+  &.vc_tta-style-la-3{
+    .vc_tta-panel{
+      border-width: 1px;
+      border-style: solid;
+      @extend %border-color;
+      margin-bottom: 20px;
+      background-color: #fff;
+      @include border-radius(5px);
+      &.vc_active{
+        @extend %border-color-primary;
+        @include box-shadow(0px 0px 87px 0px rgba(41, 44, 58, 0.1));
+      }
+      .vc_tta-panel-title{
+        line-height: inherit;
+        font-size: 14px;
+        > a{
+          padding: 15px 30px;
+        }
+        .vc_tta-controls-icon{
+          width: 10px;
+          height: 10px;
+        }
+      }
+      .vc_tta-controls-icon-position-left .vc_tta-controls-icon{
+        left: 12px;
+      }
+    }
+    .vc_tta-panel-heading{
+      border: none;
+    }
+    .vc_tta-panel-body{
+      margin: 0;
+      border: none;
+      padding: 0 30px 30px;
+    }
+  }
+}

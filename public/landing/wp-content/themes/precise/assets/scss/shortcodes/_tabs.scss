@@ -1,0 +1,203 @@
+.wpb-js-composer{
+  .vc_tta-panel-body{
+    .products{
+      padding-top: 20px;
+    }
+  }
+  [class*="vc_tta-la-"]{
+    .vc_tta-panel{
+      .vc_tta-panel-body{
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: padding .2s ease-in-out;
+      }
+    }
+    .vc_active{
+      .vc_tta-panel-body{
+        visibility: visible;
+        overflow: visible;
+        opacity: 1;
+        height: auto !important;
+        animation: in-bottom50 450ms ease 0ms 1 forwards;
+        -webkit-animation: in-bottom50 450ms ease 0ms 1 forwards;
+      }
+      .vc_tta-panel-heading{
+        .vc_tta-panel-title{
+          @extend %text-color-primary;
+          a{
+            border-bottom: 1px solid;
+            padding-bottom: 5px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .vc_tta-panel-heading{
+      text-transform: uppercase;
+      margin: 10px 0;
+      .vc_tta-panel-title{
+        margin: 0;
+      }
+    }
+  }
+}
+
+[class*="vc_tta-la-"]{
+  > h2{
+    display: none;
+  }
+  .vc_tta-tabs-list{
+    list-style: none;
+    margin: 15px 0 30px;
+    padding: 0;
+    line-height: 24px;
+    li{
+      display: inline-block;
+      margin: 0 12px;
+      padding: 0 10px;
+      &:hover > a,
+      &.vc_active > a{
+        @extend %text-color-secondary;
+      }
+    }
+    a{
+      padding: 0;
+      position: relative;
+      display: block;
+      color: inherit;
+    }
+  }
+  .tabs-la-2,
+  .tabs-la-1{
+    .vc_tta-tabs-list {
+      li{
+        a{
+          &:after{
+            content: "";
+            height: 2px;
+            bottom: 0;
+            right: 0;
+            left: auto;
+            width: 0;
+            position: absolute;
+            transition: width 300ms ease-out;
+            @extend %background-color-secondary;
+          }
+        }
+        &:hover > a,
+        &.vc_active > a{
+          &:after{
+            left: 0;
+            right: auto;
+            width: 100%;
+            transition: width 300ms ease-in;
+            @extend %text-color-secondary;
+          }
+        }
+      }
+    }
+  }
+  .tabs-la-1{
+    .vc_tta-tabs-list {
+      li{
+        a{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .tabs-la-3,
+  .tabs-la-4{
+    .vc_tta-tabs-list{
+      margin-bottom: 30px;
+      li{
+        padding: 0;
+        margin: 0 5px;
+        a{
+          border-width: 1px;
+          border-style: solid;
+          border-color: transparent;
+          padding: 10px 15px;
+          min-width: 80px;
+        }
+      }
+    }
+    &.vc_tta-controls-align-right{
+      .vc_tta-tabs-list li{
+        margin-right: 0;
+      }
+    }
+    &.vc_tta-controls-align-left{
+      .vc_tta-tabs-list li{
+        margin-left: 0;
+      }
+    }
+  }
+  .tabs-la-3{
+    .vc_tta-tabs-list{
+      li{
+        &:hover{
+          a{
+            @extend %text-color-three;
+            @extend %border-color-three;
+          }
+        }
+        &.vc_active{
+          a{
+            @extend %text-color-primary;
+            @extend %border-color-primary;
+          }
+        }
+      }
+    }
+  }
+  .tabs-la-5{
+    .vc_tta-tabs-list{
+      font-size: 36px;
+      line-height: normal;
+      margin-top: 1.1em;
+      margin-bottom: 1.2em;
+      li{
+        margin: 0 10px;
+        a{
+          @extend %text-color-secondary;
+        }
+        &:not(.vc_active){
+          a{
+            opacity: 0.3;
+          }
+        }
+        &.vc_active{
+          a{
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .tour-la-1{
+    .vc_tta-tabs-list {
+      li{
+        font-size: 16px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+        padding-right: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.wpb-js-composer .vc_tta-container{
+  .elm-ajax-container-wrapper{
+    display: none;
+  }
+  .vc_active{
+    .elm-ajax-container-wrapper{
+      display: block;
+    }
+  }
+}

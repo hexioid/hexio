@@ -1,0 +1,197 @@
+
+.commentlist{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  .star-rating{
+    float: right;
+  }
+  .comment-meta{
+    font-size: 14px;
+    padding-top: 10px;
+    .comment-author{
+      display: inline-block;
+    }
+    .edit-link{
+      display: none;
+    }
+    time{
+      &:before{
+        content: "-";
+        padding: 0 5px;
+      }
+    }
+    .comment-reply-link{
+      float: $global-right;
+      text-transform: uppercase;
+      &:hover{
+        @extend %text-color-secondary;
+      }
+      &:before{
+        content: "\f112";
+        font-family: FontAwesome;
+        padding-right: 5px;
+      }
+    }
+  }
+  .comment_container{
+    margin-bottom: 30px;
+  }
+  ul.children{
+    margin-left: 30px;
+    padding-left: 0;
+    list-style: none;
+  }
+  .comment-respond{
+    margin: 30px 0 0;
+    padding: 0;
+  }
+  img.avatar{
+    width: 90px;
+    height: 90px;
+    margin-right: 50px;
+  }
+  .comment-text{
+    float: right;
+    width: 80%;
+    width: calc(100% - 140px);
+    width: -webkit-calc(100% - 140px);
+  }
+}
+
+.comment-respond{
+  @extend %clearfix;
+}
+
+p.comment-notes {
+  font-style: italic;
+  font-size: 0.875em;
+}
+.comment-form{
+  label{
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+    @extend %text-color-secondary;
+  }
+  .comment-form-rating{
+    label{
+      display: none;
+    }
+  }
+  input{
+    width: 550px;
+    max-width: 100%;
+  }
+  textarea{
+    width: 550px;
+    height: 200px;
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .form-submit{
+    padding-top: 10px;
+    .submit{
+      padding: 10px 40px;
+      text-transform: uppercase;
+      width: auto;
+      color: #fff;
+      @extend %background-color-primary;
+      &:hover{
+        @extend %background-color-secondary;
+      }
+    }
+  }
+}
+
+.comments-container{
+  margin-bottom: 30px;
+  .comments-title{
+    padding-bottom: 15px;
+  }
+}
+
+.comment_container + .comment-respond{
+  .comment-reply-title{
+    a{
+      letter-spacing: 0;
+      text-transform: none;
+      font-size: 14px;
+    }
+  }
+}
+
+
+.woocommerce-Reviews {
+  max-width: 800px;
+  margin: 0 auto;
+  .woocommerce-Reviews-title{
+    display: none;
+  }
+  span#reply-title {
+    font-size: 24px;
+    margin: 20px 0;
+    display: block;
+    @extend %text-color-secondary;
+  }
+  li.comment{
+    + .comment{
+      border-width: 1px 0 0;
+      border-style: solid;
+      padding-top: 20px;
+      @extend %border-color;
+    }
+  }
+  .comment_container{
+    min-height: 85px;
+    position: relative;
+    padding-left: 100px;
+    overflow: hidden;
+    img.avatar{
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      margin: 0;
+      left: 0;
+      top: 10px;
+      @include border-radius(50%);
+    }
+    .comment-text{
+      width: 100%;
+      padding-bottom: 40px;
+      position: relative;
+    }
+    .meta{
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      > *{
+        display: none;
+      }
+      .woocommerce-review__author{
+        display: inline-block;
+        font-weight: normal;
+        text-transform: uppercase;
+        line-height: normal;
+        @extend %text-color-secondary;
+        &:before{
+          content: "";
+          width: 40px;
+          display: block;
+          border-top: 1px solid;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .star-rating{
+      position: absolute;
+      bottom: 8px;
+      right: 0;
+    }
+    .description{
+
+    }
+  }
+}

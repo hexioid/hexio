@@ -1,0 +1,106 @@
+.testimonial_item{
+  text-align: center;
+  .testimonial_item--inner{
+    margin-bottom: 20px;
+  }
+}
+.testimonial_item--excerpt{
+  font-size: 18px;
+  line-height: 24px;
+}
+.testimonial_item--title-role{
+  margin-top: 15px;
+  &:before{
+    content: "";
+    width: 50px;
+    display: block;
+    margin: 0 auto 18px;
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-color: inherit;
+  }
+}
+.testimonial_item--role{
+  display: none;
+}
+.testimonial_item--title{
+  text-transform: uppercase;
+}
+
+.la_testimonials--style-1{
+  @extend %text-color-secondary;
+  .testimonial_item--excerpt{
+    font-weight: bold;
+    max-width: 770px;
+    margin: 0 auto;
+  }
+  .testimonial_item--image{
+    width: 95px;
+    height: 95px;
+    overflow: hidden;
+    margin: 0 auto;
+    @include border-radius(50%);
+  }
+  .testimonial_item--info {
+    margin-top: 15px;
+  }
+  .testimonial_item--title-role{
+    margin-top: 20px;
+  }
+  .testimonial_item--title{
+    display: none;
+  }
+  .testimonial_item--role{
+    display: block;
+  }
+}
+
+.la_testimonials--style-2{
+  .testimonial_item{
+    text-align: left;
+    color: #343538;
+  }
+  .testimonial_item--inner{
+    background-color: #fff;
+  }
+  .testimonial_item--image{
+    width: 140px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .testimonial_item--image-tag{
+    width: 63px;
+    height: 63px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    @include border-radius(50%);
+  }
+  .testimonial_item--info{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 50px 40px 50px 0;
+  }
+  .testimonial_item--excerpt{
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .testimonial_item--title-role{
+    margin-bottom: 10px;
+    &:before{
+      display: none;
+    }
+  }
+  .testimonial_item--title{
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  .testimonial_item--rating{
+    .star-rating{
+      float: left;
+      font-size: 12px;
+      width: 73px;
+    }
+  }
+}

@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "precise";
+  src:url("assets/fonts/precise.eot");
+  src:url("assets/fonts/precise.eot?#iefix") format("embedded-opentype"),
+  url("assets/fonts/precise.woff") format("woff"),
+  url("assets/fonts/precise.ttf") format("truetype"),
+  url("assets/fonts/precise.svg#precise") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'laslick-icon';
+  src:url('assets/fonts/laslick-icon.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*="laslick-"] {
+  font-family: 'laslick-icon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.laslick-arrow-right:before {
+  content: "\e600";
+}
+.laslick-arrow-left:before {
+  content: "\e601";
+}
+.laslick-arrow-right2:before {
+  content: "\e602";
+}
+.laslick-arrow-left2:before {
+  content: "\e603";
+}
+.laslick-arrow-right3:before {
+  content: "\e604";
+}
+.laslick-arrow-left3:before {
+  content: "\e605";
+}
+.laslick-checkbox-unchecked:before {
+  content: "\e606";
+}
+.laslick-checkbox-partial:before {
+  content: "\e607";
+}
+.laslick-radio-checked:before {
+  content: "\e608";
+}
+.laslick-radio-unchecked:before {
+  content: "\e609";
+}
+.laslick-record:before {
+  content: "\e60a";
+}
+.laslick-stop:before {
+  content: "\e60b";
+}
+.laslick-arrow-left4:before {
+  content: "\e60c";
+}
+.laslick-arrow-right4:before {
+  content: "\e60d";
+}
+.laslick-arrow-left5:before {
+  content: "\e60e";
+}
+.laslick-arrow-right5:before {
+  content: "\e60f";
+}
+.laslick-arrow-left6:before {
+  content: "\e610";
+}
+.laslick-arrow-right6:before {
+  content: "\e611";
+}
+
+[class*="precise-icon-"]{
+  font-family: "precise";
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class*="ult-vid-cntrl"],
+[class*="fa-"] {
+  font-family: FontAwesome;
+  font-size:inherit;
+  line-height: inherit;
+  text-rendering:auto;
+  display: inline-block;
+  font-style: normal;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
+}
+.ult-vid-cntrlplay:before {
+  content: "\f04b";
+}
+.ult-vid-cntrlpause:before {
+  content: "\f04c";
+}
+
+.precise-icon-favourite:before {
+  content: "\67";
+}
+.precise-icon-mobile:before {
+  content: "\61";
+}
+.precise-icon-email:before {
+  content: "\62";
+}
+.precise-icon-clock:before {
+  content: "\63";
+}
+.precise-icon-zoom:before {
+  content: "\64";
+}
+.precise-icon-cart-modern:before {
+  content: "\65";
+}
+.precise-icon-menu:before {
+  content: "\66";
+}
+.precise-icon-simple-close:before,
+.precise-icon-simple-remove:before {
+  content: "\68";
+}
+.precise-icon-arrow-tail-left:before {
+  content: "\69";
+}
+.precise-icon-arrow-tail-right:before {
+  content: "\6a";
+}
+.precise-icon-arrow-minimal-left:before {
+  content: "\6b";
+}
+.precise-icon-arrow-minimal-right:before {
+  content: "\6c";
+}
+.precise-icon-arrow-tail-triangle-down:before {
+  content: "\6d";
+}
+.precise-icon-arrow-tail-triangle-up:before {
+  content: "\6e";
+}
+.precise-icon-grid:before {
+  content: "\6f";
+}
+.precise-icon-user-circle:before {
+  content: "\70";
+}
+.precise-icon-customer-support:before {
+  content: "\71";
+}
+.precise-icon-favourite2:before {
+  content: "\72";
+}
+.precise-icon-user-circle2:before {
+  content: "\73";
+}
+.precise-icon-chat:before {
+  content: "\74";
+}
+.precise-icon-loop:before {
+  content: "\75";
+}
+.precise-icon-loop-alt3:before {
+  content: "\76";
+}
+.precise-icon-loop-alt4:before {
+  content: "\77";
+}
+.precise-icon-arrow-swap:before {
+  content: "\78";
+}
+.precise-icon-menu2:before {
+  content: "\79";
+}

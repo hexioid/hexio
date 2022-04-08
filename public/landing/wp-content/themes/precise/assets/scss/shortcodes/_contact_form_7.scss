@@ -1,0 +1,398 @@
+.la-contact-info{
+  .la-contact-item{
+    padding-#{$global-left}: 35px;
+    position: relative;
+    margin-bottom: 10px;
+    &:before{
+      font-family: FontAwesome;
+      position: absolute;
+      #{$global-left}: 0;
+      font-size: 1.15em;
+      top: -0.1em;
+    }
+  }
+  .la-contact-phone{
+    &:before{
+      content: "\f095";
+    }
+  }
+  .la-contact-email{
+    &:before{
+      content: "\f0e0";
+    }
+  }
+  .la-contact-address{
+    &:before{
+      content: "\f041";
+    }
+  }
+  .la-contact-working-hours{
+    &:before{
+      content: "\f017";
+    }
+  }
+  &.inline-item{
+    .la-contact-item{
+      padding-left: 30px;
+      display: inline-block;
+      margin: 0 20px 0;
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+.wpcf7-response-output {
+  font-size: 12px;
+}
+.wpcf7-form-control-wrap{
+  margin-bottom: 30px;
+  &,
+  .wpcf7-form-control{
+    display: block;
+    width: 100%;
+  }
+  .wpcf7-not-valid-tip{
+    font-size: 12px;
+  }
+  .wpcf7-select,
+  .wpcf7-text,
+  .wpcf7-textarea{
+    padding: 12px 30px;
+  }
+  .wpcf7-select{
+    height: 54px;
+  }
+}
+
+.wpcf7-form .contact-form label {
+  padding-bottom: 10px;
+  display: block;
+}
+
+
+.cf7-style-default{
+  font-size: 12px;
+  .wpcf7-form-control-wrap{
+    margin-bottom: 20px;
+    .wpcf7-select,
+    .wpcf7-text,
+    .wpcf7-textarea{
+      padding: 15px 30px;
+    }
+  }
+}
+
+.cf7-style-01{
+  .wpcf7-form-control-wrap{
+    margin-bottom: 10px;
+    .wpcf7-select,
+    .wpcf7-text,
+    .wpcf7-textarea{
+      @extend %text-color-secondary;
+      padding: 15px 0;
+      border-width: 0 0 1px;
+      font-size: 11px;
+    }
+  }
+}
+
+
+.yikes-mailchimp-container{
+  .edit-link{
+    display: none;
+  }
+}
+
+.la-newsletter-popup {
+  display: none;
+  max-width: 470px;
+  margin: 0 auto;
+  text-align: center;
+  margin-left: 35%;
+  @extend %text-color-secondary;
+  #lightcase-case & {
+    display: block;
+  }
+  .yikes-easy-mc-form{
+    .yikes-easy-mc-email{
+      background: #fff;
+      border-width: 1px;
+      border-style: solid;
+      outline: none !important;
+      width: 100%;
+      line-height: 32px;
+      padding: 8px 15px;
+      margin: 20px 0 5px;
+      @extend %border-color;
+      @extend %text-color-body;
+      &:focus{
+        @extend %text-color-secondary;
+      }
+    }
+    .yikes-easy-mc-submit-button{
+      border: none;
+      margin: 0 0 20px !important;
+      width: 100%;
+      padding: 10px 15px;
+      line-height: 30px;
+      color: #fff;
+      @extend %background-color-secondary;
+      &:hover{
+        color: #fff;
+        @extend %background-color-primary;
+      }
+    }
+  }
+  .lbl-dont-show-popup {
+    display: block;
+    text-align: left;
+    margin-top: 30px;
+    input {
+      margin-right: 5px;
+    }
+  }
+}
+.open-newsletter-popup{
+  .lightcase-inlineWrap{
+    background: {
+      image : url(../images/popup.jpg);
+      color: #fff;
+      position: 0 0;
+      repeat: no-repeat;
+    }
+  }
+  #lightcase-case #lightcase-content{
+    overflow: visible;
+  }
+  .btn-close-newsletter-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+
+.yikes-mailchimp-container .yikes-easy-mc-success-message {
+  padding: 0;
+  background: none;
+  margin-bottom: 0;
+}
+
+.subscribe-style-01{
+  .yikes-easy-mc-form{
+    font-size: 14px;
+    @include clearfix;
+    position: relative;
+    label{
+      margin-bottom: 0;
+      span{
+        display: none;
+      }
+    }
+    .EMAIL-label{
+      &:before{
+        content: "\f003";
+        font-family: FontAwesome;
+        position: absolute;
+        left: 20px;
+        top: 17px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+    .yikes-easy-mc-email{
+      background: #fff;
+      border-width: 1px;
+      border-style: solid;
+      outline: none !important;
+      width: 100%;
+      line-height: 30px;
+      padding: 19px 120px 19px 50px;
+      margin: 0;
+      @extend %border-color;
+      @extend %text-color-body;
+      &:focus{
+        @extend %text-color-secondary;
+      }
+    }
+    .yikes-easy-mc-submit-button{
+      border: none;
+      margin: 0 !important;
+      width: 120px;
+      padding: 13px 0;
+      line-height: 30px;
+      background-color: transparent;
+      @extend %text-color-secondary;
+      position: absolute;
+      right: 0;
+      top: 0;
+      &:hover{
+        @extend %text-color-primary;
+      }
+    }
+  }
+}
+
+.subscribe-style-02{
+  .yikes-easy-mc-form{
+    font-size: 14px;
+    @include clearfix;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    label{
+      margin-bottom: 0;
+      span{
+        display: none;
+      }
+    }
+    .yikes-easy-mc-email{
+      background: transparent;
+      border-width: 0 0 1px;
+      border-style: solid;
+      border-color: rgba(#ffffff,.4);
+      outline: none !important;
+      width: 100%;
+      line-height: 32px;
+      padding: 10px 100px 10px 0;
+      margin: 0;
+      font-size: 16px;
+      font-style: italic;
+      color: #fff;
+    }
+    .yikes-easy-mc-submit-button{
+      border: none;
+      margin: 0 !important;
+      width: 100px;
+      padding: 13px 0;
+      line-height: 30px;
+      background-color: transparent;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+.subscribe-style-03{
+  .yikes-easy-mc-form{
+    @extend %text-color-secondary;
+    border-width: 0 0 1px;
+    border-style: solid;
+    position: relative;
+    label{
+      margin-bottom: 0;
+      span{
+        display: none;
+      }
+    }
+    .yikes-easy-mc-email{
+      background: transparent;
+      border-width: 0;
+      outline: none !important;
+      width: 100%;
+      line-height: 25px;
+      padding: 10px 100px 10px 0;
+      margin: 0;
+      color: inherit;
+    }
+    .yikes-easy-mc-submit-button{
+      border: none;
+      margin: 0 !important;
+      width: 100px;
+      padding: 10px 0;
+      line-height: 25px;
+      background-color: transparent !important;
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: inherit !important;
+      text-align: right;
+    }
+  }
+}
+
+.subscribe-style-04{
+  .yikes-easy-mc-form{
+    @include clearfix;
+    position: relative;
+    label{
+      margin-bottom: 0;
+      span{
+        display: none;
+      }
+    }
+    .yikes-easy-mc-email{
+      background: transparent;
+      border-width: 1px;
+      border-style: solid;
+      outline: none !important;
+      width: 100%;
+      line-height: 30px;
+      padding: 19px 120px 19px 30px;
+      @extend %border-color;
+      @extend %text-color-body;
+      &:focus{
+        @extend %text-color-secondary;
+      }
+    }
+    .yikes-easy-mc-submit-button{
+      border: none;
+      margin: 0 !important;
+      width: 120px;
+      padding: 0;
+      line-height: 30px;
+      background-color: transparent !important;
+      @extend %text-color-secondary;
+      position: absolute;
+      right: 0;
+      top: 16px;
+      &:hover{
+        @extend %text-color-primary;
+      }
+    }
+  }
+}
+.subscribe-style-05{
+  .yikes-easy-mc-form{
+    @include clearfix;
+    position: relative;
+    label{
+      margin-bottom: 0;
+      span{
+        display: none;
+      }
+    }
+    .yikes-easy-mc-email{
+      background: transparent;
+      border-width: 1px;
+      border-style: solid;
+      outline: none !important;
+      width: 100%;
+      line-height: 30px;
+      padding: 19px 120px 19px 30px;
+      @extend %border-color-secondary;
+      @extend %text-color-secondary;
+    }
+    .yikes-easy-mc-submit-button{
+      border: none;
+      margin: 0 !important;
+      width: 120px;
+      padding: 0;
+      line-height: 30px;
+      background-color: transparent !important;
+      @extend %text-color-secondary;
+      position: absolute;
+      right: 0;
+      top: 16px;
+    }
+  }
+}

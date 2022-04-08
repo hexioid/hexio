@@ -1,0 +1,102 @@
+{
+  "sidebar-primary": {
+    "search-2": {
+      "title": ""
+    },
+    "media_image-4": {
+      "attachment_id": 531,
+      "url": "http:\/\/precise.la-studioweb.com\/furniture\/wp-content\/uploads\/sites\/2\/2017\/07\/author.png",
+      "title": "",
+      "size": "full",
+      "width": 167,
+      "height": 167,
+      "caption": "",
+      "alt": "",
+      "link_type": "none",
+      "link_url": "",
+      "image_classes": "",
+      "link_classes": "",
+      "link_rel": "",
+      "image_title": "",
+      "classes": "widget-author__image",
+      "link_target_blank": false
+    },
+    "text-5": {
+      "title": "Ollie Berry",
+      "text": "Aenean a diam turpis. Vestibulum quam turpis, lobortis",
+      "filter": "content",
+      "classes": "widget-author__information"
+    },
+    "nav_menu-6": {
+      "title": "CATEGORIES",
+      "nav_menu": "Blog Categories",
+      "classes": ""
+    },
+    "la-recent-posts-2": {
+      "title": "POPULAR POSTS",
+      "number": 5,
+      "show_date": true,
+      "classes": ""
+    },
+    "recent-comments-3": {
+      "title": "RECENT COMMENTS",
+      "number": 5,
+      "classes": ""
+    }
+  },
+  "f-col-1": {
+    "media_image-2": {
+      "attachment_id": 223,
+      "url": "http:\/\/precise.la-studioweb.com\/furniture\/wp-content\/uploads\/sites\/2\/2017\/07\/logo-precise-white.png",
+      "title": "",
+      "size": "full",
+      "width": 161,
+      "height": 58,
+      "caption": "",
+      "alt": "",
+      "link_type": "none",
+      "link_url": "",
+      "image_classes": "",
+      "link_classes": "",
+      "link_rel": "",
+      "image_title": "",
+      "classes": "margin-bottom-20",
+      "link_target_blank": false
+    },
+    "text-3": {
+      "title": "",
+      "text": "[la_social_link]",
+      "filter": "content",
+      "classes": ""
+    }
+  },
+  "f-col-2": {
+    "nav_menu-2": {
+      "title": "Useful Links",
+      "nav_menu": "Footer Useful Link",
+      "classes": ""
+    }
+  },
+  "f-col-3": {
+    "nav_menu-3": {
+      "title": "Company",
+      "nav_menu": "Footer Company",
+      "classes": ""
+    }
+  },
+  "f-col-4": {
+    "nav_menu-4": {
+      "title": "Profile",
+      "nav_menu": "Footer Profile",
+      "classes": ""
+    }
+  },
+  "f-col-5": {
+    "text-2": {
+      "title": "@Instagram",
+      "text": "[la_instagram_feed limit=\"6\" hashtag=\"negan\" column=\"xlg:3;lg:3;md:3;sm:3;xs:3;mb:3;\" el_class=\"grid-space-10\"][\/la_instagram_feed]",
+      "filter": "content",
+      "classes": ""
+    }
+  }
+}
