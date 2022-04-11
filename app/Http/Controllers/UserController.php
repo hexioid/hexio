@@ -404,7 +404,7 @@ class UserController extends Controller
         }
 
         $headers    = [
-            "Content-Type"  => "text/x-vcard",
+            "Content-Type"  => "text/vcard",
             "Content-Disposition"   => 'attachment; filename="' . $data->name . '.vcf"',
             "Content-Length"    => mb_strlen($vcard->getOutput(), 'utf-8')
         ];
