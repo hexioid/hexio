@@ -410,6 +410,6 @@ class UserController extends Controller
         ];
 
         \Storage::disk('public')->put($data->name.'.vcf', $vcard);
-        return response()->download('storage/'.$data->name, $data->name.'.vcf', $headers)->deleteFileAfterSend();
+        return response()->download('storage/'.$data->name.".vcf", $data->name.'.vcf', $headers)->deleteFileAfterSend();
     }
 }
