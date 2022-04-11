@@ -403,16 +403,13 @@ class UserController extends Controller
             $vcard->addPhoto(env('APP_URL').$user->photo);
         }
 
-        $headers    = [
-            "Content-Type"  => "text/vcard",
-            "Content-Disposition"   => 'attachment; filename="' . $data->name . '.vcf"',
-            "Content-Length"    => mb_strlen($vcard->getOutput(), 'utf-8')
-        ];
+        $response = new Response();
+        $response->setContent($vcard->getOutput());
+        $response->setStatusCode(200);
+        $response->headers->set('Content-Type', 'text/x-vcard');
+        $response->headers->set('Content-Disposition', 'attachment; filename="' . $data->name . '.vcf"');
+        $response->headers->set('Content-Length', mb_strlen($vcard->getOutput(), 'utf-8'));
 
-        \Storage::disk('public')->put($data->name.'.vcf', $vcard);
-
-        return \Storage::download('public/'.$data->name.".vcf", $data->name.'.vcf', $headers);
-        return "ok";
-        return response()->download('storage/'.$data->name.".vcf", $data->name.'.vcf', $headers)->deleteFileAfterSend();
+        return $response;
     }
 }
