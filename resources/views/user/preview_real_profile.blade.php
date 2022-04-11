@@ -82,7 +82,7 @@
                         @foreach($list_contents as $content)
                             @if($content->content_type_id == 1)
                                 <div id="div-preview-item-{{$content->id}}" style="display: {{$content->is_content_displayed ? '' : 'none'}}">
-                                    <a href="{{url('page/open_link/'.$content->id)}}" target="_blank" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn-preview btn btn-dark btn-lg col-12 mb-3 border-0" style=" background-color: {{$content->button_color}}">
+                                    <a href="{{url('page/open_link/'.$content->id)}}" id="preview-item-button-name-{{$content->id}}" data-text-color="{{$content->text_color}}" data-button-color="{{$content->button_color}}" class="btn-preview btn btn-dark btn-lg col-12 mb-3 border-0" style=" background-color: {{$content->button_color}}">
                                         <div class="justify-content-center row mx-0">
                                             <i id="preview-icon-{{$content->id}}" class="mt-2 pt-1 {{$content->linkType->icon}} fa-lg" style="display: {{$content->is_icon_displayed ? '' : 'none'}}"></i>
                                             <span class="px-1" id="preview-text-button-name-{{$content->id}}" style="max-width:90%; font-size:18px; color: {{$content->text_color}}">{{$content->text}}&nbsp;</span>
