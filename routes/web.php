@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect("page/login");
+    return redirect()->to("https://hexio.id/landing/");
 });
 
 Route::get("/{username}", "UserController@profile_user");

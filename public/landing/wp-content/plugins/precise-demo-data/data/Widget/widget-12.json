@@ -1,0 +1,194 @@
+{
+  "sidebar-primary": {
+    "search-2": {
+      "title": ""
+    },
+    "media_image-2": {
+      "attachment_id": 562,
+      "url": "http:\/\/precise.la-studioweb.com\/wp-content\/uploads\/2017\/07\/author.png",
+      "title": "",
+      "size": "full",
+      "width": 167,
+      "height": 167,
+      "caption": "",
+      "alt": "",
+      "link_type": "none",
+      "link_url": "",
+      "image_classes": "",
+      "link_classes": "",
+      "link_rel": "",
+      "image_title": "",
+      "classes": "widget-author__image",
+      "link_target_blank": false
+    },
+    "text-4": {
+      "title": "Ollie Berry",
+      "text": "Aenean a diam turpis. Vestibulum quam turpis, lobortis",
+      "filter": "content",
+      "classes": "widget-author__information"
+    },
+    "nav_menu-3": {
+      "title": "CATEGORIES",
+      "nav_menu": "Blog Categories",
+      "classes": ""
+    },
+    "la-recent-posts-2": {
+      "title": "POPULAR POSTS",
+      "number": 4,
+      "show_date": true,
+      "classes": ""
+    },
+    "recent-comments-2": {
+      "title": "RECENT COMMENTS",
+      "number": 5,
+      "classes": ""
+    }
+  },
+  "sidebar-shop-filter": {
+    "product-sort-by-2": {
+      "title": "SORT BY",
+      "classes": ""
+    },
+    "la-price-filter-list-2": {
+      "title": "PRICE",
+      "text": "0|40\r\n40|60\r\n60|70\r\n70|80\r\n80|",
+      "classes": ""
+    },
+    "woocommerce_layered_nav-4": {
+      "title": "SIZE",
+      "attribute": "size",
+      "display_type": "list",
+      "query_type": "or",
+      "classes": ""
+    },
+    "woocommerce_layered_nav-5": {
+      "title": "COLOR",
+      "attribute": "color",
+      "display_type": "swatches",
+      "query_type": "and",
+      "classes": ""
+    },
+    "la_product_tag_cloud-2": {
+      "title": "TAGS",
+      "classes": ""
+    }
+  },
+  "aside-widget": {
+    "media_image-5": {
+      "attachment_id": 651,
+      "url": "http:\/\/precise.la-studioweb.com\/wp-content\/uploads\/2017\/07\/logo-precise-black.png",
+      "title": "",
+      "size": "full",
+      "width": 161,
+      "height": 58,
+      "caption": "",
+      "alt": "",
+      "link_type": "none",
+      "link_url": "",
+      "image_classes": "",
+      "link_classes": "",
+      "link_rel": "",
+      "image_title": "",
+      "classes": "margin-bottom-30",
+      "link_target_blank": false
+    },
+    "text-6": {
+      "title": "",
+      "text": "Curabitur placerat urna augue, id luctus sem imperdiet id. Nunc congue ac libero ut lacinia. In ultrices elementum ipsum, in tempus enim accumsan..",
+      "filter": "content",
+      "classes": "margin-bottom-30"
+    },
+    "text-8": {
+      "title": "",
+      "text": "[la_social_link]",
+      "filter": "content",
+      "classes": "margin-bottom-50"
+    },
+    "nav_menu-8": {
+      "classes": ""
+    },
+    "contact_info-2": {
+      "title": "",
+      "phone": "+44. 54.343.54",
+      "email": "info@la-studioweb.com",
+      "address": "PO Box 16122 Collins Street West  Victoria 8007 Australia",
+      "classes": ""
+    },
+    "text-7": {
+      "title": "",
+      "text": "<div class=\"small text-uppercase\">\u00a9 2017 Created by LaStudio<\/div>",
+      "filter": "content",
+      "classes": ""
+    }
+  },
+  "f-col-1": {
+    "media_image-4": {
+      "attachment_id": 579,
+      "url": "http:\/\/precise.la-studioweb.com\/wp-content\/uploads\/2017\/07\/logo-black.png",
+      "title": "",
+      "size": "full",
+      "width": 52,
+      "height": 58,
+      "caption": "",
+      "alt": "",
+      "link_type": "custom",
+      "link_url": "http:\/\/precise.la-studioweb.com\/",
+      "image_classes": "",
+      "link_classes": "",
+      "link_rel": "",
+      "image_title": "",
+      "classes": "xs-text-center",
+      "link_target_blank": false
+    }
+  },
+  "f-col-2": {
+    "nav_menu-4": {
+      "nav_menu": "Footer Menu Horizontal",
+      "classes": "menu-inline-item text-center margin-top-15"
+    }
+  },
+  "f-col-3": {
+    "text-5": {
+      "title": "",
+      "text": "[la_social_link el_class=\"font-size-14\"]",
+      "filter": "content",
+      "classes": "text-right xs-text-center margin-top-20"
+    }
+  },
+  "sidebar-shop-area": {
+    "nav_menu-2": {
+      "title": "CATEGORIES",
+      "nav_menu": "Shop Category Menu",
+      "classes": ""
+    },
+    "woocommerce_layered_nav-2": {
+      "title": "BY SIZE",
+      "attribute": "size",
+      "display_type": "list",
+      "query_type": "and",
+      "classes": ""
+    },
+    "woocommerce_layered_nav-3": {
+      "title": "BY COLORS",
+      "attribute": "color",
+      "display_type": "swatches",
+      "query_type": "and",
+      "classes": "margin-bottom-0"
+    },
+    "text-3": {
+      "title": "",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit duis id varius",
+      "filter": "content",
+      "classes": ""
+    },
+    "la-price-filter-list-3": {
+      "title": "BY PRICE LIST",
+      "text": "0|40\r\n40|60\r\n60|70\r\n70|80\r\n80|",
+      "classes": ""
+    },
+    "woocommerce_price_filter-2": {
+      "title": "BY PRICE",
+      "classes": ""
+    }
+  }
+}

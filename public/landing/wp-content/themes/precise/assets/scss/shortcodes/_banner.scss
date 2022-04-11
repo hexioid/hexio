@@ -1,0 +1,175 @@
+.la-banner-box{
+  .banner--link-overlay:after,
+  img{
+    -webkit-transition: opacity 0.35s, -webkit-transform 1s;
+    transition: opacity 0.35s, transform 1s;
+  }
+  img{
+    width: 100%;
+  }
+  .box-inner{
+    position: relative;
+    overflow: hidden;
+  }
+  .banner--link-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .banner--info{
+    position: absolute;
+    bottom: 30px;
+    width: 90%;
+    left: 5%;
+    transition: all 450ms ease-out;
+    z-index: 2;
+  }
+  .banner--image{
+    .item--overlay{
+      visibility: visible;
+      opacity: 1;
+      background-color: transparent;
+      transition: all 450ms ease-out;
+    }
+  }
+}
+.banner-type-default .banner--info {
+  top: 10%;
+  bottom: auto;
+}
+.banner-type-1{
+  &:hover{
+    .banner--image{
+      img{
+        @include scale(1.1);
+      }
+    }
+    .banner--info{
+      bottom: 10%;
+    }
+  }
+}
+.banner-type-2{
+  .banner--info{
+    left: 35px;
+    bottom: auto;
+    top: 50%;
+    width: auto;
+    max-width: 90%;
+    @include translate2d(0,-50%);
+  }
+  &:hover{
+    .banner--image{
+      img{
+        @include transform(#{'scale(1.05) translate(2%,0)'});
+      }
+    }
+    .banner--info {
+      left: 12%;
+    }
+  }
+}
+.banner-type-3{
+  .banner--info{
+    bottom: auto;
+    top: 50%;
+    right: 25px;
+    width: auto;
+    left: auto;
+    max-width: 90%;
+    @include translate2d(0,-50%);
+  }
+  &:hover{
+    .banner--image{
+      img{
+        @include transform(#{'scale(1.05) translate(2%,0)'});
+      }
+    }
+  }
+}
+.banner-type-hover_effect{
+  .banner--info{
+    width: 90%;
+    left: 5%;
+    z-index: 9;
+    bottom: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0, 50%) scale(2);
+    -ms-transform: translate(0, 50%) scale(2);
+    -webkit-transform: translate(0, 50%) scale(2);
+  }
+  .banner--link-overlay{
+    &:after{
+      border: none;
+      @extend %background-color-primary;
+      @include transform(none);
+    }
+  }
+  &:hover{
+    .banner--info{
+      visibility: visible;
+      opacity: 1;
+      transform: translate(0, 50%) scale(1);
+      -ms-transform: translate(0, 50%) scale(1);
+      -webkit-transform: translate(0, 50%) scale(1);
+    }
+    .banner--link-overlay {
+      &:after {
+        @include transform(none);
+        @include opacity(0.9);
+      }
+    }
+  }
+}
+.banner-type-centered{
+  .banner--info{
+    padding: 10px;
+    top: 50%;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    text-align: center;
+    @include translate2d(0,-50%);
+  }
+  .banner--link-overlay:after{
+    display: none;
+  }
+  &:hover{
+    .banner--image{
+      img{
+        @include scale(1.1);
+      }
+    }
+  }
+}
+.la-banner-box.banner-hover-show-button{
+  .btn{
+    opacity: 0;
+    visibility: hidden;
+  }
+  &.banner-type-2{
+    .banner--info{
+      left: 6%;
+    }
+  }
+  &.banner-type-3{
+    .banner--info{
+      right: 6%;
+    }
+  }
+  .banner--info{
+    margin-top: 20px
+  }
+  &:hover{
+    .btn{
+      opacity: 1;
+      visibility: visible;
+    }
+    .banner--info{
+      margin-top: 0;
+    }
+  }
+}

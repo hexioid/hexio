@@ -1,0 +1,18 @@
+
+# BEGIN WordPress
+# Arahan (baris) antara "BEGIN WordPress" dan "END WordPress"
+# dihasilkan secara dinamis, dan hanya dapat dimodifikasi melalui filter WordPress.
+# Setiap perubahan pada arahan di antara penanda berikut akan ditimpa.
+
+
+# END WordPress
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /landing/
+    RewriteRule ^index\.php$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    # add trailing slash if missing
+    RewriteRule . /landing/index.php [L]
+</IfModule>

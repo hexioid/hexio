@@ -1,0 +1,81 @@
+{
+  "sidebar-primary": {
+    "search-2": {
+      "title": ""
+    },
+    "media_image-4": {
+      "attachment_id": 531,
+      "url": "http:\/\/precise.la-studioweb.com\/furniture\/wp-content\/uploads\/sites\/2\/2017\/07\/author.png",
+      "title": "",
+      "size": "full",
+      "width": 167,
+      "height": 167,
+      "caption": "",
+      "alt": "",
+      "link_type": "none",
+      "link_url": "",
+      "image_classes": "",
+      "link_classes": "",
+      "link_rel": "",
+      "image_title": "",
+      "classes": "widget-author__image",
+      "link_target_blank": false
+    },
+    "text-5": {
+      "title": "Ollie Berry",
+      "text": "Aenean a diam turpis. Vestibulum quam turpis, lobortis",
+      "filter": "content",
+      "classes": "widget-author__information"
+    },
+    "nav_menu-6": {
+      "title": "CATEGORIES",
+      "nav_menu": "Blog Categories",
+      "classes": ""
+    },
+    "la-recent-posts-2": {
+      "title": "POPULAR POSTS",
+      "number": 5,
+      "show_date": true,
+      "classes": ""
+    },
+    "recent-comments-3": {
+      "title": "RECENT COMMENTS",
+      "number": 5,
+      "classes": ""
+    }
+  },
+  "f-col-1": {
+    "media_image-3": {
+      "attachment_id": 225,
+      "url": "http:\/\/precise.la-studioweb.com\/furniture\/wp-content\/uploads\/sites\/2\/2017\/07\/logo-white.png",
+      "title": "",
+      "size": "full",
+      "width": 52,
+      "height": 58,
+      "caption": "",
+      "alt": "",
+      "link_type": "none",
+      "link_url": "",
+      "image_classes": "",
+      "link_classes": "",
+      "link_rel": "httpprecisela-studiowebcom",
+      "image_title": "",
+      "classes": "xs-text-center",
+      "link_target_blank": false
+    }
+  },
+  "f-col-2": {
+    "nav_menu-5": {
+      "nav_menu": "Footer Menu Horizontal",
+      "classes": "menu-inline-item text-center margin-top-15"
+    }
+  },
+  "f-col-3": {
+    "text-4": {
+      "title": "",
+      "text": "[la_social_link el_class=\"font-size-14\"]",
+      "filter": "content",
+      "classes": "text-right xs-text-center margin-top-20"
+    }
+  }
+}

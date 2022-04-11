@@ -1,0 +1,3565 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-12 11:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Duy Pham <dpv.0990@gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: index.php:68
+msgid "Custom Block"
+msgstr ""
+
+#: index.php:84
+msgid "Testimonial"
+msgstr ""
+
+#: index.php:101
+msgid "Portfolio"
+msgstr ""
+
+#: index.php:112 includes/shortcodes/configs/la_team_member.php:76
+msgid "Team Member"
+msgstr ""
+
+#: index.php:137
+msgid "Portfolio Categories"
+msgstr ""
+
+#: index.php:138
+msgid "Portfolio Category"
+msgstr ""
+
+#: index.php:151
+msgid "Portfolio Skills"
+msgstr ""
+
+#: index.php:152
+msgid "Portfolio Skill"
+msgstr ""
+
+#: functions/actions.php:36 includes/options/fields/typography.php:251
+msgid "Error! Can not load json file."
+msgstr ""
+
+#: functions/actions.php:61 includes/options/fields/icon.php:25
+msgid "Add Icon"
+msgstr ""
+
+#: functions/actions.php:62
+msgid "Search a Icon..."
+msgstr ""
+
+#: functions/actions.php:63
+msgid "Loading..."
+msgstr ""
+
+#: functions/actions.php:76
+msgid "Query is empty ..."
+msgstr ""
+
+#: functions/actions.php:90
+msgid "Not found"
+msgstr ""
+
+#: functions/helpers.php:66
+msgid "This field class is not available!"
+msgstr ""
+
+#: functions/validate.php:14
+msgid "Please write a valid email address!"
+msgstr ""
+
+#: functions/validate.php:33
+msgid "Please write a numeric data!"
+msgstr ""
+
+#: functions/validate.php:51
+msgid "Fatal Error! This field is required!"
+msgstr ""
+
+#: includes/class-lastudio-options.php:168
+msgid "Success. Imported backup options."
+msgstr ""
+
+#: includes/class-lastudio-options.php:176
+msgid "Default options restored."
+msgstr ""
+
+#: includes/class-lastudio-options.php:196
+msgid "Default options restored for only this section."
+msgstr ""
+
+#: includes/class-lastudio-options.php:361
+msgid "Settings saved."
+msgstr ""
+
+#: includes/class-lastudio-options.php:363
+msgid "Save"
+msgstr ""
+
+#: includes/class-lastudio-options.php:363
+msgid "Saving..."
+msgstr ""
+
+#: includes/class-lastudio-options.php:364
+msgid "Restore"
+msgstr ""
+
+#: includes/class-lastudio-options.php:367
+#: includes/options/fields/backup.php:29
+msgid "Reset All Options"
+msgstr ""
+
+#: includes/class-lastudio-options.php:371
+msgid "show all options"
+msgstr ""
+
+#: includes/class-lastudio-options.php:457
+msgid "Powered by"
+msgstr ""
+
+#: includes/class-lastudio-shortcode-manager.php:49
+#: includes/class-lastudio-shortcode-manager.php:56
+msgid "Add Shortcode"
+msgstr ""
+
+#: includes/class-lastudio-shortcode-manager.php:58
+msgid "Select a shortcode"
+msgstr ""
+
+#: includes/class-lastudio-shortcode-manager.php:74
+msgid "Insert Shortcode"
+msgstr ""
+
+#: includes/options/base-field.php:92
+msgid "CONFIG"
+msgstr ""
+
+#: includes/options/base-field.php:98 includes/options/base-field.php:118
+msgid "USAGE"
+msgstr ""
+
+#: includes/options/base-field.php:104
+msgid "VALUE"
+msgstr ""
+
+#: includes/options/base-field.php:122
+#: includes/shortcodes/configs/featured_products.php:64
+#: includes/shortcodes/configs/la_portfolio_masonry.php:81
+#: includes/shortcodes/configs/la_show_portfolios.php:125
+#: includes/shortcodes/configs/la_show_posts.php:186
+#: includes/shortcodes/configs/product_attribute.php:70
+#: includes/shortcodes/configs/product_categories.php:41
+#: includes/shortcodes/configs/product_category.php:98
+#: includes/shortcodes/configs/products.php:64
+#: includes/shortcodes/configs/recent_products.php:64
+#: includes/shortcodes/configs/sale_products.php:78
+#: includes/shortcodes/configs/top_rated_products.php:64
+msgid "ID"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-autocomplete-filters.php:189
+#: includes/shortcodes/class-lastudio-shortcodes-autocomplete-filters.php:221
+#: includes/shortcodes/class-lastudio-shortcodes-autocomplete-filters.php:250
+#: includes/shortcodes/class-lastudio-shortcodes-autocomplete-filters.php:276
+msgid "Id"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-autocomplete-filters.php:191
+msgid "Name"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-autocomplete-filters.php:193
+#: includes/shortcodes/class-lastudio-shortcodes-autocomplete-filters.php:213
+#: includes/shortcodes/class-lastudio-shortcodes-autocomplete-filters.php:270
+msgid "Slug"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-autocomplete-filters.php:218
+#: includes/shortcodes/class-lastudio-shortcodes-autocomplete-filters.php:252
+#: includes/shortcodes/class-lastudio-shortcodes-autocomplete-filters.php:274
+#: includes/swatch/class-lastudio-swatch-widget.php:66
+#: includes/shortcodes/configs/featured_products.php:66
+#: includes/shortcodes/configs/la_portfolio_masonry.php:83
+#: includes/shortcodes/configs/la_show_portfolios.php:127
+#: includes/shortcodes/configs/la_show_posts.php:188
+#: includes/shortcodes/configs/la_stats_counter.php:61
+#: includes/shortcodes/configs/la_timeline_item.php:26
+#: includes/shortcodes/configs/product_attribute.php:72
+#: includes/shortcodes/configs/product_categories.php:43
+#: includes/shortcodes/configs/product_category.php:100
+#: includes/shortcodes/configs/products.php:66
+#: includes/shortcodes/configs/recent_products.php:66
+#: includes/shortcodes/configs/sale_products.php:80
+#: includes/shortcodes/configs/top_rated_products.php:66
+msgid "Title"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:26
+#: includes/shortcodes/configs/la_icon_list_item.php:26
+msgid "Icon library"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:28
+#: includes/shortcodes/configs/la_icon_list_item.php:28
+msgid "Font Awesome"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:29
+msgid "Open Iconic"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:30
+msgid "Typicons"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:31
+msgid "Entypo"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:32
+msgid "Linecons"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:33
+msgid "Mono Social"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:34
+#: includes/shortcodes/configs/la_icon_list_item.php:29
+msgid "LaStudio Icon Outline"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:35
+msgid "Nucleo Glyph"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:36
+msgid "Custom Image"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:39
+#: includes/shortcodes/configs/la_icon_list_item.php:32
+msgid "Select icon library."
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:44
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:58
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:72
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:86
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:100
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:114
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:129
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:144
+#: includes/shortcodes/configs/la_icon_list_item.php:16
+#: includes/shortcodes/configs/la_icon_list_item.php:36
+#: includes/shortcodes/configs/la_icon_list_item.php:49
+#: includes/shortcodes/configs/la_icon_list_item.php:63
+msgid "Icon"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:159
+msgid "Upload the custom image icon"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:172
+msgid "Column"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:190
+#: includes/shortcodes/configs/la_instagram_feed.php:85
+msgid "Image size"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:193
+#: includes/shortcodes/configs/la_portfolio_masonry.php:217
+msgid ""
+"Enter image size (Example: \"thumbnail\", \"medium\", \"large\", \"full\" or "
+"other sizes defined by theme). Alternatively enter size in pixels (Example: "
+"200x100 (Width x Height))."
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:203
+msgid "CSS Animation"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:212
+msgid "Select initial loading animation for element."
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:222
+#: includes/shortcodes/configs/la_portfolio_masonry.php:389
+msgid "Extra Class name"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:224
+#: includes/shortcodes/configs/la_btn.php:82
+#: includes/shortcodes/configs/la_portfolio_masonry.php:391
+msgid ""
+"Style particular content element differently - add a class name and refer to "
+"it in custom CSS."
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:234
+msgid "CSS box"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:236
+msgid "Design Options"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:243
+msgid "Slider Settings"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:247
+msgid "Slide Scrolling Speed"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:251
+msgid "Milliseconds"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:252
+msgid "Slide transition duration (in milliseconds)"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:258
+msgid "Advanced settings"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:261
+msgid "Enable infinite scroll"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:262
+msgid "Enable dots"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:263
+msgid "Enable navigation"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:264
+msgid "Enable autoplay"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:265
+msgid "Enable Variable Width"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:266
+msgid "Enable Center Mode"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:274
+msgid "AutoPlay Speed"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:279
+msgid "Autoplay Speed in milliseconds"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:288
+msgid "Custom Navigation Carousel Element"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:324
+#: includes/shortcodes/configs/la_pricing_table.php:148
+#: includes/shortcodes/configs/la_pricing_table.php:163
+#: includes/shortcodes/configs/la_pricing_table.php:178
+#: includes/shortcodes/configs/la_pricing_table.php:184
+msgid "Typography"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:329
+msgid " settings"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:334
+msgid "Use google fonts family?"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:336
+#: includes/shortcodes/configs/best_selling_products.php:84
+#: includes/shortcodes/configs/best_selling_products.php:90
+#: includes/shortcodes/configs/best_selling_products.php:102
+#: includes/shortcodes/configs/best_selling_products.php:112
+#: includes/shortcodes/configs/best_selling_products.php:118
+#: includes/shortcodes/configs/featured_products.php:114
+#: includes/shortcodes/configs/featured_products.php:120
+#: includes/shortcodes/configs/featured_products.php:132
+#: includes/shortcodes/configs/featured_products.php:142
+#: includes/shortcodes/configs/featured_products.php:148
+#: includes/shortcodes/configs/la_carousel.php:57
+#: includes/shortcodes/configs/la_carousel.php:79
+#: includes/shortcodes/configs/la_carousel.php:251
+#: includes/shortcodes/configs/la_carousel.php:261
+#: includes/shortcodes/configs/la_carousel.php:274
+#: includes/shortcodes/configs/la_carousel.php:284
+#: includes/shortcodes/configs/la_carousel.php:294
+#: includes/shortcodes/configs/la_carousel.php:307
+#: includes/shortcodes/configs/la_carousel.php:317
+#: includes/shortcodes/configs/la_instagram_feed.php:72
+#: includes/shortcodes/configs/la_maps.php:84
+#: includes/shortcodes/configs/la_portfolio_masonry.php:126
+#: includes/shortcodes/configs/la_portfolio_masonry.php:133
+#: includes/shortcodes/configs/la_portfolio_masonry.php:325
+#: includes/shortcodes/configs/la_show_portfolios.php:197
+#: includes/shortcodes/configs/la_show_portfolios.php:207
+#: includes/shortcodes/configs/la_show_posts.php:264
+#: includes/shortcodes/configs/la_team_member.php:55
+#: includes/shortcodes/configs/la_testimonial.php:49
+#: includes/shortcodes/configs/la_timeline.php:39
+#: includes/shortcodes/configs/product.php:71
+#: includes/shortcodes/configs/product.php:77
+#: includes/shortcodes/configs/product.php:89
+#: includes/shortcodes/configs/product_attribute.php:139
+#: includes/shortcodes/configs/product_attribute.php:145
+#: includes/shortcodes/configs/product_attribute.php:157
+#: includes/shortcodes/configs/product_attribute.php:167
+#: includes/shortcodes/configs/product_attribute.php:173
+#: includes/shortcodes/configs/product_categories.php:68
+#: includes/shortcodes/configs/product_categories.php:87
+#: includes/shortcodes/configs/product_categories.php:99
+#: includes/shortcodes/configs/product_category.php:161
+#: includes/shortcodes/configs/product_category.php:167
+#: includes/shortcodes/configs/product_category.php:179
+#: includes/shortcodes/configs/product_category.php:189
+#: includes/shortcodes/configs/product_category.php:195
+#: includes/shortcodes/configs/products.php:121
+#: includes/shortcodes/configs/products.php:127
+#: includes/shortcodes/configs/products.php:139
+#: includes/shortcodes/configs/products.php:149
+#: includes/shortcodes/configs/recent_products.php:114
+#: includes/shortcodes/configs/recent_products.php:120
+#: includes/shortcodes/configs/recent_products.php:132
+#: includes/shortcodes/configs/recent_products.php:142
+#: includes/shortcodes/configs/recent_products.php:148
+#: includes/shortcodes/configs/sale_products.php:128
+#: includes/shortcodes/configs/sale_products.php:134
+#: includes/shortcodes/configs/sale_products.php:146
+#: includes/shortcodes/configs/sale_products.php:156
+#: includes/shortcodes/configs/sale_products.php:162
+#: includes/shortcodes/configs/top_rated_products.php:114
+#: includes/shortcodes/configs/top_rated_products.php:120
+#: includes/shortcodes/configs/top_rated_products.php:132
+#: includes/shortcodes/configs/top_rated_products.php:142
+#: includes/shortcodes/configs/top_rated_products.php:148
+msgid "Yes"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:337
+#: includes/shortcodes/configs/la_maps.php:85
+msgid "Use font family from the theme."
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:351
+#: includes/shortcodes/configs/la_pricing_table.php:167
+msgid "Font size"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:366
+#: includes/options/fields/typography.php:197
+#: includes/shortcodes/configs/la_heading.php:120
+#: includes/shortcodes/configs/la_stats_counter.php:145
+msgid "Line Height"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-helper.php:382
+#: includes/swatch/class-lastudio-swatch.php:220
+#: includes/swatch/class-lastudio-swatch.php:266
+#: includes/swatch/class-lastudio-swatch.php:372
+#: includes/swatch/class-lastudio-swatch.php:599
+#: includes/shortcodes/configs/la_btn.php:39
+#: includes/shortcodes/configs/la_pricing_table.php:183
+msgid "Color"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:44
+msgid "Parallax Row Background"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:47
+msgid "Add a parallax bg to your row."
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:48
+#: includes/shortcodes/configs/best_selling_products.php:141
+#: includes/shortcodes/configs/featured_products.php:171
+#: includes/shortcodes/configs/la_banner.php:97
+#: includes/shortcodes/configs/la_block.php:34
+#: includes/shortcodes/configs/la_btn.php:93
+#: includes/shortcodes/configs/la_carousel.php:19
+#: includes/shortcodes/configs/la_countdown.php:162
+#: includes/shortcodes/configs/la_divider.php:38
+#: includes/shortcodes/configs/la_heading.php:170
+#: includes/shortcodes/configs/la_icon_boxes.php:186
+#: includes/shortcodes/configs/la_icon_list.php:19
+#: includes/shortcodes/configs/la_icon_list_item.php:19
+#: includes/shortcodes/configs/la_instagram_feed.php:110
+#: includes/shortcodes/configs/la_maps.php:167
+#: includes/shortcodes/configs/la_portfolio_masonry.php:402
+#: includes/shortcodes/configs/la_pricing_table.php:221
+#: includes/shortcodes/configs/la_show_portfolios.php:227
+#: includes/shortcodes/configs/la_show_posts.php:337
+#: includes/shortcodes/configs/la_social_link.php:35
+#: includes/shortcodes/configs/la_stats_counter.php:178
+#: includes/shortcodes/configs/la_team_member.php:79
+#: includes/shortcodes/configs/la_testimonial.php:73
+#: includes/shortcodes/configs/la_timeline.php:19
+#: includes/shortcodes/configs/la_timeline_item.php:19
+#: includes/shortcodes/configs/product.php:101
+#: includes/shortcodes/configs/product_attribute.php:196
+#: includes/shortcodes/configs/product_categories.php:116
+#: includes/shortcodes/configs/product_category.php:218
+#: includes/shortcodes/configs/products.php:165
+#: includes/shortcodes/configs/recent_products.php:171
+#: includes/shortcodes/configs/sale_products.php:185
+#: includes/shortcodes/configs/top_rated_products.php:171
+msgid "La Studio"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:53
+msgid "Background Image"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:56
+msgid ""
+"Select your background image. <strong>Make sure that your image is of high "
+"resolution, we will resize the image to make it fit.</strong><br><strong>For "
+"optimal performance, try keeping your images close to 1600 x 900 "
+"pixels</strong>"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:61
+msgid "Background Image Parallax"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:70
+msgid ""
+"Choose the direction of your parallax. <strong>Note that browsers render "
+"fixed directions very slow since they aren't hardware accelerated.</strong>"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:75
+msgid "Parallax Speed"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:78
+msgid ""
+"The movement speed, value should be between 0.1 and 1.0. A lower number "
+"means slower scrolling speed."
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:87
+msgid "Background Style / Repeat"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:90
+msgid "Cover Whole Row (covers the whole row)"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:91
+msgid "Repeating Image Pattern"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:93
+msgid ""
+"Select whether the background image above should cover the whole row, or "
+"whether the image is a background seamless pattern."
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:98
+msgid "Background Position / Alignment"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:101
+msgid "Centered"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:102
+msgid "Left (only applies to up, down parallax or fixed)"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:103
+msgid "Right (only applies to up, down parallax or fixed)"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:104
+msgid "Top (only applies to left or right parallax)"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:105
+msgid "Bottom (only applies to left or right parallax)"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:107
+msgid ""
+"The alignment of the background / parallax image. Note that this most likely "
+"will only be noticeable in smaller screens, if the row is large enough, the "
+"image will most likely be fully visible. Use this if you want to ensure that "
+"a certain area will always be visible in your parallax in smaller screens."
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:112
+msgid "Opacity"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:115
+msgid ""
+"You may set the opacity level for your parallax. You can add a background "
+"color to your row and add an opacity here to tint your parallax. <strong>"
+"Please choose an integer value between 1 and 100.</strong>"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:121
+msgid "Check this to enable the parallax effect in mobile devices"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:122
+msgid ""
+"Parallax effects would most probably cause slowdowns when your site is "
+"viewed in mobile devices. If the device width is less than 980 pixels, then "
+"it is assumed that the site is being viewed in a mobile device."
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:126
+msgid "Custom ID"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:129
+msgid "Add a custom id for the element here. Only one ID can be defined."
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:130
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:138
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:146
+#: includes/shortcodes/configs/la_icon_boxes.php:56
+#: includes/shortcodes/configs/la_maps.php:117
+#: includes/shortcodes/configs/la_maps.php:124
+#: includes/shortcodes/configs/la_maps.php:131
+#: includes/shortcodes/configs/la_maps.php:139
+#: includes/shortcodes/configs/la_maps.php:147
+msgid "Advanced"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:134
+msgid "Parallax ID"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:137
+msgid "Assign an ID for the actual parallax row here."
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:142
+msgid "Custom Class"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-parallax-row.php:145
+msgid ""
+"Add a custom class name for the element here. If defining multiple classes, "
+"separate them by lines and define them like you would in HTML code."
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-param.php:41
+msgid "Responsive Options"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-param.php:52
+#: includes/options/fields/column-responsive.php:63
+#: includes/options/fields/responsive.php:65
+msgid "Large Desktop"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-param.php:63
+#: includes/options/fields/column-responsive.php:76
+#: includes/options/fields/responsive.php:80
+#: includes/options/fields/typography.php:145
+#: includes/options/fields/typography.php:206
+msgid "Desktop"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-param.php:75
+#: includes/options/fields/column-responsive.php:89
+#: includes/options/fields/responsive.php:95
+#: includes/options/fields/typography.php:154
+#: includes/options/fields/typography.php:215
+msgid "Tablet"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-param.php:87
+#: includes/options/fields/column-responsive.php:102
+#: includes/options/fields/responsive.php:110
+#: includes/options/fields/typography.php:163
+#: includes/options/fields/typography.php:224
+msgid "Tablet Portrait"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-param.php:98
+#: includes/options/fields/column-responsive.php:115
+#: includes/options/fields/responsive.php:125
+#: includes/options/fields/typography.php:172
+#: includes/options/fields/typography.php:233
+msgid "Mobile Landscape"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-param.php:108
+#: includes/options/fields/column-responsive.php:128
+#: includes/options/fields/responsive.php:140
+#: includes/options/fields/typography.php:181
+#: includes/options/fields/typography.php:242
+msgid "Mobile"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-param.php:188
+msgid "Vertical"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-param.php:189
+msgid "Horizontal"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-param.php:190
+#: includes/shortcodes/configs/la_portfolio_masonry.php:246
+msgid "Custom"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-param.php:193
+msgid "Choose Colors"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-row.php:24
+msgid "Background Gradient"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-row.php:28
+msgid "Use Background Gradient"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-row.php:36
+msgid "Gradient Type"
+msgstr ""
+
+#: includes/shortcodes/class-lastudio-shortcodes-row.php:38
+msgid "At least two color points should be selected."
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch-widget.php:14
+msgid ""
+"Shows a custom attribute in a widget which lets you narrow down the list of "
+"products when viewing product categories."
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch-widget.php:16
+msgid "WooCommerce Layered Nav"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch-widget.php:65
+msgid "Filter by"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch-widget.php:71
+#: includes/swatch/class-lastudio-swatch.php:534
+#: includes/swatch/class-lastudio-swatch.php:633
+#: includes/shortcodes/configs/product_attribute.php:95
+msgid "Attribute"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch-widget.php:77
+msgid "Display type"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch-widget.php:79
+#: includes/swatch/class-lastudio-swatch.php:69
+#: includes/swatch/class-lastudio-swatch.php:70
+#: includes/swatch/class-lastudio-swatch.php:331
+msgid "Swatches"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch-widget.php:80
+#: includes/shortcodes/configs/best_selling_products.php:19
+#: includes/shortcodes/configs/featured_products.php:19
+#: includes/shortcodes/configs/product.php:29
+#: includes/shortcodes/configs/product_attribute.php:25
+#: includes/shortcodes/configs/product_category.php:51
+#: includes/shortcodes/configs/products.php:19
+#: includes/shortcodes/configs/recent_products.php:19
+#: includes/shortcodes/configs/sale_products.php:19
+#: includes/shortcodes/configs/top_rated_products.php:19
+msgid "List"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch-widget.php:81
+msgid "Dropdown"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch-widget.php:87
+msgid "Query type"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch-widget.php:89
+msgid "AND"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch-widget.php:90
+msgid "OR"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch-widget.php:224
+#, php-format
+msgid "Any %s"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:104
+msgid "Swatches and Photos"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:117
+msgid "Hard crop?"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:121
+msgid "The default size for color swatches and photos."
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:143
+msgid "Swatch Attributes Visibility"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:144
+msgid "Swatch attributes visibility on items from the product listing page"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:151
+msgid "Attributes to apply for swatch product gallery"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:159
+#, php-format
+msgid "Please %s add new attribute %s before to do this!"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:206
+#: includes/swatch/class-lastudio-swatch.php:252
+msgid "Swatch Type"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:212
+#: includes/swatch/class-lastudio-swatch.php:258
+#: includes/swatch/class-lastudio-swatch.php:318
+#: includes/swatch/class-lastudio-swatch.php:322
+#: includes/swatch/class-lastudio-swatch.php:354
+#: includes/shortcodes/configs/la_icon_boxes.php:117
+#: includes/shortcodes/configs/la_timeline_item.php:46
+msgid "None"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:213
+#: includes/swatch/class-lastudio-swatch.php:259
+msgid "Color Swatch"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:214
+#: includes/swatch/class-lastudio-swatch.php:227
+#: includes/swatch/class-lastudio-swatch.php:260
+#: includes/swatch/class-lastudio-swatch.php:273
+#: includes/swatch/class-lastudio-swatch.php:607
+msgid "Photo"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:291
+#: includes/swatch/class-lastudio-swatch.php:495
+#: includes/shortcodes/configs/la_instagram_feed.php:88
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:309
+#: includes/swatch/class-lastudio-swatch.php:315
+msgid "Not Set"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:355
+msgid "Taxonomy Colors and Images"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:356
+msgid "Custom Colors and Images"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:357
+msgid "Radio Button"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:360
+#: includes/swatch/class-lastudio-swatch.php:365
+#: includes/shortcodes/configs/best_selling_products.php:29
+#: includes/shortcodes/configs/featured_products.php:29
+#: includes/shortcodes/configs/la_banner.php:24
+#: includes/shortcodes/configs/la_heading.php:30
+#: includes/shortcodes/configs/la_instagram_feed.php:55
+#: includes/shortcodes/configs/la_portfolio_masonry.php:199
+#: includes/shortcodes/configs/la_portfolio_masonry.php:245
+#: includes/shortcodes/configs/la_show_portfolios.php:172
+#: includes/shortcodes/configs/la_show_posts.php:41
+#: includes/shortcodes/configs/la_show_posts.php:66
+#: includes/shortcodes/configs/la_show_posts.php:111
+#: includes/shortcodes/configs/la_show_posts.php:217
+#: includes/shortcodes/configs/la_social_link.php:19
+#: includes/shortcodes/configs/product.php:39
+#: includes/shortcodes/configs/product_attribute.php:35
+#: includes/shortcodes/configs/product_category.php:61
+#: includes/shortcodes/configs/products.php:29
+#: includes/shortcodes/configs/recent_products.php:29
+#: includes/shortcodes/configs/sale_products.php:29
+#: includes/shortcodes/configs/top_rated_products.php:29
+msgid "Default"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:361
+msgid "Show Only Label"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:366
+#: includes/shortcodes/configs/la_social_link.php:20
+msgid "Circle"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:367
+#: includes/shortcodes/configs/la_social_link.php:21
+msgid "Square"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:368
+msgid "Rounder"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:373
+msgid "Image"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:395
+msgid ""
+"Before you can add a swatches you need to add some variation attributes on "
+"the <strong>Attributes</strong> tab."
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:397
+msgid "Learn more"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:406
+msgid "Product Attribute Name"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:409
+msgid "Attribute Control Type"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:483
+#: includes/swatch/class-lastudio-swatch.php:537
+msgid "Type"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:492
+msgid "Swatches and Photos Size"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:496
+msgid "Medium"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:497
+msgid "Product thumbnails"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:498
+msgid "Catalog images"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:499
+msgid "Swatches Image Size"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:507
+#: includes/shortcodes/configs/best_selling_products.php:16
+#: includes/shortcodes/configs/featured_products.php:16
+#: includes/shortcodes/configs/la_show_portfolios.php:20
+#: includes/shortcodes/configs/la_show_posts.php:38
+#: includes/shortcodes/configs/product.php:26
+#: includes/shortcodes/configs/product_attribute.php:22
+#: includes/shortcodes/configs/product_category.php:48
+#: includes/shortcodes/configs/products.php:16
+#: includes/shortcodes/configs/recent_products.php:16
+#: includes/shortcodes/configs/sale_products.php:16
+#: includes/shortcodes/configs/top_rated_products.php:16
+msgid "Layout"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:516
+#: includes/shortcodes/configs/best_selling_products.php:26
+#: includes/shortcodes/configs/best_selling_products.php:41
+#: includes/shortcodes/configs/featured_products.php:26
+#: includes/shortcodes/configs/featured_products.php:41
+#: includes/shortcodes/configs/la_btn.php:29
+#: includes/shortcodes/configs/la_show_portfolios.php:29
+#: includes/shortcodes/configs/la_show_portfolios.php:45
+#: includes/shortcodes/configs/la_show_posts.php:63
+#: includes/shortcodes/configs/la_show_posts.php:76
+#: includes/shortcodes/configs/la_show_posts.php:92
+#: includes/shortcodes/configs/la_show_posts.php:108
+#: includes/shortcodes/configs/la_social_link.php:16
+#: includes/shortcodes/configs/product.php:36
+#: includes/shortcodes/configs/product.php:51
+#: includes/shortcodes/configs/product_attribute.php:32
+#: includes/shortcodes/configs/product_attribute.php:47
+#: includes/shortcodes/configs/product_categories.php:76
+#: includes/shortcodes/configs/product_category.php:58
+#: includes/shortcodes/configs/product_category.php:73
+#: includes/shortcodes/configs/products.php:26
+#: includes/shortcodes/configs/products.php:41
+#: includes/shortcodes/configs/recent_products.php:26
+#: includes/shortcodes/configs/recent_products.php:41
+#: includes/shortcodes/configs/sale_products.php:26
+#: includes/shortcodes/configs/sale_products.php:43
+#: includes/shortcodes/configs/top_rated_products.php:26
+#: includes/shortcodes/configs/top_rated_products.php:41
+msgid "Style"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:523
+msgid "Attribute Configuration"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:531
+msgid "Preview"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:591
+msgid "Attribute Color or Image"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:625
+msgid "Swatch Product Gallery"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:636
+msgid "Gallery"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:672
+msgid "Product image"
+msgstr ""
+
+#: includes/swatch/class-lastudio-swatch.php:678
+msgid "Product gallery"
+msgstr ""
+
+#: includes/swatch/functions.php:24 includes/swatch/functions.php:109
+msgid "Choose an option"
+msgstr ""
+
+#: includes/woothreesixty/class-lastudio-woothreesixty.php:35
+msgid "360 Image Settings"
+msgstr ""
+
+#: includes/woothreesixty/class-lastudio-woothreesixty.php:47
+msgid "Replace Image with 360 Image"
+msgstr ""
+
+#: includes/woothreesixty/class-lastudio-woothreesixty.php:170
+msgid "Video Link"
+msgstr ""
+
+#: includes/options/fields/background.php:31
+#: includes/options/fields/background.php:32
+#: includes/options/fields/upload.php:23 includes/options/fields/upload.php:24
+msgid "Upload"
+msgstr ""
+
+#: includes/options/fields/background.php:33
+#: includes/options/fields/upload.php:25
+msgid "Use Image"
+msgstr ""
+
+#: includes/options/fields/backup.php:21
+msgid "Import a Backup"
+msgstr ""
+
+#: includes/options/fields/backup.php:22
+msgid "copy-paste your backup string here"
+msgstr ""
+
+#: includes/options/fields/backup.php:27
+msgid "Export and Download Backup"
+msgstr ""
+
+#: includes/options/fields/backup.php:28
+msgid "or"
+msgstr ""
+
+#: includes/options/fields/backup.php:30
+msgid "Please be sure for reset all of framework options."
+msgstr ""
+
+#: includes/options/fields/gallery.php:21
+msgid "Add Gallery"
+msgstr ""
+
+#: includes/options/fields/gallery.php:22
+msgid "Edit Gallery"
+msgstr ""
+
+#: includes/options/fields/gallery.php:23
+msgid "Clear"
+msgstr ""
+
+#: includes/options/fields/group.php:22
+msgid "Adding"
+msgstr ""
+
+#: includes/options/fields/group.php:45 includes/options/fields/group.php:71
+msgid "Remove"
+msgstr ""
+
+#: includes/options/fields/icon.php:26
+msgid "Remove Icon"
+msgstr ""
+
+#: includes/options/fields/image.php:22
+msgid "Add Image"
+msgstr ""
+
+#: includes/options/fields/la-demo-importer.php:39
+msgid "Demo Imported"
+msgstr ""
+
+#: includes/options/fields/la-demo-importer.php:40
+msgid "Imported"
+msgstr ""
+
+#: includes/options/fields/la-demo-importer.php:49
+#: includes/options/fields/la-demo-importer.php:50
+msgid "Import Demo"
+msgstr ""
+
+#: includes/options/fields/la-demo-importer.php:60
+msgid "Active:"
+msgstr ""
+
+#: includes/options/fields/la-demo-importer.php:63
+msgid "Please Wait..."
+msgstr ""
+
+#: includes/options/fields/la-demo-importer.php:65
+msgid "Re-Import"
+msgstr ""
+
+#: includes/options/fields/la-demo-importer.php:70
+msgid "Without Content"
+msgstr ""
+
+#: includes/options/fields/switcher.php:20
+msgid "on"
+msgstr ""
+
+#: includes/options/fields/switcher.php:20
+msgid "off"
+msgstr ""
+
+#: includes/options/fields/typography.php:85
+msgid "Font Family"
+msgstr ""
+
+#: includes/options/fields/typography.php:90
+msgid "Web Safe Fonts"
+msgstr ""
+
+#: includes/options/fields/typography.php:96
+msgid "Google Fonts"
+msgstr ""
+
+#: includes/options/fields/typography.php:114
+msgid "Font Weight & Style"
+msgstr ""
+
+#: includes/options/fields/typography.php:136
+msgid "Font Size"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:20
+#: includes/shortcodes/configs/featured_products.php:20
+#: includes/shortcodes/configs/la_show_portfolios.php:23
+#: includes/shortcodes/configs/product.php:30
+#: includes/shortcodes/configs/product_attribute.php:26
+#: includes/shortcodes/configs/product_category.php:52
+#: includes/shortcodes/configs/products.php:20
+#: includes/shortcodes/configs/recent_products.php:20
+#: includes/shortcodes/configs/sale_products.php:20
+#: includes/shortcodes/configs/top_rated_products.php:20
+msgid "Grid"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:30
+#: includes/shortcodes/configs/featured_products.php:30
+#: includes/shortcodes/configs/product.php:40
+#: includes/shortcodes/configs/product_attribute.php:36
+#: includes/shortcodes/configs/products.php:30
+#: includes/shortcodes/configs/recent_products.php:30
+#: includes/shortcodes/configs/sale_products.php:30
+#: includes/shortcodes/configs/top_rated_products.php:30
+msgid "Special"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:31
+#: includes/shortcodes/configs/featured_products.php:31
+#: includes/shortcodes/configs/product.php:41
+#: includes/shortcodes/configs/product_attribute.php:37
+#: includes/shortcodes/configs/product_category.php:62
+#: includes/shortcodes/configs/products.php:31
+#: includes/shortcodes/configs/recent_products.php:31
+#: includes/shortcodes/configs/sale_products.php:31
+#: includes/shortcodes/configs/top_rated_products.php:31
+msgid "Mini"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:44
+#: includes/shortcodes/configs/featured_products.php:44
+#: includes/shortcodes/configs/la_portfolio_masonry.php:185
+#: includes/shortcodes/configs/la_pricing_table.php:197
+#: includes/shortcodes/configs/la_show_portfolios.php:32
+#: includes/shortcodes/configs/product.php:54
+#: includes/shortcodes/configs/product_attribute.php:50
+#: includes/shortcodes/configs/product_categories.php:79
+#: includes/shortcodes/configs/product_category.php:76
+#: includes/shortcodes/configs/products.php:44
+#: includes/shortcodes/configs/recent_products.php:44
+#: includes/shortcodes/configs/sale_products.php:46
+#: includes/shortcodes/configs/top_rated_products.php:44
+msgid "Design 01"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:45
+#: includes/shortcodes/configs/featured_products.php:45
+#: includes/shortcodes/configs/la_portfolio_masonry.php:186
+#: includes/shortcodes/configs/la_pricing_table.php:198
+#: includes/shortcodes/configs/la_show_portfolios.php:33
+#: includes/shortcodes/configs/product.php:55
+#: includes/shortcodes/configs/product_attribute.php:51
+#: includes/shortcodes/configs/product_category.php:77
+#: includes/shortcodes/configs/products.php:45
+#: includes/shortcodes/configs/recent_products.php:45
+#: includes/shortcodes/configs/sale_products.php:47
+#: includes/shortcodes/configs/top_rated_products.php:45
+msgid "Design 02"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:46
+#: includes/shortcodes/configs/featured_products.php:46
+#: includes/shortcodes/configs/la_portfolio_masonry.php:187
+#: includes/shortcodes/configs/la_pricing_table.php:199
+#: includes/shortcodes/configs/la_show_portfolios.php:34
+#: includes/shortcodes/configs/product.php:56
+#: includes/shortcodes/configs/product_attribute.php:52
+#: includes/shortcodes/configs/product_category.php:78
+#: includes/shortcodes/configs/products.php:46
+#: includes/shortcodes/configs/recent_products.php:46
+#: includes/shortcodes/configs/sale_products.php:48
+#: includes/shortcodes/configs/top_rated_products.php:46
+msgid "Design 03"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:47
+#: includes/shortcodes/configs/featured_products.php:47
+#: includes/shortcodes/configs/la_portfolio_masonry.php:188
+#: includes/shortcodes/configs/la_pricing_table.php:200
+#: includes/shortcodes/configs/la_show_portfolios.php:35
+#: includes/shortcodes/configs/product.php:57
+#: includes/shortcodes/configs/product_attribute.php:53
+#: includes/shortcodes/configs/product_category.php:79
+#: includes/shortcodes/configs/products.php:47
+#: includes/shortcodes/configs/recent_products.php:47
+#: includes/shortcodes/configs/sale_products.php:49
+#: includes/shortcodes/configs/top_rated_products.php:47
+msgid "Design 04"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:48
+#: includes/shortcodes/configs/featured_products.php:48
+#: includes/shortcodes/configs/product.php:58
+#: includes/shortcodes/configs/product_attribute.php:54
+#: includes/shortcodes/configs/product_category.php:80
+#: includes/shortcodes/configs/products.php:48
+#: includes/shortcodes/configs/recent_products.php:48
+#: includes/shortcodes/configs/sale_products.php:50
+#: includes/shortcodes/configs/top_rated_products.php:48
+msgid "Design 05"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:49
+#: includes/shortcodes/configs/featured_products.php:49
+#: includes/shortcodes/configs/product.php:59
+#: includes/shortcodes/configs/product_attribute.php:55
+#: includes/shortcodes/configs/product_category.php:82
+#: includes/shortcodes/configs/products.php:49
+#: includes/shortcodes/configs/recent_products.php:49
+#: includes/shortcodes/configs/sale_products.php:51
+#: includes/shortcodes/configs/top_rated_products.php:49
+msgid "Design 06"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:59
+#: includes/shortcodes/configs/featured_products.php:89
+#: includes/shortcodes/configs/la_show_portfolios.php:152
+#: includes/shortcodes/configs/la_show_posts.php:288
+#: includes/shortcodes/configs/la_team_member.php:44
+#: includes/shortcodes/configs/product_attribute.php:114
+#: includes/shortcodes/configs/product_category.php:136
+#: includes/shortcodes/configs/recent_products.php:89
+#: includes/shortcodes/configs/sale_products.php:103
+#: includes/shortcodes/configs/top_rated_products.php:89
+msgid "Total items"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:60
+#: includes/shortcodes/configs/featured_products.php:90
+#: includes/shortcodes/configs/product_attribute.php:115
+#: includes/shortcodes/configs/product_category.php:137
+#: includes/shortcodes/configs/recent_products.php:90
+#: includes/shortcodes/configs/sale_products.php:104
+#: includes/shortcodes/configs/top_rated_products.php:90
+msgid ""
+"The \"per_page\" shortcode determines how many products to show on the page"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:68
+#: includes/shortcodes/configs/featured_products.php:98
+#: includes/shortcodes/configs/la_portfolio_masonry.php:117
+#: includes/shortcodes/configs/la_show_portfolios.php:162
+#: includes/shortcodes/configs/la_show_posts.php:297
+#: includes/shortcodes/configs/product_attribute.php:123
+#: includes/shortcodes/configs/product_category.php:145
+#: includes/shortcodes/configs/products.php:105
+#: includes/shortcodes/configs/recent_products.php:98
+#: includes/shortcodes/configs/sale_products.php:112
+#: includes/shortcodes/configs/top_rated_products.php:98
+msgid "Paged"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:73
+#: includes/shortcodes/configs/featured_products.php:103
+#: includes/shortcodes/configs/product_attribute.php:128
+#: includes/shortcodes/configs/product_categories.php:71
+#: includes/shortcodes/configs/product_category.php:150
+#: includes/shortcodes/configs/products.php:110
+#: includes/shortcodes/configs/recent_products.php:103
+#: includes/shortcodes/configs/sale_products.php:117
+#: includes/shortcodes/configs/top_rated_products.php:103
+msgid "Columns"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:82
+#: includes/shortcodes/configs/featured_products.php:112
+#: includes/shortcodes/configs/product.php:69
+#: includes/shortcodes/configs/product_attribute.php:137
+#: includes/shortcodes/configs/product_categories.php:85
+#: includes/shortcodes/configs/product_category.php:159
+#: includes/shortcodes/configs/products.php:119
+#: includes/shortcodes/configs/recent_products.php:112
+#: includes/shortcodes/configs/sale_products.php:126
+#: includes/shortcodes/configs/top_rated_products.php:112
+msgid "Enable Custom Image Size"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:88
+#: includes/shortcodes/configs/featured_products.php:118
+#: includes/shortcodes/configs/product.php:75
+#: includes/shortcodes/configs/product_attribute.php:143
+#: includes/shortcodes/configs/product_category.php:165
+#: includes/shortcodes/configs/products.php:125
+#: includes/shortcodes/configs/recent_products.php:118
+#: includes/shortcodes/configs/sale_products.php:132
+#: includes/shortcodes/configs/top_rated_products.php:118
+msgid "Disable alternative image "
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:100
+#: includes/shortcodes/configs/featured_products.php:130
+#: includes/shortcodes/configs/la_instagram_feed.php:70
+#: includes/shortcodes/configs/la_show_portfolios.php:195
+#: includes/shortcodes/configs/la_show_posts.php:262
+#: includes/shortcodes/configs/la_team_member.php:53
+#: includes/shortcodes/configs/la_testimonial.php:47
+#: includes/shortcodes/configs/product_attribute.php:155
+#: includes/shortcodes/configs/product_categories.php:97
+#: includes/shortcodes/configs/product_category.php:177
+#: includes/shortcodes/configs/products.php:137
+#: includes/shortcodes/configs/recent_products.php:130
+#: includes/shortcodes/configs/sale_products.php:144
+#: includes/shortcodes/configs/top_rated_products.php:130
+msgid "Enable slider"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:110
+#: includes/shortcodes/configs/featured_products.php:140
+#: includes/shortcodes/configs/product.php:87
+#: includes/shortcodes/configs/product_attribute.php:165
+#: includes/shortcodes/configs/product_category.php:187
+#: includes/shortcodes/configs/products.php:147
+#: includes/shortcodes/configs/recent_products.php:140
+#: includes/shortcodes/configs/sale_products.php:154
+#: includes/shortcodes/configs/top_rated_products.php:140
+msgid "Enable Ajax Loading"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:116
+#: includes/shortcodes/configs/featured_products.php:146
+#: includes/shortcodes/configs/la_portfolio_masonry.php:131
+#: includes/shortcodes/configs/la_show_portfolios.php:205
+#: includes/shortcodes/configs/product_attribute.php:171
+#: includes/shortcodes/configs/product_category.php:193
+#: includes/shortcodes/configs/recent_products.php:146
+#: includes/shortcodes/configs/sale_products.php:160
+#: includes/shortcodes/configs/top_rated_products.php:146
+msgid "Enable Load More"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:122
+#: includes/shortcodes/configs/featured_products.php:152
+#: includes/shortcodes/configs/la_portfolio_masonry.php:138
+#: includes/shortcodes/configs/la_show_portfolios.php:211
+#: includes/shortcodes/configs/la_timeline.php:43
+#: includes/shortcodes/configs/product_attribute.php:177
+#: includes/shortcodes/configs/product_category.php:199
+#: includes/shortcodes/configs/recent_products.php:152
+#: includes/shortcodes/configs/sale_products.php:166
+#: includes/shortcodes/configs/top_rated_products.php:152
+msgid "Load More Text"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:124
+#: includes/shortcodes/configs/featured_products.php:154
+#: includes/shortcodes/configs/la_portfolio_masonry.php:140
+#: includes/shortcodes/configs/la_show_portfolios.php:213
+#: includes/shortcodes/configs/product_attribute.php:179
+#: includes/shortcodes/configs/product_category.php:201
+#: includes/shortcodes/configs/recent_products.php:154
+#: includes/shortcodes/configs/sale_products.php:168
+#: includes/shortcodes/configs/top_rated_products.php:154
+msgid "Load more"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:138
+msgid "Best selling products"
+msgstr ""
+
+#: includes/shortcodes/configs/best_selling_products.php:142
+msgid "List best selling products on sale."
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:59
+#: includes/shortcodes/configs/la_portfolio_masonry.php:77
+#: includes/shortcodes/configs/la_show_portfolios.php:120
+#: includes/shortcodes/configs/la_show_posts.php:181
+#: includes/shortcodes/configs/product_attribute.php:65
+#: includes/shortcodes/configs/product_categories.php:36
+#: includes/shortcodes/configs/product_category.php:93
+#: includes/shortcodes/configs/products.php:59
+#: includes/shortcodes/configs/recent_products.php:59
+#: includes/shortcodes/configs/sale_products.php:73
+#: includes/shortcodes/configs/top_rated_products.php:59
+msgid "Order by"
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:63
+#: includes/shortcodes/configs/la_portfolio_masonry.php:80
+#: includes/shortcodes/configs/la_show_portfolios.php:124
+#: includes/shortcodes/configs/la_show_posts.php:185
+#: includes/shortcodes/configs/product_attribute.php:69
+#: includes/shortcodes/configs/product_categories.php:40
+#: includes/shortcodes/configs/product_category.php:97
+#: includes/shortcodes/configs/products.php:63
+#: includes/shortcodes/configs/recent_products.php:63
+#: includes/shortcodes/configs/sale_products.php:77
+#: includes/shortcodes/configs/top_rated_products.php:63
+msgid "Date"
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:65
+#: includes/shortcodes/configs/la_portfolio_masonry.php:82
+#: includes/shortcodes/configs/la_show_portfolios.php:126
+#: includes/shortcodes/configs/la_show_posts.php:187
+#: includes/shortcodes/configs/product_attribute.php:71
+#: includes/shortcodes/configs/product_categories.php:42
+#: includes/shortcodes/configs/product_category.php:99
+#: includes/shortcodes/configs/products.php:65
+#: includes/shortcodes/configs/recent_products.php:65
+#: includes/shortcodes/configs/sale_products.php:79
+#: includes/shortcodes/configs/top_rated_products.php:65
+msgid "Author"
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:67
+#: includes/shortcodes/configs/la_portfolio_masonry.php:84
+#: includes/shortcodes/configs/la_show_portfolios.php:128
+#: includes/shortcodes/configs/la_show_posts.php:189
+#: includes/shortcodes/configs/product_attribute.php:73
+#: includes/shortcodes/configs/product_categories.php:44
+#: includes/shortcodes/configs/product_category.php:101
+#: includes/shortcodes/configs/products.php:67
+#: includes/shortcodes/configs/recent_products.php:67
+#: includes/shortcodes/configs/sale_products.php:81
+#: includes/shortcodes/configs/top_rated_products.php:67
+msgid "Modified"
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:68
+#: includes/shortcodes/configs/la_portfolio_masonry.php:85
+#: includes/shortcodes/configs/la_show_portfolios.php:129
+#: includes/shortcodes/configs/la_show_posts.php:190
+#: includes/shortcodes/configs/product_attribute.php:74
+#: includes/shortcodes/configs/product_categories.php:45
+#: includes/shortcodes/configs/product_category.php:102
+#: includes/shortcodes/configs/products.php:68
+#: includes/shortcodes/configs/recent_products.php:68
+#: includes/shortcodes/configs/sale_products.php:82
+#: includes/shortcodes/configs/top_rated_products.php:68
+msgid "Random"
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:69
+#: includes/shortcodes/configs/la_portfolio_masonry.php:86
+#: includes/shortcodes/configs/la_show_portfolios.php:130
+#: includes/shortcodes/configs/la_show_posts.php:191
+#: includes/shortcodes/configs/product_attribute.php:75
+#: includes/shortcodes/configs/product_categories.php:46
+#: includes/shortcodes/configs/product_category.php:103
+#: includes/shortcodes/configs/products.php:69
+#: includes/shortcodes/configs/recent_products.php:69
+#: includes/shortcodes/configs/sale_products.php:83
+#: includes/shortcodes/configs/top_rated_products.php:69
+msgid "Comment count"
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:70
+#: includes/shortcodes/configs/la_portfolio_masonry.php:87
+#: includes/shortcodes/configs/la_show_portfolios.php:131
+#: includes/shortcodes/configs/la_show_posts.php:192
+#: includes/shortcodes/configs/product_attribute.php:76
+#: includes/shortcodes/configs/product_categories.php:47
+#: includes/shortcodes/configs/product_category.php:104
+#: includes/shortcodes/configs/products.php:70
+#: includes/shortcodes/configs/recent_products.php:70
+#: includes/shortcodes/configs/sale_products.php:84
+#: includes/shortcodes/configs/top_rated_products.php:70
+msgid "Menu order"
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:73
+#: includes/shortcodes/configs/la_portfolio_masonry.php:90
+#: includes/shortcodes/configs/la_show_portfolios.php:134
+#: includes/shortcodes/configs/la_show_posts.php:195
+#: includes/shortcodes/configs/product_attribute.php:79
+#: includes/shortcodes/configs/product_categories.php:50
+#: includes/shortcodes/configs/product_category.php:107
+#: includes/shortcodes/configs/products.php:73
+#: includes/shortcodes/configs/recent_products.php:73
+#: includes/shortcodes/configs/sale_products.php:87
+#: includes/shortcodes/configs/top_rated_products.php:73
+#, php-format
+msgid "Select how to sort retrieved products. More at %s."
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:77
+#: includes/shortcodes/configs/la_portfolio_masonry.php:95
+#: includes/shortcodes/configs/la_show_portfolios.php:139
+#: includes/shortcodes/configs/la_show_posts.php:200
+#: includes/shortcodes/configs/product_attribute.php:83
+#: includes/shortcodes/configs/product_categories.php:54
+#: includes/shortcodes/configs/product_category.php:111
+#: includes/shortcodes/configs/products.php:77
+#: includes/shortcodes/configs/recent_products.php:77
+#: includes/shortcodes/configs/sale_products.php:91
+#: includes/shortcodes/configs/top_rated_products.php:77
+msgid "Sort order"
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:81
+#: includes/shortcodes/configs/la_portfolio_masonry.php:99
+#: includes/shortcodes/configs/la_show_portfolios.php:143
+#: includes/shortcodes/configs/la_show_posts.php:204
+#: includes/shortcodes/configs/product_attribute.php:87
+#: includes/shortcodes/configs/product_categories.php:58
+#: includes/shortcodes/configs/product_category.php:115
+#: includes/shortcodes/configs/products.php:81
+#: includes/shortcodes/configs/recent_products.php:81
+#: includes/shortcodes/configs/sale_products.php:95
+#: includes/shortcodes/configs/top_rated_products.php:81
+msgid "Descending"
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:82
+#: includes/shortcodes/configs/la_portfolio_masonry.php:100
+#: includes/shortcodes/configs/la_show_portfolios.php:144
+#: includes/shortcodes/configs/la_show_posts.php:205
+#: includes/shortcodes/configs/product_attribute.php:88
+#: includes/shortcodes/configs/product_categories.php:59
+#: includes/shortcodes/configs/product_category.php:116
+#: includes/shortcodes/configs/products.php:82
+#: includes/shortcodes/configs/recent_products.php:82
+#: includes/shortcodes/configs/sale_products.php:96
+#: includes/shortcodes/configs/top_rated_products.php:82
+msgid "Ascending"
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:85
+#: includes/shortcodes/configs/la_portfolio_masonry.php:102
+#: includes/shortcodes/configs/la_show_portfolios.php:147
+#: includes/shortcodes/configs/la_show_posts.php:208
+#: includes/shortcodes/configs/product_attribute.php:91
+#: includes/shortcodes/configs/product_categories.php:62
+#: includes/shortcodes/configs/product_category.php:119
+#: includes/shortcodes/configs/products.php:85
+#: includes/shortcodes/configs/recent_products.php:85
+#: includes/shortcodes/configs/sale_products.php:99
+#: includes/shortcodes/configs/top_rated_products.php:85
+#, php-format
+msgid "Designates the ascending or descending order. More at %s."
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:168
+msgid "Featured products"
+msgstr ""
+
+#: includes/shortcodes/configs/featured_products.php:172
+msgid "Featured products Display products set as \"featured\""
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:16
+msgid "Upload the banner image"
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:21
+#: includes/shortcodes/configs/la_banner.php:45
+#: includes/shortcodes/configs/la_banner.php:55
+#: includes/shortcodes/configs/la_countdown.php:17
+#: includes/shortcodes/configs/la_portfolio_masonry.php:182
+#: includes/shortcodes/configs/la_team_member.php:20
+#: includes/shortcodes/configs/la_testimonial.php:20
+#: includes/shortcodes/configs/la_timeline.php:28
+msgid "Design"
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:25
+msgid "Description at bottom"
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:26
+msgid "Description at left center"
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:27
+msgid "Description at right center"
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:28
+msgid "Display content when mouse over"
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:29
+msgid "Centered Description"
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:39
+msgid "Background Overlay"
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:49
+msgid "Background Overlay On Hover"
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:59
+msgid "Banner Link"
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:61
+msgid "Add link / select existing page to link to this banner"
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:69
+#: includes/shortcodes/configs/la_icon_boxes.php:25
+#: includes/shortcodes/configs/la_icon_boxes.php:176
+msgid "Description"
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:94
+msgid "Banner Box"
+msgstr ""
+
+#: includes/shortcodes/configs/la_banner.php:98
+msgid "Displays the banner image with Information"
+msgstr ""
+
+#: includes/shortcodes/configs/la_block.php:16
+#: includes/shortcodes/configs/product.php:16
+msgid "Select identificator"
+msgstr ""
+
+#: includes/shortcodes/configs/la_block.php:18
+msgid "Input block ID or block title to see suggestions"
+msgstr ""
+
+#: includes/shortcodes/configs/la_block.php:31
+msgid "La Custom Block"
+msgstr ""
+
+#: includes/shortcodes/configs/la_block.php:35
+msgid "Displays the custom block"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:16
+#: includes/shortcodes/configs/la_pricing_table.php:60
+msgid "Text"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:18
+msgid "Text on the button"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:23
+msgid "URL (Link)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:25
+msgid "Add link to button."
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:30
+msgid "Select button display style."
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:33
+msgid "Flat"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:34
+msgid "Outline"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:41
+msgid "Select button color."
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:44
+msgid "Black"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:45
+msgid "Primary"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:46
+msgid "Three"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:47
+msgid "White"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:48
+msgid "White 2"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:49
+msgid "Gray"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:55
+msgid "Size"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:57
+msgid "Select button display size."
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:68
+#: includes/shortcodes/configs/la_heading.php:44
+msgid "Alignment"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:70
+msgid "Select button alignment."
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:72
+#: includes/shortcodes/configs/la_heading.php:50
+msgid "Inline"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:73
+#: includes/shortcodes/configs/la_heading.php:48
+msgid "Left"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:74
+#: includes/shortcodes/configs/la_heading.php:49
+msgid "Right"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:75
+#: includes/shortcodes/configs/la_heading.php:47
+msgid "Center"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:80
+msgid "Extra class name"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:90
+msgid "La Button"
+msgstr ""
+
+#: includes/shortcodes/configs/la_btn.php:94
+msgid "Eye catching button"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:16
+msgid "LA Advanced Carousel"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:20
+msgid "Carousel anything."
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:28
+msgid "Slider Type"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:38
+msgid "Slides to Scroll"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:47
+msgid "Items to Show"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:53
+msgid "Infinite loop"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:54
+msgid "Restart the slider automatically as it passes the last slide."
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:64
+msgid "Transition speed"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:71
+msgid "Speed at which next slide comes."
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:76
+msgid "Autoplay Slides"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:85
+msgid "Autoplay Speed"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:99
+msgid "Extra Class"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:105
+msgid "Navigation Arrows"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:106
+msgid "Display next / previous navigation arrows"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:109
+#: includes/shortcodes/configs/la_carousel.php:215
+msgid "Show"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:115
+msgid "Arrow Style"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:131
+msgid "Background Color"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:141
+msgid "Border Color"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:151
+msgid "Border Size"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:166
+msgid "Arrow Color"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:176
+msgid "Arrow Size"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:190
+msgid "Select icon for 'Next Arrow'"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:200
+msgid "Select icon for 'Previous Arrow'"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:211
+msgid "Dots Navigation"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:212
+msgid "Display dot navigation"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:222
+msgid "Color of dots"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:232
+msgid "Select icon for 'Navigation Dots'"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:241
+msgid "Item Animation"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:247
+msgid "Draggable Effect"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:248
+msgid "Allow slides to be draggable"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:257
+msgid "Touch Move"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:258
+msgid "Enable slide moving with touch"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:270
+msgid "RTL Mode"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:271
+msgid "Turn on RTL mode"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:280
+msgid "Adaptive Height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:281
+msgid "Turn on Adaptive Height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:290
+msgid "Pause on hover"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:291
+msgid "Pause the slider on hover"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:303
+msgid "Center mode"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:304
+msgid ""
+"Enables centered view with partial prev/next slides. <br>Animations do not "
+"work with center mode.<br>Slides to scroll -> 'All Visible' do not work with "
+"center mode."
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:313
+msgid "Item Auto Width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:314
+msgid "Variable width slides"
+msgstr ""
+
+#: includes/shortcodes/configs/la_carousel.php:323
+msgid "Space between two items"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:20
+#: includes/shortcodes/configs/la_portfolio_masonry.php:169
+#: includes/shortcodes/configs/la_show_posts.php:51
+#: includes/shortcodes/configs/la_show_posts.php:79
+#: includes/shortcodes/configs/la_show_posts.php:95
+#: includes/shortcodes/configs/la_team_member.php:23
+#: includes/shortcodes/configs/la_testimonial.php:23
+#: includes/shortcodes/configs/la_timeline.php:31
+msgid "Style 01"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:21
+#: includes/shortcodes/configs/la_portfolio_masonry.php:170
+#: includes/shortcodes/configs/la_show_posts.php:52
+#: includes/shortcodes/configs/la_show_posts.php:80
+#: includes/shortcodes/configs/la_show_posts.php:96
+#: includes/shortcodes/configs/la_team_member.php:24
+#: includes/shortcodes/configs/la_testimonial.php:24
+#: includes/shortcodes/configs/la_timeline.php:32
+msgid "Style 02"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:26
+msgid "Target Time For Countdown"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:28
+msgid "Date and time format (yyyy/mm/dd hh:mm:ss)."
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:32
+msgid "Countdown Timer Depends on"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:35
+msgid "WordPress Defined Timezone"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:36
+msgid "User's System Timezone"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:41
+msgid "Select Time Units To Display In Countdown Timer"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:44
+msgid "Years"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:45
+msgid "Months"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:46
+msgid "Weeks"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:47
+msgid "Days"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:48
+msgid "Hours"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:49
+msgid "Minutes"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:50
+msgid "Seconds"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:58
+msgid "Day (Singular)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:61
+#: includes/shortcodes/configs/la_countdown.php:68
+#: includes/shortcodes/configs/la_countdown.php:75
+#: includes/shortcodes/configs/la_countdown.php:82
+#: includes/shortcodes/configs/la_countdown.php:89
+#: includes/shortcodes/configs/la_countdown.php:96
+#: includes/shortcodes/configs/la_countdown.php:103
+#: includes/shortcodes/configs/la_countdown.php:110
+#: includes/shortcodes/configs/la_countdown.php:117
+#: includes/shortcodes/configs/la_countdown.php:124
+#: includes/shortcodes/configs/la_countdown.php:131
+#: includes/shortcodes/configs/la_countdown.php:138
+#: includes/shortcodes/configs/la_countdown.php:145
+#: includes/shortcodes/configs/la_countdown.php:152
+msgid "Strings Translation"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:65
+msgid "Days (Plural)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:72
+msgid "Week (Singular)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:79
+msgid "Weeks (Plural)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:86
+msgid "Month (Singular)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:93
+msgid "Months (Plural)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:100
+msgid "Year (Singular)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:107
+msgid "Years (Plural)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:114
+msgid "Hour (Singular)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:121
+msgid "Hours (Plural)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:128
+msgid "Minute (Singular)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:135
+msgid "Minutes (Plural)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:142
+msgid "Second (Singular)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:149
+msgid "Seconds (Plural)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:159
+msgid "Count Down"
+msgstr ""
+
+#: includes/shortcodes/configs/la_countdown.php:163
+msgid "Countdown Timer"
+msgstr ""
+
+#: includes/shortcodes/configs/la_divider.php:16
+msgid "Space Height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_divider.php:35
+msgid "LaStudio Space"
+msgstr ""
+
+#: includes/shortcodes/configs/la_divider.php:39
+msgid "Blank space with custom height."
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:16
+#: includes/shortcodes/configs/la_icon_boxes.php:18
+msgid "Heading"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:22
+msgid "Sub Heading(Optional)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:27
+msgid "Heading tag"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:31
+#: includes/shortcodes/configs/la_portfolio_masonry.php:200
+#: includes/shortcodes/configs/la_show_portfolios.php:173
+#: includes/shortcodes/configs/la_show_posts.php:218
+msgid "H1"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:32
+#: includes/shortcodes/configs/la_portfolio_masonry.php:202
+msgid "H3"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:33
+#: includes/shortcodes/configs/la_portfolio_masonry.php:203
+#: includes/shortcodes/configs/la_show_portfolios.php:175
+#: includes/shortcodes/configs/la_show_posts.php:220
+msgid "H4"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:34
+#: includes/shortcodes/configs/la_show_portfolios.php:176
+#: includes/shortcodes/configs/la_show_posts.php:221
+msgid "H5"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:35
+#: includes/shortcodes/configs/la_portfolio_masonry.php:204
+#: includes/shortcodes/configs/la_show_portfolios.php:177
+#: includes/shortcodes/configs/la_show_posts.php:222
+msgid "H6"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:36
+#: includes/shortcodes/configs/la_portfolio_masonry.php:205
+#: includes/shortcodes/configs/la_show_portfolios.php:178
+#: includes/shortcodes/configs/la_show_posts.php:223
+msgid "DIV"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:37
+msgid "p"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:40
+msgid "Default is H2"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:56
+#: includes/shortcodes/configs/la_stats_counter.php:86
+msgid "Separator"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:59
+#: includes/shortcodes/configs/la_stats_counter.php:89
+msgid "No Separator"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:60
+#: includes/shortcodes/configs/la_stats_counter.php:90
+msgid "Line"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:70
+#: includes/shortcodes/configs/la_stats_counter.php:96
+msgid "Separator Position"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:73
+#: includes/shortcodes/configs/la_stats_counter.php:99
+msgid "Top"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:74
+msgid "Between Heading & Subheading"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:75
+#: includes/shortcodes/configs/la_stats_counter.php:100
+msgid "Bottom"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:76
+msgid "Title between separator"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:86
+#: includes/shortcodes/configs/la_stats_counter.php:111
+msgid "Line Style"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:89
+#: includes/shortcodes/configs/la_icon_boxes.php:118
+#: includes/shortcodes/configs/la_stats_counter.php:114
+msgid "Solid"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:90
+#: includes/shortcodes/configs/la_icon_boxes.php:119
+#: includes/shortcodes/configs/la_stats_counter.php:115
+msgid "Dashed"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:91
+#: includes/shortcodes/configs/la_icon_boxes.php:120
+#: includes/shortcodes/configs/la_stats_counter.php:116
+msgid "Dotted"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:92
+#: includes/shortcodes/configs/la_icon_boxes.php:121
+#: includes/shortcodes/configs/la_stats_counter.php:117
+msgid "Double"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:102
+#: includes/shortcodes/configs/la_stats_counter.php:127
+msgid "Line Width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:132
+#: includes/shortcodes/configs/la_stats_counter.php:157
+msgid "Line Color"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:142
+#: includes/shortcodes/configs/la_icon_boxes.php:166
+msgid "Extra Class for heading"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:146
+msgid "Extra Class for subheading"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:150
+msgid "Extra Class for Line"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:160
+msgid "Subheading"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:167
+msgid "La Heading"
+msgstr ""
+
+#: includes/shortcodes/configs/la_heading.php:171
+msgid "Awesome heading styles."
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:21
+msgid "Provide the title for this icon boxes."
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:27
+msgid "Provide the description for this icon box."
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:31
+#: includes/shortcodes/configs/la_stats_counter.php:21
+msgid "Icon Position"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:34
+msgid "Icon at left with heading"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:35
+msgid "Icon at Right with heading"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:36
+#: includes/shortcodes/configs/la_stats_counter.php:26
+msgid "Icon at Left"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:37
+#: includes/shortcodes/configs/la_stats_counter.php:27
+msgid "Icon at Right"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:38
+#: includes/shortcodes/configs/la_stats_counter.php:25
+msgid "Icon at Top"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:41
+#: includes/shortcodes/configs/la_stats_counter.php:30
+msgid ""
+"Select icon position. Icon box style will be changed according to the icon "
+"position."
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:42
+#: includes/shortcodes/configs/la_icon_boxes.php:58
+#: includes/shortcodes/configs/la_icon_boxes.php:68
+#: includes/shortcodes/configs/la_icon_boxes.php:77
+#: includes/shortcodes/configs/la_icon_boxes.php:90
+#: includes/shortcodes/configs/la_icon_boxes.php:100
+#: includes/shortcodes/configs/la_icon_boxes.php:110
+#: includes/shortcodes/configs/la_icon_boxes.php:123
+#: includes/shortcodes/configs/la_icon_boxes.php:137
+#: includes/shortcodes/configs/la_icon_boxes.php:147
+#: includes/shortcodes/configs/la_icon_boxes.php:161
+msgid "Icon Settings"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:47
+msgid "Icon Styles"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:49
+msgid ""
+"We have given four quick preset if you are in a hurry. Otherwise, create "
+"your own with various options."
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:52
+msgid "Simple"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:53
+msgid "Circle Background"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:54
+msgid "Square Background"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:55
+msgid "Round Background"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:63
+#: includes/shortcodes/configs/la_stats_counter.php:35
+msgid "Icon Size"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:72
+msgid "Icon Box Width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:85
+msgid "Icon Padding"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:98
+#: includes/shortcodes/configs/la_icon_list_item.php:68
+#: includes/shortcodes/configs/la_stats_counter.php:47
+msgid "Icon Color"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:104
+msgid "Icon Background Color"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:114
+msgid "Icon Border Style"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:127
+msgid "Icon Border Width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:141
+msgid "Icon Border Color"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:151
+msgid "Icon Border Radius"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:156
+msgid ""
+"0 pixel value will create a square border. As you increase the value, the "
+"shape convert in circle slowly. (e.g 500 pixels)."
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:170
+msgid "Extra Class for description"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:183
+msgid "Icon boxes"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_boxes.php:187
+msgid "Adds icon box with custom font icon"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_list.php:16
+msgid "Icon Lists"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_list.php:20
+#: includes/shortcodes/configs/la_icon_list_item.php:20
+msgid "Displays the list icon"
+msgstr ""
+
+#: includes/shortcodes/configs/la_icon_list_item.php:73
+#: includes/shortcodes/configs/la_timeline_item.php:38
+msgid "Content"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:20
+msgid "Feed Type"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:23
+msgid "Images with a specific tag"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:24
+msgid "Images from a location."
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:25
+msgid "Images from a user"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:32
+msgid "Hashtag"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:33
+msgid "Only Alphanumeric characters are allowed (a-z, A-Z, 0-9)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:39
+msgid "Location ID"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:40
+msgid "Unique id of a location to get"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:45
+msgid "User ID"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:46
+msgid "Unique id of a user to get"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:51
+msgid "Sort By"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:56
+msgid "Newest to oldest"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:57
+msgid "Oldest to newest"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:58
+msgid "Highest # of likes to lowest."
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:59
+msgid "Lowest # likes to highest."
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:60
+msgid "Highest # of comments to lowest"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:61
+msgid "Lowest # of comments to highest."
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:62
+msgid "Random order"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:77
+msgid "Limit"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:78
+msgid "Maximum number of Images to add. Max of 60"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:89
+msgid "Low Resolution"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:90
+msgid "Standard Resolution"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:107
+msgid "Instagram Feed"
+msgstr ""
+
+#: includes/shortcodes/configs/la_instagram_feed.php:111
+msgid "Display Instagram photos from any non-private Instagram accounts"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:16
+msgid "Width (in %)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:20
+#: includes/shortcodes/configs/la_maps.php:28
+#: includes/shortcodes/configs/la_maps.php:36
+#: includes/shortcodes/configs/la_maps.php:45
+#: includes/shortcodes/configs/la_maps.php:54
+#: includes/shortcodes/configs/la_maps.php:63
+#: includes/shortcodes/configs/la_maps.php:71
+#: includes/shortcodes/configs/la_maps.php:156
+msgid "General Settings"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:24
+msgid "Height (in px)"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:32
+msgid "Map type"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:35
+msgid "Roadmap"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:35
+msgid "Satellite"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:35
+msgid "Hybrid"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:35
+msgid "Terrain"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:40
+msgid "Latitude"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:44
+#: includes/shortcodes/configs/la_maps.php:53
+msgid "Here is a tool"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:44
+#: includes/shortcodes/configs/la_maps.php:53
+msgid "where you can find Latitude & Longitude of your location"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:49
+msgid "Longitude"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:58
+msgid "Map Zoom"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:61
+msgid "12 - Default"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:69
+msgid "Disable map zoom on mouse wheel scroll"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:75
+msgid "Info Window Text"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:77
+#: includes/shortcodes/configs/la_maps.php:86
+msgid "Info Window"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:82
+msgid "Open on Marker Click"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:91
+msgid "Marker/Point icon"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:93
+msgid "Use Google Default"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:93
+msgid "Use Plugin's Default"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:93
+msgid "Upload Custom"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:94
+#: includes/shortcodes/configs/la_maps.php:103
+#: includes/shortcodes/configs/la_maps.php:110
+msgid "Marker"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:99
+msgid "Upload Image Icon"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:101
+msgid "Upload the custom image icon."
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:107
+msgid "Icon Image Url"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:114
+msgid "Street view control"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:116
+#: includes/shortcodes/configs/la_maps.php:123
+#: includes/shortcodes/configs/la_maps.php:130
+#: includes/shortcodes/configs/la_maps.php:146
+msgid "Disable"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:116
+#: includes/shortcodes/configs/la_maps.php:123
+#: includes/shortcodes/configs/la_maps.php:130
+#: includes/shortcodes/configs/la_maps.php:146
+msgid "Enable"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:121
+msgid "Map type control"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:128
+msgid "Zoom control"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:135
+msgid "Zoom control size"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:137
+msgid "Small"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:137
+msgid "Large"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:144
+msgid "Disable dragging on Mobile"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:151
+msgid "Google Styled Map JSON"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:153
+msgid "Click here"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:153
+msgid "to get the style JSON code for styling your map."
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:154
+msgid "Styling"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:165
+msgid "La Google Maps"
+msgstr ""
+
+#: includes/shortcodes/configs/la_maps.php:169
+msgid "Display Google Maps to indicate your location."
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:17
+#: includes/shortcodes/configs/la_show_portfolios.php:60
+#: includes/shortcodes/configs/la_show_posts.php:121
+msgid "Category In:"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:28
+#: includes/shortcodes/configs/la_portfolio_masonry.php:43
+#: includes/shortcodes/configs/la_portfolio_masonry.php:58
+#: includes/shortcodes/configs/la_portfolio_masonry.php:73
+#: includes/shortcodes/configs/la_portfolio_masonry.php:91
+#: includes/shortcodes/configs/la_portfolio_masonry.php:103
+#: includes/shortcodes/configs/la_portfolio_masonry.php:113
+#: includes/shortcodes/configs/la_portfolio_masonry.php:120
+#: includes/shortcodes/configs/la_portfolio_masonry.php:127
+#: includes/shortcodes/configs/la_portfolio_masonry.php:134
+#: includes/shortcodes/configs/la_portfolio_masonry.php:142
+#: includes/shortcodes/configs/la_show_portfolios.php:71
+#: includes/shortcodes/configs/la_show_portfolios.php:86
+#: includes/shortcodes/configs/la_show_portfolios.php:101
+#: includes/shortcodes/configs/la_show_portfolios.php:116
+#: includes/shortcodes/configs/la_show_portfolios.php:135
+#: includes/shortcodes/configs/la_show_portfolios.php:148
+#: includes/shortcodes/configs/la_show_portfolios.php:158
+#: includes/shortcodes/configs/la_show_portfolios.php:165
+#: includes/shortcodes/configs/la_show_posts.php:132
+#: includes/shortcodes/configs/la_show_posts.php:147
+#: includes/shortcodes/configs/la_show_posts.php:162
+#: includes/shortcodes/configs/la_show_posts.php:177
+#: includes/shortcodes/configs/la_show_posts.php:196
+#: includes/shortcodes/configs/la_show_posts.php:209
+msgid "Query Settings"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:32
+#: includes/shortcodes/configs/la_show_portfolios.php:75
+#: includes/shortcodes/configs/la_show_posts.php:136
+msgid "Category Not In:"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:47
+#: includes/shortcodes/configs/la_show_portfolios.php:90
+#: includes/shortcodes/configs/la_show_posts.php:151
+msgid "Post In:"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:62
+#: includes/shortcodes/configs/la_show_portfolios.php:105
+#: includes/shortcodes/configs/la_show_posts.php:166
+msgid "Post Not In:"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:107
+msgid "Items per page"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:108
+#: includes/shortcodes/configs/la_show_portfolios.php:153
+#: includes/shortcodes/configs/la_show_posts.php:289
+#: includes/shortcodes/configs/la_team_member.php:45
+msgid ""
+"Set max limit for items in grid or enter -1 to display all (limited to 1000)."
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:124
+msgid "Enable Skill Filter"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:147
+msgid "Skill Filter"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:162
+#: includes/shortcodes/configs/la_portfolio_masonry.php:177
+msgid "Skill Filters"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:166
+msgid "Filter style"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:191
+#: includes/shortcodes/configs/la_portfolio_masonry.php:209
+#: includes/shortcodes/configs/la_portfolio_masonry.php:218
+#: includes/shortcodes/configs/la_portfolio_masonry.php:237
+#: includes/shortcodes/configs/la_portfolio_masonry.php:249
+#: includes/shortcodes/configs/la_portfolio_masonry.php:268
+#: includes/shortcodes/configs/la_portfolio_masonry.php:284
+#: includes/shortcodes/configs/la_portfolio_masonry.php:300
+#: includes/shortcodes/configs/la_portfolio_masonry.php:318
+#: includes/shortcodes/configs/la_portfolio_masonry.php:330
+#: includes/shortcodes/configs/la_portfolio_masonry.php:384
+#: includes/shortcodes/configs/la_portfolio_masonry.php:392
+#: includes/shortcodes/configs/la_show_portfolios.php:182
+#: includes/shortcodes/configs/la_show_portfolios.php:185
+#: includes/shortcodes/configs/la_show_posts.php:227
+#: includes/shortcodes/configs/la_show_posts.php:237
+#: includes/shortcodes/configs/la_show_posts.php:240
+#: includes/shortcodes/configs/la_show_posts.php:248
+msgid "Item Settings"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:196
+msgid "Item Title HTML Tag"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:201
+#: includes/shortcodes/configs/la_show_portfolios.php:174
+#: includes/shortcodes/configs/la_show_posts.php:219
+msgid "H2"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:208
+msgid "Default is H5"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:214
+msgid "Image Size"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:223
+msgid "Item padding"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:224
+msgid "Select gap between item in grids."
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:227
+msgid "0px"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:228
+msgid "5px"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:229
+msgid "10px"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:230
+msgid "15px"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:231
+msgid "20px"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:232
+msgid "25px"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:233
+msgid "30px"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:234
+msgid "35px"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:242
+msgid "Column Type"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:253
+msgid "Responsive Column"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:273
+msgid "Portfolio Item Width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:275
+msgid "Set your portfolio item default width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:289
+msgid "Portfolio Item Height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:290
+msgid "Set your portfolio item default height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:305
+msgid "Mobile Column"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:323
+msgid "Enable Custom Item Setting"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:339
+msgid "Width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:340
+msgid ""
+"it will occupy x width of base item width ( example: this item will be "
+"occupy 2x width of base width you need entered \"2\")"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:344
+msgid "1/2x width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:345
+msgid "1x width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:346
+msgid "1.5x width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:347
+msgid "2x width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:348
+msgid "2.5x width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:349
+msgid "3x width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:350
+msgid "3.5x width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:351
+msgid "4x width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:357
+msgid "Height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:358
+msgid ""
+"it will occupy x height of base item height ( example: this item will be "
+"occupy 2x height of base height you need entered \"2\")"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:362
+msgid "1/2x height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:363
+msgid "1x height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:364
+msgid "1.5x height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:365
+msgid "2x height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:366
+msgid "2.5x height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:367
+msgid "3x height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:368
+msgid "3.5x height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:369
+msgid "4x height"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:375
+msgid "Custom Image Size"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:377
+msgid "leave blank to inherit from parent settings"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:399
+msgid "Portfolio Masonry"
+msgstr ""
+
+#: includes/shortcodes/configs/la_portfolio_masonry.php:403
+#: includes/shortcodes/configs/la_show_portfolios.php:228
+msgid "Display portfolio with la-studio themes style."
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:16
+msgid "Package Name / Title"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:18
+msgid "Enter the package name or table heading"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:22
+msgid "Package Price"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:24
+msgid "Enter the price for this package. e.g. $157"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:28
+#: includes/shortcodes/configs/la_pricing_table.php:139
+msgid "Price Unit"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:30
+msgid "Enter the price unit for this package. e.g. per month"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:34
+msgid "Features"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:36
+msgid "Create the features list"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:54
+msgid "Highlight Text"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:76
+msgid "Description before featured"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:81
+msgid "Description after featured"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:86
+msgid "Button text"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:88
+msgid "Enter call to action button text"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:93
+msgid "Button Link"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:95
+msgid "Select / enter the link for call to action button"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:100
+msgid "Make this pricing box as featured"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:104
+msgid "Custom badge"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:118
+msgid "Main background color"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:124
+msgid "Main text color"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:130
+msgid "Highlight color"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:137
+msgid "Package Name/Title"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:138
+msgid "Price"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:140
+msgid "After Featured/ Before Featured"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:141
+msgid "Featured"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:142
+msgid "Button"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:147
+msgid "Icon settings"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:152
+msgid "Icon Width"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:193
+msgid "Select Design"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:194
+msgid "Select Pricing table design you would like to use"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:218
+msgid "Pricing Table"
+msgstr ""
+
+#: includes/shortcodes/configs/la_pricing_table.php:222
+msgid "Create nice looking pricing tables"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_portfolios.php:48
+msgid "Classic 01"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_portfolios.php:49
+msgid "Classic 02"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_portfolios.php:50
+msgid "Classic 03"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_portfolios.php:169
+#: includes/shortcodes/configs/la_show_posts.php:214
+msgid "Item title tag"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_portfolios.php:181
+#: includes/shortcodes/configs/la_show_posts.php:226
+msgid "Default is H3"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_portfolios.php:224
+msgid "Show Portfolios"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:48
+msgid "Blog Style"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:53
+#: includes/shortcodes/configs/la_show_posts.php:81
+#: includes/shortcodes/configs/la_show_posts.php:97
+#: includes/shortcodes/configs/la_testimonial.php:25
+msgid "Style 03"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:82
+#: includes/shortcodes/configs/la_show_posts.php:98
+#: includes/shortcodes/configs/la_testimonial.php:26
+msgid "Style 04"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:231
+msgid "Excerpt Length"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:244
+msgid "Image size 2"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:247
+msgid "Enter image size ( For Special Style )."
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:272
+msgid "Display Style"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:273
+msgid "Select display style for grid."
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:276
+msgid "Show all"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:277
+msgid "Load more button"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:278
+msgid "Pagination"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:303
+msgid "Number items showing"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:305
+msgid "Number of items to show per page."
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:316
+msgid "Load more text"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:334
+msgid "Blog Posts"
+msgstr ""
+
+#: includes/shortcodes/configs/la_show_posts.php:338
+msgid "Display posts with la-studio themes style."
+msgstr ""
+
+#: includes/shortcodes/configs/la_social_link.php:22
+msgid "Round"
+msgstr ""
+
+#: includes/shortcodes/configs/la_social_link.php:32
+msgid "Social Media Link"
+msgstr ""
+
+#: includes/shortcodes/configs/la_social_link.php:36
+msgid "Display Social Media Link."
+msgstr ""
+
+#: includes/shortcodes/configs/la_stats_counter.php:24
+msgid "No display"
+msgstr ""
+
+#: includes/shortcodes/configs/la_stats_counter.php:67
+#: includes/shortcodes/configs/la_stats_counter.php:169
+msgid "Value"
+msgstr ""
+
+#: includes/shortcodes/configs/la_stats_counter.php:72
+msgid ""
+"Enter number for counter without any special character. You may enter a "
+"decimal number. Eg 12.76"
+msgstr ""
+
+#: includes/shortcodes/configs/la_stats_counter.php:76
+msgid "Value Prefix"
+msgstr ""
+
+#: includes/shortcodes/configs/la_stats_counter.php:81
+msgid "Value Suffix"
+msgstr ""
+
+#: includes/shortcodes/configs/la_stats_counter.php:101
+msgid "Between Value & Title"
+msgstr ""
+
+#: includes/shortcodes/configs/la_stats_counter.php:175
+msgid "Stats Counter"
+msgstr ""
+
+#: includes/shortcodes/configs/la_stats_counter.php:179
+msgid "Your milestones, achievements, etc."
+msgstr ""
+
+#: includes/shortcodes/configs/la_team_member.php:30
+#: includes/shortcodes/configs/la_testimonial.php:33
+msgid "Choose member"
+msgstr ""
+
+#: includes/shortcodes/configs/la_team_member.php:80
+msgid "Display the team member"
+msgstr ""
+
+#: includes/shortcodes/configs/la_testimonial.php:70
+msgid "Testimonials"
+msgstr ""
+
+#: includes/shortcodes/configs/la_testimonial.php:74
+msgid "Display the testimonial"
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline.php:16
+#: includes/shortcodes/configs/la_timeline_item.php:16
+msgid "Timeline"
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline.php:20
+#: includes/shortcodes/configs/la_timeline_item.php:20
+msgid "Displays the timeline block"
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline.php:37
+msgid "Enable load more"
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline.php:46
+msgid "Customize the load more text."
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline_item.php:32
+msgid "Sub-Title"
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline_item.php:43
+msgid "Apply link to:"
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline_item.php:47
+msgid "Complete box"
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline_item.php:48
+msgid "Box Title"
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline_item.php:49
+msgid "Display Read More"
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline_item.php:51
+msgid "Select the element for link."
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline_item.php:55
+msgid "Add Link"
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline_item.php:58
+msgid "Provide the link that will be applied to this timeline."
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline_item.php:62
+msgid "Read More Text"
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline_item.php:65
+msgid "Customize the read more text."
+msgstr ""
+
+#: includes/shortcodes/configs/la_timeline_item.php:70
+msgid "Dot Color"
+msgstr ""
+
+#: includes/shortcodes/configs/product.php:18
+msgid "Input product ID or product SKU or product title to see suggestions"
+msgstr ""
+
+#: includes/shortcodes/configs/product.php:98
+msgid "Product"
+msgstr ""
+
+#: includes/shortcodes/configs/product.php:102
+msgid "Show a single product by ID or SKU."
+msgstr ""
+
+#: includes/shortcodes/configs/product_attribute.php:99
+msgid "List of product taxonomy attribute"
+msgstr ""
+
+#: includes/shortcodes/configs/product_attribute.php:103
+msgid "Filter"
+msgstr ""
+
+#: includes/shortcodes/configs/product_attribute.php:107
+msgid "Taxonomy values"
+msgstr ""
+
+#: includes/shortcodes/configs/product_attribute.php:193
+msgid "Product Attribute"
+msgstr ""
+
+#: includes/shortcodes/configs/product_attribute.php:197
+msgid "List Products with an attribute shortcodes"
+msgstr ""
+
+#: includes/shortcodes/configs/product_categories.php:16
+#: includes/shortcodes/configs/sale_products.php:62
+msgid "Categories"
+msgstr ""
+
+#: includes/shortcodes/configs/product_categories.php:23
+msgid "List of product categories"
+msgstr ""
+
+#: includes/shortcodes/configs/product_categories.php:27
+msgid "Maximum Category will be displayed"
+msgstr ""
+
+#: includes/shortcodes/configs/product_categories.php:29
+msgid "The `number` field is used to display the number of products."
+msgstr ""
+
+#: includes/shortcodes/configs/product_categories.php:66
+msgid "Hide Empty"
+msgstr ""
+
+#: includes/shortcodes/configs/product_categories.php:113
+msgid "Product Categories"
+msgstr ""
+
+#: includes/shortcodes/configs/product_categories.php:117
+msgid "Display product categories loop"
+msgstr ""
+
+#: includes/shortcodes/configs/product_category.php:63
+msgid "Mini 2"
+msgstr ""
+
+#: includes/shortcodes/configs/product_category.php:81
+msgid "Design 05-2"
+msgstr ""
+
+#: includes/shortcodes/configs/product_category.php:83
+msgid "Design 07"
+msgstr ""
+
+#: includes/shortcodes/configs/product_category.php:127
+msgid "Product category list"
+msgstr ""
+
+#: includes/shortcodes/configs/product_category.php:215
+msgid "Product Category"
+msgstr ""
+
+#: includes/shortcodes/configs/product_category.php:219
+msgid "Show multiple products in a category"
+msgstr ""
+
+#: includes/shortcodes/configs/products.php:89
+#: includes/shortcodes/configs/products.php:162
+msgid "Products"
+msgstr ""
+
+#: includes/shortcodes/configs/products.php:97
+msgid "Enter List of Products"
+msgstr ""
+
+#: includes/shortcodes/configs/products.php:166
+msgid "Show multi product by ID or SKU"
+msgstr ""
+
+#: includes/shortcodes/configs/recent_products.php:168
+msgid "Recent products"
+msgstr ""
+
+#: includes/shortcodes/configs/recent_products.php:172
+msgid "Display Recent Products."
+msgstr ""
+
+#: includes/shortcodes/configs/sale_products.php:32
+#: includes/shortcodes/configs/sale_products.php:52
+msgid "With Countdown"
+msgstr ""
+
+#: includes/shortcodes/configs/sale_products.php:33
+msgid "With Countdown 2"
+msgstr ""
+
+#: includes/shortcodes/configs/sale_products.php:69
+msgid "Category In"
+msgstr ""
+
+#: includes/shortcodes/configs/sale_products.php:182
+msgid "Sale products"
+msgstr ""
+
+#: includes/shortcodes/configs/sale_products.php:186
+msgid "List all products on sale"
+msgstr ""
+
+#: includes/shortcodes/configs/top_rated_products.php:168
+msgid "Top rated products"
+msgstr ""
+
+#: includes/shortcodes/configs/top_rated_products.php:172
+msgid "List all products has rated."
+msgstr ""
+
+#: includes/shortcodes/templates/la_team_member.php:11
+msgid "Load More"
+msgstr ""
+
+#. Name of the plugin
+msgid "LA Studio Core"
+msgstr ""
+
+#. Description of the plugin
+msgid "(VERSION 2) This plugin use only for LA Studio theme"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://themeforest.net/user/la-studio/?ref=la-studio"
+msgstr ""
+
+#. Author of the plugin
+msgid "LA Studio"
+msgstr ""

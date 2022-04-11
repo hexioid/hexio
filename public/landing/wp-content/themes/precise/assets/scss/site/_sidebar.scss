@@ -1,0 +1,98 @@
+// Sidebar Widget
+.sidebar-inner{
+  .widget{
+    margin-bottom: 50px;
+    .widget-title{
+      margin: 0 0 25px;
+      font-size: 16px;
+    }
+    select {
+      height: 50px;
+      width: 100%;
+      padding: 10px 30px;
+    }
+    &.widget-border{
+      margin-bottom: 20px;
+    }
+  }
+  ul.menu{
+    li{
+      padding: 5px 0;
+      font-size: 12px;
+      margin-bottom: 15px;
+      ul{
+        padding-left: 0;
+        padding-top: 20px;
+        li{
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+      .narrow{
+        top: 0;
+        height: 30px;
+        line-height: 30px;
+        i{
+          margin-top: 13px;
+        }
+      }
+      &.current-cat,
+      &.current-cat-parent,
+      &.open,
+      &:hover{
+        > a {
+          text-decoration: underline;
+          @extend %text-color-secondary;
+        }
+      }
+    }
+  }
+  .TweetAuthor-name,
+  .TweetAuthor-avatar{
+    display: none;
+  }
+  .widget_archive{
+    .menu{
+      li{
+        padding: 0;
+        margin-bottom: 10px;
+        a{
+          display: block;
+          border-width: 1px;
+          border-style: solid;
+          line-height: 20px;
+          padding: 15px 20px;
+          @extend %border-color;
+        }
+        &:hover > a{
+          text-decoration: none;
+          border-color: inherit;
+          @include box-shadow(0 0 24px 0 rgba(41, 44, 58, 0.11));
+        }
+      }
+    }
+  }
+  .widget_tag_cloud{
+    .tagcloud{
+      a{
+        font-size: 10px !important;
+        text-transform: uppercase;
+        border-width: 1px;
+        border-style: solid;
+        padding: 12px 20px;
+        float: left;
+        margin: 0 5px 5px 0;
+        @extend %border-color;
+        &:after{
+          display: none;
+        }
+        &:hover{
+          text-decoration: none;
+          border-color: inherit;
+          @include box-shadow(0 0 24px 0 rgba(41, 44, 58, 0.11));
+        }
+      }
+    }
+  }
+}

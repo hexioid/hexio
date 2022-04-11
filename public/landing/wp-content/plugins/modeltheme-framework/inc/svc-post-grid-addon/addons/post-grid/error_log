@@ -1,0 +1,1 @@
+[15-Dec-2016 16:48:55 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/modelthe/public_html/mt_eagle/wp-content/plugins/modeltheme-framework/inc/svc-post-grid-addon/addons/post-grid/post-grid.php on line 9

@@ -1,0 +1,413 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: cryptokn/templates/template-header1.php:196
+#: cryptokn/templates/template-header2.php:102
+#: cryptokn/templates/template-header3.php:123
+#: cryptokn/templates/template-header4.php:43
+msgid " Appearance -> Menus"
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:77
+msgid "&larr; Older Comments"
+msgstr ""
+
+#. Text in echo
+#: cryptokn/404.php:29
+msgid "404"
+msgstr ""
+
+#. Text in function
+#: cryptokn/functions.php:1
+msgid "404 Not Found"
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "Add comment"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/custom-functions.php:1
+msgid "Blog"
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "Cancel reply"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/custom-functions.php:1
+msgid "Category: "
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "Comment"
+msgstr ""
+
+#. Text in echo
+#: cryptokn/comments.php:76
+msgid "Comment navigation"
+msgstr ""
+
+#. Text in echo
+#: cryptokn/comments.php:88
+msgid "Comments are closed."
+msgstr ""
+
+#. Text in function
+#: cryptokn/content-blogloop-v1.php:74
+#: cryptokn/content-blogloop-v2.php:74
+#: cryptokn/content-blogloop-v3.php:74
+#: cryptokn/content-blogloop-v4.php:65
+#: cryptokn/content-blogloop-v5.php:87
+msgid "Continue Reading"
+msgstr ""
+
+#. Text in function
+#: cryptokn/footer.php:46
+msgid "Copyright 2018 by ModelTheme. All Rights Reserved."
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "Dismiss this notice"
+msgstr ""
+
+#. Text in function
+#: cryptokn/content-page.php:20
+#: cryptokn/inc/custom-comments.php:36
+msgid "Edit"
+msgstr ""
+
+#. Text in function
+#: cryptokn/functions.php:1
+msgid "Footer Row 1 - Sidebar "
+msgstr ""
+
+#. Text in function
+#: cryptokn/functions.php:1
+msgid "Footer Row 2 - Sidebar "
+msgstr ""
+
+#. Text in function
+#: cryptokn/functions.php:1
+msgid "Footer Row 3 - Sidebar "
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/custom-functions.php:1
+msgid "From the Blog"
+msgstr ""
+
+#. Text in function
+#: cryptokn/header.php:47
+msgid "Hit ENTER to search or ESC to close..."
+msgstr ""
+
+#. Text in function
+#: cryptokn/functions.php:1
+msgid "Home"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "Install Plugins"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "Install Required Plugins"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. Text in echo
+#: cryptokn/content-none.php:27
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "Leave a comment"
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "Leave a reply to %s"
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "Log out of this account"
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "Log out?"
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "Logged in as "
+msgstr ""
+
+#. Text in function
+#: cryptokn/functions.php:1
+msgid "Main Theme Sidebar"
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:78
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#. Text in function
+#: cryptokn/content-single.php:243
+msgid "Next Post"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. Text in echo
+#: cryptokn/content-none.php:21
+msgid "Nothing Found"
+msgstr ""
+
+#. Text in function
+#: cryptokn/functions.php:1
+msgid "Page"
+msgstr ""
+
+#. Text in function
+#: cryptokn/content-blogloop-v1.php:79
+#: cryptokn/content-blogloop-v2.php:79
+#: cryptokn/content-blogloop-v3.php:79
+#: cryptokn/content-blogloop-v4.php:70
+#: cryptokn/content-blogloop-v5.php:92
+#: cryptokn/content-page.php:12
+#: cryptokn/content-single.php:180
+#: cryptokn/content.php:70
+msgid "Pages:"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "Plugin activated successfully."
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. Text in function
+#: cryptokn/content-single.php:236
+msgid "Previous Post"
+msgstr ""
+
+#. Text in function
+#: cryptokn/functions.php:1
+msgid "Primary menu"
+msgstr ""
+
+#. Text in function
+#: cryptokn/templates/template-header1.php:196
+#: cryptokn/templates/template-header2.php:102
+#: cryptokn/templates/template-header3.php:123
+#: cryptokn/templates/template-header4.php:43
+msgid "Primary navigation menu is missing. Add one from "
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/custom-functions.woocommerce.php:16
+msgid "Quick View"
+msgstr ""
+
+#. Text in function
+#: cryptokn/content.php:70
+msgid "Read More <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"></i>"
+msgstr ""
+
+#. Text in function
+#: cryptokn/content-none.php:11
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#. Text in echo
+#: cryptokn/content-single.php:186
+msgid "Related Posts"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "Return to the Dashboard"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/custom-functions.php:1
+msgid "Search Results for: "
+msgstr ""
+
+#. Text in function
+#: cryptokn/functions.php:1
+#: cryptokn/inc/custom-functions.php:1
+msgid "Shop"
+msgstr ""
+
+#. Text in function
+#: cryptokn/functions.php:1
+msgid "Sidebar"
+msgstr ""
+
+#. Text in function
+#: cryptokn/functions.php:1
+msgid "Sidebar "
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. Text in echo
+#: cryptokn/404.php:30
+msgid "Sorry, this page does not exist"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/custom-functions.php:1
+msgid "Tag Archives: "
+msgstr ""
+
+#. Text in function
+#: cryptokn/content-single.php:95
+msgid "Tags:"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#. Text in echo
+#: cryptokn/404.php:31
+msgid "The link you clicked might be corrupted, or the page may have been removed."
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#. Text in echo
+#: cryptokn/content-none.php:22
+msgid "Try to search for posts via the form above"
+msgstr ""
+
+#. Text in echo
+#: cryptokn/content-none.php:17
+msgid "Try to search using another term via the form above"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "Update Required"
+msgstr ""
+
+#. Text in function
+#: cryptokn/inc/tgm/class-tgm-plugin-activation.php:1
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#. Text in function
+#: cryptokn/functions.php:1
+msgid "Used on WooCommerce pages"
+msgstr ""
+
+#. Text in echo
+#: cryptokn/inc/custom-functions.woocommerce.php:15
+msgid "View your shopping cart"
+msgstr ""
+
+#. Text in function
+#: cryptokn/functions.php:1
+msgid "Woocommerce sidebar"
+msgstr ""
+
+#. Text in function
+#: cryptokn/content-single.php:129
+msgid "Written by"
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "You must be "
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "Your comment"
+msgstr ""
+
+#. Text in echo
+#: cryptokn/inc/custom-comments.php:24
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "Your email"
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "Your name"
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "Your website"
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "logged in"
+msgstr ""
+
+#. Text in function
+#: cryptokn/comments.php:91
+msgid "to post a comment."
+msgstr ""
