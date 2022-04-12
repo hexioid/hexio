@@ -20,7 +20,7 @@
                 </button>
                 <div class="collapse" id="collapseExample">
                     @foreach($list_content_types as $content_type)
-                        <button style="background-color:#5d5d5d" onclick="addContent({{$content_type->id}})" class="border-0 my-1 btn btn-dark col-12" id="{{$content_type->id}}"> 
+                        <button style="background-color:#5d5d5d" onclick="addContent({{$content_type->id}})" class="border-0 my-1 btn btn-dark col-12" id="{{$content_type->id}}">
                             <div class="row">
                                 <div class="col-5 col-lg-6 text-right">
                                     <img style="margin-bottom:3.5px" style="position:relative" src="{{asset('images/Plus.svg')}}" alt="">
@@ -29,7 +29,7 @@
                                 ADD {{$content_type->type}}
                                 </div>
                             </div>
-                        
+
                         </button>
                     @endforeach
                 </div>
@@ -242,7 +242,7 @@
                                 <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
                                 <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
                                 <p id="preview-bio" style="line-height: 1.1;">{{$data->bio}}</p>
-                                <p class="mb-2" id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-map-pin"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
+                                <p class="mb-2" id="full-preview-address" style="color:#7F7F7F; display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-map-pin"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
                                 <br>
                                 <div id="container-list-preview">
                                     @foreach($list_contents as $content)
@@ -281,7 +281,7 @@
             </div>
         </div>
     </div>
-    
+
 @endsection
 @section('script')
     <script>
@@ -594,7 +594,7 @@
 
             let val = $("#list-preview-item-"+id).attr("class");
             let el = $("#list-preview-item-"+id);
-            
+
             if(val){
                 // Check if bold
                 if(val.includes("font-weight-bold")){
@@ -610,7 +610,7 @@
                     is_italic = false;
                 }
             }
-            
+
             // Check if underline
             if(el.parent().get( 0 ).tagName == 'U'){
                 is_underline = true;
@@ -667,7 +667,7 @@
             }
             update_text(id);
         }
-        
+
         function underlineText(id){
             let el = $("#list-preview-item-"+id);
             console.log(el.parent());

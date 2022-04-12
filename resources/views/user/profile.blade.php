@@ -138,7 +138,7 @@
                                 <p class="mb-0"><b id="preview-name">{{$data->name}}</b></p>
                                 <p id="full-preview-username" style="display: {{$data->is_username_displayed ? '' : 'none'}}"  style="font-size:12px">@<span id="preview-username">{{$data->username}}</span></p>
                                 <p id="preview-bio" style="white-space: pre-wrap; line-height: 1.1;">{{$data->bio}}</p>
-                                <p class="mb-2" id="full-preview-address" style="display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-map-pin"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
+                                <p class="mb-2" id="full-preview-address" style="color:#7F7F7F; display: {{$data->is_address_displayed ? '' : 'none'}}"><i class="fa-solid fa-map-pin"></i><span id="preview-address" class="pl-2">{{$data->address}}</span></p>
                                 <br>
                                 <div id="container-list-preview">
                                     @foreach($list_contents as $content)
