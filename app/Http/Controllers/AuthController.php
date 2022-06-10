@@ -124,7 +124,7 @@ class AuthController extends Controller
             \Mail::to($request->get("email"))->send(new \App\Mail\MyTestMail($details));
 
             return redirect()->back()->with(['success' => "Check your email"]);
-        } catch (\Throwable $th) {
+        } catch (\Exception $e) {
             return redirect()->back()->with(['error' => $e->getMessage()]);
         }
     }
